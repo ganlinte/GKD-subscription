@@ -32,7 +32,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: 'com.qiekj.user.MainActivity',
       quickFind: true,
       matchTime: 10000,
