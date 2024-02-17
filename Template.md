@@ -1,4 +1,4 @@
-# @ganlinte/gkd-subscription
+# @ganlinte/GKD-subscription
 
 随缘更新
 
@@ -7,7 +7,7 @@
 在 GKD 内添加以下链接即可使用此规则
 
 ```txt
-https://raw.githubusercontent.com/ganlinte/gkd-subscription/main/dist/ganlin_gkd.json5
+https://raw.githubusercontent.com/ganlinte/GKD-subscription/main/dist/ganlin_gkd.json5
 ```
 
 当前版本: v--VERSION--
