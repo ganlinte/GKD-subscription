@@ -2,9 +2,9 @@
   "name": "@ganlinte/gkd-subscription",
   "type": "module",
   "version": "1.2.0",
-  "main": "./dist/gkd.json5",
-  "unpkg": "./dist/gkd.json5",
-  "jsdelivr": "./dist/gkd.json5",
+  "main": "./dist/ganlin_gkd.json5",
+  "unpkg": "./dist/ganlin_gkd.json5",
+  "jsdelivr": "./dist/ganlin_gkd.json5",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"

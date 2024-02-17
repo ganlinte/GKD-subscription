@@ -10,9 +10,9 @@ const subsConfig: RawSubscription = {
   author: 'ganlinte',
   supportUri: 'https://github.com/ganlinte/GKD-subscription',
   updateUrl:
-    'https://registry.npmmirror.com/@ganlinte/GKD-subscription/latest/files',
+    'https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files',
   checkUpdateUrl:
-    'https://registry.npmmirror.com/@ganlinte/GKD-subscription/latest/files/dist/gkd.version.json',
+    'https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files/dist/gkd.version.json',
   globalGroups,
   categories,
   apps,
