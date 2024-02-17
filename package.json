@@ -1,0 +1,73 @@
+{
+  "name": "@ganlinte/gkd-subscription",
+  "type": "module",
+  "version": "1.2.0",
+  "main": "./dist/gkd.json5",
+  "unpkg": "./dist/gkd.json5",
+  "jsdelivr": "./dist/gkd.json5",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "format": "prettier --cache --write .",
+    "lint": "eslint --cache --fix ./**/*.{js,ts,jsx,tsx}",
+    "build": "tsc --noEmit && tsx ./scripts/build.ts",
+    "check": "tsc --noEmit && tsx ./scripts/check.ts",
+    "updateSubs": "tsx ./scripts/updateSubs.ts"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
+    "@commitlint/types": "^18.4.4",
+    "@gkd-kit/selector": "0.0.18",
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20.11.5",
+    "@typescript-eslint/eslint-plugin": "6.19.0",
+    "@typescript-eslint/parser": "6.19.0",
+    "dayjs": "^1.11.10",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-define-config": "2.1.0",
+    "husky": "^8.0.3",
+    "json5": "^2.2.3",
+    "lint-staged": "^15.2.0",
+    "lodash": "^4.17.21",
+    "picocolors": "^1.0.0",
+    "pinyin-pro": "3.19.2",
+    "prettier": "^3.2.4",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "author": "ganlinte",
+  "license": "MIT",
+  "homepage": "https://github.com/ganlinte/gkd-subscription#readme",
+  "bugs": {
+    "url": "https://github.com/ganlinte/gkd-subscription/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganlinte/gkd-subscription.git"
+  },
+  "volta": {
+    "node": "20.9.0"
+  },
+  "packageManager": "pnpm@8.10.2",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --cache --write --ignore-unknown"
+    ],
+    "*.{js,ts,jsx,tsx}": [
+      "eslint --cache --fix"
+    ]
+  }
+}
