@@ -10,7 +10,7 @@
 https://raw.githubusercontent.com/ganlinte/GKD-subscription/main/dist/ganlin_gkd.json5
 ```
 
-当前版本: v3
+当前版本: v4
 
 当前订阅文件已适配 610 个 APP, 共有 1372 规则组
 
