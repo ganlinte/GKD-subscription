@@ -12,7 +12,7 @@ const subsConfig: RawSubscription = {
   updateUrl:
     'https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files',
   checkUpdateUrl:
-    'https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files/dist/gkd.version.json',
+    'https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files/dist/ganlin_gkd.version.json',
   globalGroups,
   categories,
   apps,
