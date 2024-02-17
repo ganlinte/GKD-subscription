@@ -8,11 +8,11 @@ const subsConfig: RawSubscription = {
   version: 0,
   name: '甘霖的GKD订阅',
   author: 'ganlinte',
-  supportUri: 'https://github.com/ganlinte/gkd-subscription',
+  supportUri: 'https://github.com/ganlinte/GKD-subscription',
   updateUrl:
-    'https://raw.githubusercontent.com/ganlinte/gkd-subscription/main/dist/ganlin_gkd.json5',
+    'https://registry.npmmirror.com/@ganlinte/GKD-subscription/latest/files',
   checkUpdateUrl:
-    'https://raw.githubusercontent.com/ganlinte/gkd-subscription/main/dist/gkd.version.json',
+    'https://registry.npmmirror.com/@ganlinte/GKD-subscription/latest/files/dist/gkd.version.json',
   globalGroups,
   categories,
   apps,
