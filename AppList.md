@@ -336,7 +336,7 @@
 | 牛客 | [com.nowcoder.app.florida](/docs/com.nowcoder.app.florida.md) | 1 |
 | 牛牛视频 | [com.schunshang.bij.niuniu](/docs/com.schunshang.bij.niuniu.md) | 1 |
 | 欧乐影院 | [com.xiaohu.olevodmobile](/docs/com.xiaohu.olevodmobile.md) | 1 |
-| 胖乖生活 | [com.qiekj.user](/docs/com.qiekj.user.md) | 3 |
+| 胖乖生活 | [com.qiekj.user](/docs/com.qiekj.user.md) | 2 |
 | 澎湃新闻 | [com.wondertek.paper](/docs/com.wondertek.paper.md) | 1 |
 | 拼多多 | [com.xunmeng.pinduoduo](/docs/com.xunmeng.pinduoduo.md) | 12 |
 | 皮皮搞笑 | [cn.xiaochuankeji.zuiyouLite](/docs/cn.xiaochuankeji.zuiyouLite.md) | 2 |
