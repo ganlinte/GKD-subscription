@@ -48,19 +48,13 @@ export default defineAppConfig({
       ],
     },
     {
-      key: 7,
-      name: '全屏广告',
-      enable: true,
-      rules: [
-        {
-          key: 0,
-          name: '我的-弹窗广告',
-          activityIds:
-            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: '@Image < View + View + TextView[text*="反馈"]',
-          snapshotUrls: 'https://i.gkd.li/import/14304573',
-        },
-      ],
+      enable: false,
+      key: 10,
+      name: '我的-弹窗广告',
+      activityIds:
+        'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+      rules: '@Image < View + View + TextView[text*="反馈"]',
+      snapshotUrls: 'https://i.gkd.li/import/14304573',
     },
   ],
 });
