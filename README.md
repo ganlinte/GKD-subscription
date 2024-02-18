@@ -26,4 +26,4 @@ https://raw.githubusercontent.com/ganlinte/GKD-subscription/main/dist/ganlin_gkd
 
 ### 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=Adpro-Team/GKD_subscription&_v=24)
+![img](https://contrib.rocks/image?repo=ganlinte/GKD-subscription&_v=--VERSION--)
