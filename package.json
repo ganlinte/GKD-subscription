@@ -1,7 +1,7 @@
 {
   "name": "@ganlinte/gkd-subscription",
   "type": "module",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "main": "./dist/ganlin_gkd.json5",
   "unpkg": "./dist/ganlin_gkd.json5",
   "jsdelivr": "./dist/ganlin_gkd.json5",
