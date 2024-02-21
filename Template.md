@@ -4,11 +4,19 @@
 
 `默认规则` 仅启用 `开屏广告` 一类规则, 其它所有规则均需用户手动打开
 
-在 GKD 内添加以下链接即可使用此规则
+## GKD 订阅链接
 
-```txt
-https://raw.githubusercontent.com/ganlinte/GKD-subscription/main/dist/ganlin_gkd.json5
-```
+|                                             Github                                             |                                   npmmirror                                    |
+| :--------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------: |
+| [链接](https://raw.githubusercontent.com/ganlinte/GKD-subscription/main/dist/ganlin_gkd.json5) | [链接](https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files) |
+
+## GKD 订阅仓库
+
+|                        Github                        |                              npmjs                               |
+| :--------------------------------------------------: | :--------------------------------------------------------------: |
+| [链接](https://github.com/ganlinte/GKD-subscription) | [链接](https://www.npmjs.com/package/@ganlinte/gkd-subscription) |
+
+## 说明
 
 当前版本: v--VERSION--
 
