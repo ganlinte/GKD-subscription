@@ -16,6 +16,8 @@ https://raw.githubusercontent.com/ganlinte/GKD-subscription/main/dist/ganlin_gkd
 
 查看 [适配 APP 列表](./AppList.md)
 
+查看 [第三方订阅规则汇总](https://github.com/Adpro-Team/GKD_THS_List)
+
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## 致谢
