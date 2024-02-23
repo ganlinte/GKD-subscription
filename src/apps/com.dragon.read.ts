@@ -175,5 +175,21 @@ export default defineAppConfig({
       rules: 'TextView[text="广告"] +2 Button[id="com.dragon.read:id/close"]',
       snapshotUrls: 'https://i.gkd.li/import/13191156',
     },
+    {
+      key: 13,
+      name: '全屏广告-周末开红包',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
+      rules: [
+        {
+          matches:
+            'FlattenUIText[text*="开心收下"] +n FlattenUIImage[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/14383684',
+        },
+      ],
+    },
   ],
 });
