@@ -14,8 +14,11 @@
 
 - [快照-0](https://i.gkd.li/import/13435011)
 
-## 全屏广告
+## 全屏广告-我的-弹窗广告
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/14304573)
+- [快照-1](https://i.gkd.li/import/14321282)
+- [快照-2](https://i.gkd.li/import/14383463)
+- [快照-3](https://i.gkd.li/import/14383477)

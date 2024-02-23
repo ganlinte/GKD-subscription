@@ -1,6 +1,6 @@
 # 番茄免费小说
 
-存在 8 规则组 - [com.dragon.read](/src/apps/com.dragon.read.ts)
+存在 9 规则组 - [com.dragon.read](/src/apps/com.dragon.read.ts)
 
 ## 卡片式广告
 
@@ -31,7 +31,7 @@
 - [快照-0](https://i.gkd.li/import/12910159)
 - [快照-1](https://i.gkd.li/import/12878266)
 
-## 阅读页面\_关注作者
+## 阅读页面_关注作者
 
 默认禁用
 
@@ -60,3 +60,9 @@
 默认禁用 - 点击右上角【关闭】
 
 - [快照-0](https://i.gkd.li/import/13191156)
+
+## 全屏广告-周末开红包
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/14383684)
