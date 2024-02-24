@@ -52,33 +52,33 @@ export default defineAppConfig({
       name: '全屏广告-我的-弹窗广告',
       enable: false,
       quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      activityIds: [
-        'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-        'com.qiekj.user.MainActivity',
-        'com.sigmob.sdk.base.common.PortraitTransparentAdActivity',
-      ],
       rules: [
         {
           key: 0,
-          matches: '@Image[text=""] < View +n TextView[text*="反馈"]',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: 'TextView[text*="反馈"] -2 View > Image',
           snapshotUrls: 'https://i.gkd.li/import/14304573',
         },
         {
           key: 1,
+          activityIds: 'com.qiekj.user.MainActivity',
           matches:
             'TextView[text*="扭动手机"] <n ViewGroup < ViewGroup +4 ViewGroup >n ImageView',
           snapshotUrls: 'https://i.gkd.li/import/14321282',
         },
         {
           key: 2,
+          activityIds:
+            'com.sigmob.sdk.base.common.PortraitTransparentAdActivity',
           matches: 'TextView[text*="跳过"]',
           snapshotUrls: 'https://i.gkd.li/import/14383463',
         },
         {
           preKeys: 2,
           key: 3,
+          activityIds:
+            'com.sigmob.sdk.base.common.PortraitTransparentAdActivity',
           matches: 'TextView[id="close_btn"]',
           snapshotUrls: 'https://i.gkd.li/import/14383477',
         },
