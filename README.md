@@ -18,9 +18,9 @@
 
 ## 说明
 
-当前版本: v7
+当前版本: v8
 
-当前订阅文件已适配 611 个 APP, 共有 1374 规则组
+当前订阅文件已适配 611 个 APP, 共有 1375 规则组
 
 查看 [适配 APP 列表](./AppList.md)
 
@@ -36,4 +36,4 @@
 
 ### 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=ganlinte/GKD-subscription&_v=7)
+![img](https://contrib.rocks/image?repo=ganlinte/GKD-subscription&_v=8)
