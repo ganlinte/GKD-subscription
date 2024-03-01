@@ -11,6 +11,8 @@ export default defineAppConfig({
       quickFind: true,
       resetMatch: 'app',
       actionMaximum: 1,
+      activityIds:
+        'com.aster.comic.app.ad.view.mediation.MediationSplashAdActivity',
       rules:
         'FrameLayout[id="com.paokeji.yiqu:id/lyContainer"] >n FrameLayout[childCount=3 || childCount=4] > View',
       snapshotUrls: [
