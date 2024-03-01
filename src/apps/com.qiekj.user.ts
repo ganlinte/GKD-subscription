@@ -63,9 +63,16 @@ export default defineAppConfig({
         {
           key: 1,
           activityIds: 'com.qiekj.user.MainActivity',
-          matches:
-            'TextView[text*="扭动手机"] <n ViewGroup < ViewGroup +4 ViewGroup >n ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/14321282',
+          actionMaximum: 1,
+          matches: [
+            'ViewGroup[childCount>=5] >2 ViewGroup[clickable=true]',
+            'TextView[text="关闭"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/import/14321282',
+            'https://i.gkd.li/import/14459980',
+            'https://i.gkd.li/import/14460112',
+          ],
         },
         {
           key: 2,
@@ -83,6 +90,16 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/14383477',
         },
       ],
+    },
+    {
+      key: 11,
+      name: '全屏广告-我的-开通胖乖会员',
+      enable: false,
+      quickFind: true,
+      actionMaximum: 1,
+      activityIds: 'com.qiekj.user.MainActivity',
+      rules: 'TextView[text="暂不开通"]',
+      snapshotUrls: 'https://i.gkd.li/import/14460136',
     },
   ],
 });
