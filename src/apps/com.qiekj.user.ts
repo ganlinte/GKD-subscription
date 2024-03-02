@@ -67,11 +67,13 @@ export default defineAppConfig({
           matches: [
             'ViewGroup[childCount>=5] >2 ViewGroup[clickable=true]',
             'TextView[text="关闭"]',
+            'FrameLayout[childCount=4] > FrameLayout > ImageView',
           ],
           snapshotUrls: [
-            'https://i.gkd.li/import/14321282',
-            'https://i.gkd.li/import/14459980',
-            'https://i.gkd.li/import/14460112',
+            'https://i.gkd.li/import/14321282', //规则1
+            'https://i.gkd.li/import/14459980', //规则1
+            'https://i.gkd.li/import/14460112', //规则2
+            'https://i.gkd.li/import/14467391', //规则3
           ],
         },
         {
