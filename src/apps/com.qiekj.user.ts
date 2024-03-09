@@ -57,24 +57,28 @@ export default defineAppConfig({
           key: 0,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: 'TextView[text*="反馈"] -2 View > Image',
+          matches: 'TextView[text*="反馈"] -n View > Image[text.length=0]',
           snapshotUrls: 'https://i.gkd.li/import/14304573',
         },
         {
           key: 1,
           activityIds: 'com.qiekj.user.MainActivity',
-          actionMaximum: 1,
-          matches: [
-            'ViewGroup[childCount>=5] >2 ViewGroup[clickable=true]',
-            'TextView[text="关闭"]',
-            'FrameLayout[childCount=4] > FrameLayout > ImageView',
-          ],
+          matches:
+            'ViewGroup[childCount>=5] > ViewGroup[childCount=1] > ViewGroup[clickable=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/14321282', //规则1
-            'https://i.gkd.li/import/14459980', //规则1
-            'https://i.gkd.li/import/14460112', //规则2
-            'https://i.gkd.li/import/14467391', //规则3
+            'https://i.gkd.li/import/14321282',
+            'https://i.gkd.li/import/14459980',
           ],
+        },
+        {
+          activityIds: 'com.qiekj.user.MainActivity',
+          matches: 'TextView[text*="关闭"]',
+          snapshotUrls: 'https://i.gkd.li/import/14460112',
+        },
+        {
+          activityIds: 'com.qiekj.user.MainActivity',
+          matches: 'FrameLayout[childCount=4] > FrameLayout > ImageView',
+          snapshotUrls: 'https://i.gkd.li/import/14467391',
         },
         {
           key: 2,
@@ -91,6 +95,15 @@ export default defineAppConfig({
           matches: 'TextView[id="close_btn"]',
           snapshotUrls: 'https://i.gkd.li/import/14383477',
         },
+        {
+          key: 4,
+          activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
+          matches: 'RelativeLayout[childCount=3||childCount=4] + ImageView',
+          snapshotUrls: [
+            'https://i.gkd.li/import/14545261',
+            'https://i.gkd.li/import/14545318',
+          ],
+        },
       ],
     },
     {
@@ -98,7 +111,6 @@ export default defineAppConfig({
       name: '全屏广告-我的-开通胖乖会员',
       enable: false,
       quickFind: true,
-      actionMaximum: 1,
       activityIds: 'com.qiekj.user.MainActivity',
       rules: 'TextView[text="暂不开通"]',
       snapshotUrls: 'https://i.gkd.li/import/14460136',
