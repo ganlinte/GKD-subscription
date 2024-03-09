@@ -22,8 +22,11 @@
 - [快照-1](https://i.gkd.li/import/14321282)
 - [快照-2](https://i.gkd.li/import/14459980)
 - [快照-3](https://i.gkd.li/import/14460112)
-- [快照-4](https://i.gkd.li/import/14383463)
-- [快照-5](https://i.gkd.li/import/14383477)
+- [快照-4](https://i.gkd.li/import/14467391)
+- [快照-5](https://i.gkd.li/import/14383463)
+- [快照-6](https://i.gkd.li/import/14383477)
+- [快照-7](https://i.gkd.li/import/14545261)
+- [快照-8](https://i.gkd.li/import/14545318)
 
 ## 全屏广告-我的-开通胖乖会员
 
