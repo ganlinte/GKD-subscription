@@ -12,6 +12,7 @@ const diabledAppIds = [
   // 在一些常见的应用中禁用
   'com.tencent.mm', // 微信
   'li.songe.gkd',
+  'com.magicalstory.AppStore', //误触
 
   // https://github.com/gkd-kit/gkd/issues/451
   'mark.via',
