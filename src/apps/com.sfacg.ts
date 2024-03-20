@@ -9,11 +9,14 @@ export default defineAppConfig({
       name: '开屏广告',
       matchTime: 10000,
       quickFind: true,
-      resetMatch: 'app',
       actionMaximum: 1,
-      activityIds: 'com.sf.ui.launcher.LauncherActivity',
-      rules: 'TextView[text*="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/14320791',
+      rules: [
+        {
+          activityIds: 'com.sf.ui.launcher.LauncherActivity',
+          matches: 'TextView[text*="跳过"]',
+          snapshotUrls: 'https://i.gkd.li/import/14320791',
+        },
+      ],
     },
     {
       key: 1,
