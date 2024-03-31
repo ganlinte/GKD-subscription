@@ -16,16 +16,20 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '全屏广告-首页',
+      name: '全屏广告-首页-领劵',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
+      activityIds: 'com.midea.vm.washer.ui.activity.IndexActivity',
       rules: [
         {
-          name: '领劵',
-          activityIds: 'com.midea.vm.washer.ui.activity.IndexActivity',
           matches: 'ImageView[id="com.midea.vm.washer:id/close_img"]',
           snapshotUrls: 'https://i.gkd.li/import/14661498',
+        },
+        {
+          matches:
+            '@ImageView <2 * <2 FrameLayout[id="com.midea.vm.washer:id/bootstrap_weex_layout"]',
+          snapshotUrls: 'https://i.gkd.li/import/14814072',
         },
       ],
     },
