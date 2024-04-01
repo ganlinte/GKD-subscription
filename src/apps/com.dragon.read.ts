@@ -110,7 +110,7 @@ export default defineAppConfig({
         },
         {
           matches:
-            'ViewGroup[childCount=4] > FrameLayout[id!=null][clickable=true]',
+            'ViewGroup[childCount=4] > @FrameLayout[id!=null][clickable=true] > ImageView',
           snapshotUrls: 'https://i.gkd.li/import/12716444',
         },
         {
