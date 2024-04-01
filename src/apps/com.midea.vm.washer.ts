@@ -17,9 +17,11 @@ export default defineAppConfig({
     {
       key: 1,
       name: '全屏广告-首页-领劵',
+      desc: '关闭',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.midea.vm.washer.ui.activity.IndexActivity',
       rules: [
         {
@@ -30,6 +32,21 @@ export default defineAppConfig({
           matches:
             '@ImageView <2 * <2 FrameLayout[id="com.midea.vm.washer:id/bootstrap_weex_layout"]',
           snapshotUrls: 'https://i.gkd.li/import/14814072',
+        },
+      ],
+    },
+    {
+      key: 2,
+      name: '局部广告-首页-左侧领劵',
+      desc: '关闭',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.midea.vm.washer.ui.activity.IndexActivity',
+          matches: 'ImageView[id="com.midea.vm.washer:id/closeButton"]',
+          snapshotUrls: 'https://i.gkd.li/import/14818918',
         },
       ],
     },
