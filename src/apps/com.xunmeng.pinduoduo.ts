@@ -126,8 +126,11 @@ export default defineAppConfig({
         },
         {
           matches:
-            '@ImageView[clickable=true] < ViewGroup + ViewGroup >n [text="送你大额现金"]',
-          snapshotUrls: 'https://i.gkd.li/import/13625441',
+            '@ImageView[clickable=true] < ViewGroup + ViewGroup >n [text="送你大额现金"||text="现金"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13625441',
+            'https://i.gkd.li/import/14879427',
+          ],
         },
       ],
     },
