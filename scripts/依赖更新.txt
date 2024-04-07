@@ -1,5 +1,5 @@
 package.json文件中修改volta管理的版本
 volta list
-npm update
+npm -v
 pnpm update
 pnpm install --no-frozen-lockfile
