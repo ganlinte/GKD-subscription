@@ -100,6 +100,7 @@ export default defineAppConfig({
     {
       key: 11,
       name: '局部广告-阅读中卡片广告',
+      desc: '点击X',
       enable: false,
       quickFind: true,
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
@@ -119,8 +120,11 @@ export default defineAppConfig({
         },
         {
           name: '卡片-关注作者',
-          matches: 'TextView[text="作者"] + ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13399505',
+          matches: '@ImageView + TextView[text*="关注"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13399505',
+            'https://i.gkd.li/import/14896809',
+          ],
         },
       ],
     },
