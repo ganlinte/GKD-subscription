@@ -42,12 +42,13 @@
 
 ## 局部广告-阅读中卡片广告
 
-默认禁用
+默认禁用 - 点击X
 
 - [快照-0](https://i.gkd.li/import/12908734)
 - [快照-1](https://i.gkd.li/import/12716444)
 - [快照-2](https://i.gkd.li/import/13520314)
 - [快照-3](https://i.gkd.li/import/13399505)
+- [快照-4](https://i.gkd.li/import/14896809)
 
 ## 全屏广告-阅读中广告
 
