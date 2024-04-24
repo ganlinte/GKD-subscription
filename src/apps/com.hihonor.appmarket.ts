@@ -5,6 +5,21 @@ export default defineAppConfig({
   name: '荣耀应用市场',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      desc: '点击 跳过',
+      quickFind: true,
+      activityIds: 'com.hihonor.appmarket.module.main.MainActivity',
+      actionMaximum: 1,
+      matchTime: 10000,
+      rules: [
+        {
+          matches: '[id="com.hihonor.appmarket:id/tv_operation_skip"]',
+          snapshotUrls: 'https://i.gkd.li/import/15087199',
+        }
+      ]
+    },
+    {
       key: 1,
       name: '广告弹窗',
       quickFind: true,
