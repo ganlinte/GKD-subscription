@@ -11,17 +11,22 @@ export default defineAppConfig({
       quickFind: true,
       rules: [
         {
-          activityIds: 'com.mfcloudcalculate.networkdisk.activity.AdFreeActivity',
-          matches: '[text*="关闭"][id="com.mfcloudcalculate.networkdisk:id/tv_ad_free_colse"]',
+          activityIds:
+            'com.mfcloudcalculate.networkdisk.activity.AdFreeActivity',
+          matches:
+            '[text*="关闭"][id="com.mfcloudcalculate.networkdisk:id/tv_ad_free_colse"]',
           snapshotUrls: 'https://i.gkd.li/import/13546173',
         },
         {
-          activityIds: 'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: '[id="com.mfcloudcalculate.networkdisk:id/tv_ad_free_close"]',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '[id="com.mfcloudcalculate.networkdisk:id/tv_ad_free_close"]',
           snapshotUrls: 'https://i.gkd.li/import/15087252',
         },
         {
-          activityIds: 'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: 'TextView[text="反馈"] -4 View',
           snapshotUrls: 'https://i.gkd.li/import/15087275',
         },

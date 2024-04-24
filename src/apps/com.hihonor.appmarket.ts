@@ -16,8 +16,8 @@ export default defineAppConfig({
         {
           matches: '[id="com.hihonor.appmarket:id/tv_operation_skip"]',
           snapshotUrls: 'https://i.gkd.li/import/15087199',
-        }
-      ]
+        },
+      ],
     },
     {
       key: 1,
