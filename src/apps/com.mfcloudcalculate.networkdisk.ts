@@ -7,14 +7,25 @@ export default defineAppConfig({
     {
       key: 1,
       name: '全屏广告-应用内广告弹窗',
-      activityIds: 'com.mfcloudcalculate.networkdisk.activity.AdFreeActivity',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'activity',
+      desc: '点击 X 或 关闭',
       quickFind: true,
-      rules:
-        '[text*="关闭"][id="com.mfcloudcalculate.networkdisk:id/tv_ad_free_colse"]',
-      snapshotUrls: 'https://i.gkd.li/import/13546173',
+      rules: [
+        {
+          activityIds: 'com.mfcloudcalculate.networkdisk.activity.AdFreeActivity',
+          matches: '[text*="关闭"][id="com.mfcloudcalculate.networkdisk:id/tv_ad_free_colse"]',
+          snapshotUrls: 'https://i.gkd.li/import/13546173',
+        },
+        {
+          activityIds: 'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: '[id="com.mfcloudcalculate.networkdisk:id/tv_ad_free_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/15087252',
+        },
+        {
+          activityIds: 'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: 'TextView[text="反馈"] -4 View',
+          snapshotUrls: 'https://i.gkd.li/import/15087275',
+        },
+      ],
     },
     {
       key: 2,
