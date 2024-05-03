@@ -14,7 +14,6 @@ export default defineAppConfig({
       quickFind: true,
       rules: [
         {
-          activityIds: 'com.xiangzi.dislike.activity.SplashActivity',
           matches:
             '@View <2 FrameLayout[childCount=3] <2 FrameLayout[childCount=2] < [vid="csj_ad_container"]',
           snapshotUrls: 'https://i.gkd.li/import/15196702',
