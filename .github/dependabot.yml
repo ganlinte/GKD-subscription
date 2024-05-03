@@ -12,20 +12,3 @@ updates:
     # Check the npm registry for updates every day (weekdays)
     schedule:
       interval: 'daily'
-
-  # Enable version updates for pnpm
-  - package-ecosystem: 'pnpm'
-    # Look for `package.json` and `lock` files in the `root` directory
-    directory: '/'
-    # Check the pnpm registry for updates every day (weekdays)
-    schedule:
-      interval: 'daily'
-
-  # Enable version updates for node
-  - package-ecosystem: 'node'
-    # Look for `package.json` and `lock` files in the `root` directory
-    directory: '/'
-    # Check the node registry for updates every day (weekdays)
-    schedule:
-      interval: 'daily'
-
