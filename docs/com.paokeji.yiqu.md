@@ -6,6 +6,7 @@
 
 - [快照-0](https://i.gkd.li/import/14031922)
 - [快照-1](https://i.gkd.li/import/14427345)
+- [快照-2](https://i.gkd.li/import/15197461)
 
 ## 局部广告
 
