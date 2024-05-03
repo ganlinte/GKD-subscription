@@ -13,11 +13,19 @@ export default defineAppConfig({
       actionMaximum: 1,
       activityIds:
         'com.aster.comic.app.ad.view.mediation.MediationSplashAdActivity',
-      rules:
-        'FrameLayout[id="com.paokeji.yiqu:id/lyContainer"] >n FrameLayout[childCount=3 || childCount=4] > View',
-      snapshotUrls: [
-        'https://i.gkd.li/import/14031922',
-        'https://i.gkd.li/import/14427345',
+      rules: [
+        {
+          matches:
+            'FrameLayout[id="com.paokeji.yiqu:id/lyContainer"] >n FrameLayout[childCount=3 || childCount=4] > View',
+          snapshotUrls: [
+            'https://i.gkd.li/import/14031922',
+            'https://i.gkd.li/import/14427345',
+          ],
+        },
+        {
+          matches: '[text="跳过"]',
+          snapshotUrls: 'https://i.gkd.li/import/15197461',
+        },
       ],
     },
     {
