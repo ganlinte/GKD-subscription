@@ -62,8 +62,8 @@ devDependencies:
     specifier: ^1.0.0
     version: 1.0.0
   pinyin-pro:
-    specifier: 3.19.2
-    version: 3.19.2
+    specifier: 3.20.3
+    version: 3.20.3
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
@@ -2123,8 +2123,8 @@ packages:
     hasBin: true
     dev: true
 
-  /pinyin-pro@3.19.2:
-    resolution: {integrity: sha512-1mYXHJIht8QJaPaVzzcYxOszDRIgrt6Aw0NYrmkerSYAAA1tsI+gtOMrPXoQDLyBbUCc23tEt/bSXmRAcDzMyQ==}
+  /pinyin-pro@3.20.3:
+    resolution: {integrity: sha512-k6SKRkOkw2ZH1+cW6s/AQyDTO/UzjnaAFOxMp4lC2dF/1NajzOWBiatRsG0c2NZgo+iCwOD8YN5XijArfjUZjg==}
     dev: true
 
   /prelude-ls@1.2.1:
