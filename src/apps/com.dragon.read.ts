@@ -98,6 +98,18 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/import/12716592',
     },
     {
+      key: 7,
+      name: '全屏广告-限时会员福利',
+      desc: '点击 X',
+      quickFind: true,
+      resetMatch: 'app',
+      matchTime: 10000,
+      actionMaximum: 1,
+      activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
+      rules: '@ImageView -3 ViewGroup[childCount=8] ',
+      snapshotUrls: 'https://i.gkd.li/import/15197509',
+    },
+    {
       key: 11,
       name: '局部广告-阅读中卡片广告',
       desc: '点击X',
