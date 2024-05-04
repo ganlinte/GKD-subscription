@@ -46,7 +46,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'android.zhibo8',
     name: '直播吧',
-    deprecatedKeys: [0]
+    deprecatedKeys: [0],
   },
   {
     id: 'bubei.tingshu',
