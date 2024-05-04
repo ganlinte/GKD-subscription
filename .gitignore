@@ -6,6 +6,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+package-lock.json
 node_modules
 .env
 .vscode
