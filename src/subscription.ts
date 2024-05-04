@@ -25,7 +25,7 @@ export default defineGkdSubscription({
   author: 'ganlinte',
   supportUri: 'https://github.com/ganlinte/GKD-subscription',
   updateUrl:
-    'https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files',
+    'https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files/dist/ganlin_gkd.json5',
   checkUpdateUrl:
     'https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files/dist/ganlin_gkd.version.json5',
   categories,
