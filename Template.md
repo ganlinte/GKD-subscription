@@ -6,9 +6,9 @@
 
 ## GKD 订阅链接
 
-|                                             Github                                             |                                   npmmirror                                    |
-| :--------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------: |
-| [链接](https://raw.githubusercontent.com/ganlinte/GKD-subscription/main/dist/ganlin_gkd.json5) | [链接](https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files) |
+|                                             Github                                             |                                           npmmirror                                                 |
+| :--------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
+| [链接](https://raw.githubusercontent.com/ganlinte/GKD-subscription/main/dist/ganlin_gkd.json5) | [链接](https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files/dist/ganlin_gkd.json5) |
 
 ## GKD 订阅仓库
 
