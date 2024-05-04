@@ -22,7 +22,7 @@
 
 当前订阅文件已适配 --APP_SIZE-- 个 APP, 共有 --GROUP_SIZE-- 规则组
 
-查看 [适配 APP 列表](./AppList.md)
+查看 [适配 APP 列表](./dist/README.md)
 
 查看 [第三方订阅规则汇总](https://github.com/Adpro-Team/GKD_THS_List)
 
