@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '首页-推荐广告',
+      name: '全屏广告-首页-推荐广告',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

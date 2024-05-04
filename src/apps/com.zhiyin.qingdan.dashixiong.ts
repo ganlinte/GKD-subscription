@@ -70,7 +70,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '公告弹窗',
+      name: '全屏广告-公告弹窗',
       desc: '自动点击【我知道了】',
       activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
       quickFind: true,

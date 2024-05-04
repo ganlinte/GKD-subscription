@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '版本更新',
+      name: '全屏广告-版本更新',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

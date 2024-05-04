@@ -27,7 +27,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '首页通知',
+      name: '全屏广告-首页通知',
       activityIds: ['com.ksf.yyx.MainActivity'],
       rules: [
         {
@@ -38,7 +38,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '插屏广告',
+      name: '全屏广告-插屏广告',
 
       activityIds: [
         'com.ksf.yyx.MainActivity',

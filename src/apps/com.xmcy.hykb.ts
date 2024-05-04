@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       quickFind: true,
 
       activityIds: 'com.xmcy.hykb.app.dialog.UpdateDialog',
@@ -19,7 +19,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '广告弹窗',
+      name: '全屏广告-广告弹窗',
       quickFind: true,
       activityIds: 'com.xmcy.hykb.app.ui.main.MainActivity',
       rules: '[id="com.xmcy.hykb:id/dialog_home_notice_image_close"]',

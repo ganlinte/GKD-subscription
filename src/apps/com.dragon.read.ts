@@ -151,12 +151,12 @@ export default defineAppConfig({
     },
     {
       key: 13,
-      name: '全屏广告-阅读中视频广告',
+      name: '分段广告-阅读中视频广告',
       quickFind: true,
       rules: [
         {
           key: 0,
-          name: '阅读页面广告弹窗-点击反馈按钮',
+          name: '点击反馈按钮',
           activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
           // 有反馈原规则'[text="反馈"][clickable=true]'不触发删除[clickable=true]才能点击；有反馈原规则点击屏外节点，导致无法执行下一步，遂添加[visibleToUser=true]
           matches: '[text="反馈"][visibleToUser=true]',
@@ -168,7 +168,7 @@ export default defineAppConfig({
         {
           preKeys: 0,
           key: 1,
-          name: '阅读页面广告弹窗-点击不感兴趣',
+          name: '点击不感兴趣',
           activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
           matches: '@ViewGroup[clickable=true] > [text="不感兴趣"]',
           snapshotUrls: [
@@ -178,7 +178,7 @@ export default defineAppConfig({
         },
         {
           key: 2,
-          name: '阅读页面广告弹窗-点击下一页',
+          name: '点击下一页',
           activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
           matches:
             '[id="com.dragon.read:id/readFlowNonRoundEntranceLayout"] [id="com.dragon.read:id/relativeRight"]',
@@ -186,7 +186,7 @@ export default defineAppConfig({
         },
         {
           key: 3,
-          name: '阅读页面广告弹窗-点击反馈',
+          name: '点击反馈',
           activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
           matches: '[text="看视频免广告"] - [text="反馈"]',
           snapshotUrls: 'https://i.gkd.li/import/13816453',
@@ -194,7 +194,6 @@ export default defineAppConfig({
         {
           preKeys: 3,
           key: 4,
-          name: '阅读页面广告弹窗-点击不感兴趣',
           activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
           matches: '[text="举报"] <2 ViewGroup - ViewGroup[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/13816454',

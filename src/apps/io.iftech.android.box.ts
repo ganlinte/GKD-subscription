@@ -6,14 +6,14 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: 'io.iftech.android.box.main.HomeActivity',
       rules: '[text*="新版本"] +(2) [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/import/12706195',
     },
     {
       key: 2,
-      name: '第三方 SDK 广告',
+      name: '全屏广告-第三方 SDK 广告',
       rules: [
         {
           name: '穿山甲',
@@ -37,14 +37,14 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/12706228',
         },
         {
-          name: '百青藤',
+          name: '百青藤2',
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches:
             '@ImageView[id=null][clickable=true] + RelativeLayout + ImageView + ImageView',
           snapshotUrls: 'https://i.gkd.li/import/12706236',
         },
         {
-          name: '百青藤',
+          name: '百青藤3',
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches:
             '@ImageView[id=null][clickable=true] + RelativeLayout > RelativeLayout > ImageView + ImageView',
@@ -55,7 +55,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '会员限时优惠弹窗',
+      name: '全屏广告-会员限时优惠弹窗',
       activityIds: 'io.iftech.android.box.main.HomeActivity',
       rules:
         '@[id="io.iftech.android.box:id/ivClose"] + [text^="限时"][text$="特惠"]',

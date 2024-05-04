@@ -8,7 +8,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 2,
-      name: '消息推送通知',
+      name: '权限提示-消息推送通知',
       desc: '自动点击暂不开启。',
       quickFind: true,
       matchTime: 10000,
@@ -24,7 +24,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 3,
-      name: '升级提醒',
+      name: '更新提示',
       desc: '自动点击忽略。',
       quickFind: true,
       matchTime: 10000,

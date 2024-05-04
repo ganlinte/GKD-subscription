@@ -5,8 +5,8 @@ export default defineAppConfig({
   name: '智慧搜索',
   groups: [
     {
-      key: 0,
-      name: '下拉搜索横幅广告',
+      key: 1,
+      name: '全屏广告-下拉搜索横幅广告',
       activityIds: [
         'com.huawei.search.HomeActivity',
         'com.huawei.search.MainActivity',

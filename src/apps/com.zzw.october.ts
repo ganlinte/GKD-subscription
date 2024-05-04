@@ -20,7 +20,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '主页广告',
+      name: '全屏广告-主页广告',
       activityIds: ['com.zzw.october.MainActivity'],
       rules: [
         {

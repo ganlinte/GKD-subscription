@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '信息流广告',
+      name: '局部广告-信息流广告',
       desc: '点击广告卡片右上角x图标,点击[不感兴趣]',
       activityIds: 'com.weico.international.activity.MainFragmentActivity',
       rules: [
@@ -30,7 +30,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: 'APP评分',
+      name: '全屏广告-APP评分',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

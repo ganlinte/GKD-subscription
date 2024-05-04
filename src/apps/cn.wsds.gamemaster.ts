@@ -5,7 +5,7 @@ export default defineAppConfig({
   name: '迅游手游加速器',
   groups: [
     {
-      key: 1,
+      key: 0,
       name: '开屏广告',
       desc: '点击跳过',
       matchTime: 10000,

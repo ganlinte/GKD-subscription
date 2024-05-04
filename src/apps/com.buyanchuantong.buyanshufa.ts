@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 3,
-      name: '功能介绍',
+      name: '全屏广告-功能介绍',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

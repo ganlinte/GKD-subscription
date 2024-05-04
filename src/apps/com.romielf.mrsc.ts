@@ -5,7 +5,7 @@ export default defineAppConfig({
   name: '每日赛车',
   groups: [
     {
-      name: '新闻页面摇一摇广告',
+      name: '全屏广告-新闻页面摇一摇广告',
       key: 1,
       enable: false,
       activityIds: 'com.romielf.mrsc.MainActivity',

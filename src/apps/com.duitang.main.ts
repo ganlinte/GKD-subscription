@@ -18,7 +18,7 @@ export default defineAppConfig({
       ],
     },
     {
-      name: '首页-推荐浏览广告',
+      name: '全屏广告-首页-推荐浏览广告',
       desc: '关闭推荐浏览页面广告',
       key: 2,
       activityIds: ['com.duitang.main.business.main.NAMainActivity'],
@@ -31,7 +31,7 @@ export default defineAppConfig({
       ],
     },
     {
-      name: '去商店评分',
+      name: '全屏广告-去商店评分',
       desc: '点击[下次再说]',
       key: 3,
       actionMaximum: 1,

@@ -22,7 +22,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '请求位置权限提示信息',
+      name: '全屏广告-请求位置权限提示信息',
       activityIds: 'com.hihonor.phoneservice.main.MainActivity',
       rules:
         '[text^="开启定位权限"] + [id="com.hihonor.phoneservice:id/iv_close"]',

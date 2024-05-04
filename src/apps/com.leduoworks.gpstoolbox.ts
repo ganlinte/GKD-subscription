@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '首页占位广告',
+      name: '局部广告-首页占位广告',
       activityIds: 'com.leduoworks.gpstoolbox.frmt.MainFrmtActivity',
 
       quickFind: true,

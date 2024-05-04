@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '设为默认应用提示',
+      name: '全屏广告-设为默认应用提示',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -27,7 +27,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '通知/链接蓝牙附件设备 权限申请',
+      name: '权限提示-通知/链接蓝牙附件设备 权限申请',
       quickFind: true,
       activityIds: 'com.enflick.android.TextNow.activities.MainActivity',
       rules:

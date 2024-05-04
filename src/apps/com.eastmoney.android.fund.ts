@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '自选页面广告',
+      name: '全屏广告-自选页面广告',
       activityIds:
         'com.eastmoney.android.fund.centralis.activity.FundRootActivity',
       rules: [
@@ -17,7 +17,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 2,
-      name: '自选页面缩写提示信息',
+      name: '全屏广告-自选页面缩写提示信息',
       activityIds:
         'com.eastmoney.android.fund.centralis.activity.FundRootActivity',
       rules: [
@@ -27,7 +27,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '更新弹窗',
+      name: '更新提示',
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@FrameLayout[clickable=true] - * >2 [desc="立即升级"]',

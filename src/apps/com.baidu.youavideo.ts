@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 2,
-      name: '软件升级提醒',
+      name: '更新提示',
       activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
       quickFind: true,
       rules: [
@@ -20,7 +20,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '悬浮窗',
+      name: '局部广告-悬浮窗',
       desc: '关闭广告悬浮窗',
       activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
       quickFind: true,
@@ -33,7 +33,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '评价',
+      name: '全屏广告-评价',
       desc: '点击下次再说',
       activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
       quickFind: true,
@@ -46,7 +46,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '会员充值提示',
+      name: '全屏广告-会员充值提示',
       desc: '点击x关闭充值提示',
       activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
       quickFind: true,
@@ -60,7 +60,7 @@ export default defineAppConfig({
     },
     {
       key: 6,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       desc: '点击x关闭广告提示',
       activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
       quickFind: true,
@@ -74,7 +74,7 @@ export default defineAppConfig({
     },
     {
       key: 7,
-      name: '请求开启通知权限弹窗',
+      name: '权限提示-请求开启通知权限弹窗',
       activityIds: 'com.baidu.youavideo.app.ui.HomeActivity',
       quickFind: true,
       rules:
@@ -83,7 +83,7 @@ export default defineAppConfig({
     },
     {
       key: 8,
-      name: '照片-底部浮窗广告',
+      name: '局部广告-照片-底部浮窗广告',
       activityIds: 'com.baidu.youavideo.home.view.HomeActivity',
       quickFind: true,
       rules:

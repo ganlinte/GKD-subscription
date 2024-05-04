@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '通知权限授权弹窗',
+      name: '全屏广告-通知权限授权弹窗',
       activityIds: 'com.vivo.wallet.bookkeep.activity.BookKeepMainActivity',
       enable: false,
       quickFind: true,

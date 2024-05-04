@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 10,
-      name: '朝朝宝-广告弹窗',
+      name: '全屏广告-朝朝宝-广告弹窗',
       activityIds:
         'cmb.pb.app.h5container.webviewcontainer.PBWebContainerActivity',
       rules: '[id="cover-img"] + [text="关闭推荐"]',
@@ -15,7 +15,7 @@ export default defineAppConfig({
     },
     {
       key: 11,
-      name: '定位提示-请求定位权限弹窗',
+      name: '权限提示-定位提示-请求定位权限弹窗',
       quickFind: true,
       activityIds: [
         'cmb.pb.app.h5container.webviewcontainer.PBWebContainerActivity',

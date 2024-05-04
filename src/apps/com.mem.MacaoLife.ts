@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '開啟通知提示',
+      name: '权限提示-開啟通知提示',
       quickFind: true,
       activityIds: 'com.mem.life.ui.launch.LaunchActivity',
       rules: '[id="com.mem.MacaoLife:id/cancel"]',
@@ -14,7 +14,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '浮窗廣告',
+      name: '局部广告-浮窗廣告',
       quickFind: true,
       activityIds: 'com.mem.life.ui.home.HomeActivity',
       rules: '[id="com.mem.MacaoLife:id/close"]',

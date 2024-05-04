@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '忽略授权提示',
+      name: '权限提示-忽略授权提示',
       activityIds: 'com.byyoung.setting.Welcome.PermissionActivity',
       rules: [
         {

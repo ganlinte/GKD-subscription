@@ -80,7 +80,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '我的页面-中间滚动广告',
+      name: '局部广告-我的页面-中间滚动广告',
       quickFind: true,
       activityIds: ['com.netease.cloudmusic.activity.MainActivity'],
       rules:
@@ -89,7 +89,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '主页-免费听歌',
+      name: '功能类-主页-免费听歌',
       quickFind: true,
       activityIds: ['com.netease.cloudmusic.activity.MainActivity'],
       rules: ['@ImageView + ViewGroup > TextView[text="VIP歌曲免费听30分钟"]'],
@@ -97,7 +97,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       activityIds: 'com.netease.cloudmusic.activity.MainActivity',
       rules: [
         {
@@ -123,7 +123,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 5,
-      name: 'VIP 弹窗',
+      name: '全屏广告-VIP 弹窗',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -175,7 +175,7 @@ export default defineAppConfig({
     },
     {
       key: 6,
-      name: '更新弹窗',
+      name: '更新提示',
       quickFind: true,
 
       rules: [
@@ -197,7 +197,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 7,
-      name: '播放界面广告',
+      name: '局部广告-播放界面广告',
       desc: '右上角VIP小悬浮、巨幅卡片式广告',
       quickFind: true,
       activityIds: 'com.netease.cloudmusic.activity.PlayerActivity',
@@ -223,7 +223,7 @@ export default defineAppConfig({
     },
     {
       key: 8,
-      name: '发现-顶部视频广告',
+      name: '局部广告-发现-顶部视频广告',
       desc: '自动点击跳过。',
       quickFind: true,
       rules: [
@@ -236,7 +236,7 @@ export default defineAppConfig({
     },
     {
       key: 9,
-      name: '免费听弹窗',
+      name: '功能类-免费听弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.netease.cloudmusic.activity.MainActivity',
@@ -246,7 +246,7 @@ export default defineAppConfig({
     },
     {
       key: 10,
-      name: '功能升级弹窗',
+      name: '全屏广告-功能升级弹窗',
       rules: [
         {
           key: 0,
@@ -257,7 +257,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '【社区广场】升级-点击右上角x',
+          name: '全屏广告-【社区广场】升级-点击右上角x',
           activityIds:
             'com.netease.cloudmusic.music.biz.rn.activity.LayerReactNativeActivity',
           matches: '[text="社区广场全新升级"] + ViewGroup > ImageView',

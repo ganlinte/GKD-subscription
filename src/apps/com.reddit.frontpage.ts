@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 3,
-      name: '社区消息-更新提示',
+      name: '全屏广告-社区消息-更新提示',
       quickFind: true,
       enable: false,
       rules: [
@@ -19,7 +19,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: 'NSFW 内容提示',
+      name: '全屏广告-NSFW 内容提示',
       desc: '自动点击 continue',
       quickFind: true,
       enable: false,

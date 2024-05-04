@@ -23,7 +23,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '开启资讯通知弹窗',
+      name: '全屏广告-开启资讯通知弹窗',
       desc: '关闭资讯通知后，总是弹窗让打开',
       rules: [
         {

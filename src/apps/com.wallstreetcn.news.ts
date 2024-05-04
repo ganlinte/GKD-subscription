@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 10,
-      name: '卡片广告',
+      name: '全屏广告-卡片广告',
       desc: '点击关闭, 无后续确认操作',
       activityIds: ['com.wallstreetcn.news.ProxyMainActivity'],
       quickFind: true,

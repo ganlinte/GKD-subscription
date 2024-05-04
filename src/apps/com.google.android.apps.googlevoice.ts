@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       key: 10,
       enable: false,
-      name: '跳过实体号码链接',
+      name: '全屏广告-跳过实体号码链接',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

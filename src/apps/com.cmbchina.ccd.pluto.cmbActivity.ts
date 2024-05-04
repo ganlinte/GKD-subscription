@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '版本更新',
+      name: '更新提示',
       quickFind: true,
 
       matchTime: 10000,
@@ -27,7 +27,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '首页弹窗',
+      name: '全屏广告-首页弹窗',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -42,7 +42,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '右侧悬浮广告',
+      name: '局部广告-右侧悬浮广告',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 2, // 目前只有2个界面会分别弹悬浮窗
@@ -83,7 +83,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 4,
-      name: '消息页面-通知开关',
+      name: '权限提示-消息页面-通知开关',
       desc: '点击x按钮，不开启系统通知',
       quickFind: true,
       actionMaximum: 1,

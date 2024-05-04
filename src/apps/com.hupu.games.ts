@@ -12,7 +12,7 @@ export default defineAppConfig({
         'com.hupu.topic.TopicActivity',
       ],
       quickFind: true,
-      name: '推荐流广告',
+      name: '局部广告-推荐流广告',
       desc: '点击卡片右上角广告文字,出现广告反馈,点击屏蔽该广告',
       rules: [
         {

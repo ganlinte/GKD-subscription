@@ -20,7 +20,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '新版本弹窗',
+      name: '更新提示',
       activityIds: [
         'com.douyu.module.update.view.UpdateDialog',
         'com.douyu.module.home.pages.main.MainActivity',
@@ -29,7 +29,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '直播间广告',
+      name: '全屏广告-直播间广告',
       activityIds: 'tv.douyu.view.activity.PlayerActivity',
       rules: [
         {

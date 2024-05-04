@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: 'cn.xiaochuankeji.tieba.ui.home.setting.SettingActivity',
       rules: [
         {
@@ -19,7 +19,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       activityIds: 'cn.xiaochuankeji.tieba.ui.home.page.PageMainActivity',
       rules: [
         {
@@ -30,7 +30,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '评论区广告卡片',
+      name: '局部广告-评论区广告卡片',
       activityIds:
         'cn.xiaochuankeji.tieba.ui.post.postdetail.PostDetailActivity',
       rules: [
@@ -52,7 +52,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '系统通知弹窗',
+      name: '权限提示-系统通知弹窗',
       desc: '系统通知弹窗，点击暂不开启',
       activityIds: 'cn.xiaochuankeji.tieba.ui.home.page.PageMainActivity',
       rules: [
@@ -66,7 +66,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 11,
-      name: '系统通知提示信息',
+      name: '权限提示-系统通知提示信息',
       desc: '系统通知提示信息，点击x按钮',
       activityIds: 'cn.xiaochuankeji.tieba.ui.home.page.PageMainActivity',
       rules: [

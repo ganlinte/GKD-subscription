@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="升级版本"] +n [desc="关闭"][clickable=true]',
@@ -18,7 +18,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '浮窗广告',
+      name: '局部广告-浮窗广告',
       rules: [
         {
           key: 0,
@@ -41,7 +41,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '请求通知权限弹窗',
+      name: '全屏广告-请求通知权限弹窗',
       activityIds: ['com.ss.android.article.news.activity.MainActivity'],
       rules: [
         {
@@ -58,7 +58,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 11,
-      name: '竖屏视频广告',
+      name: '全屏广告-竖屏视频广告',
       desc: '检测到广告时,点击右上角[更多]图标按钮,出现菜单,点击不感兴趣',
       activityIds: 'com.ss.android.ugc.detail.activity.TikTokActivity',
       rules: [
@@ -109,7 +109,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 12,
-      name: '信息流广告',
+      name: '局部广告-信息流广告',
       desc: '点击右上角x按钮,点击不感兴趣',
       rules: [
         {
@@ -154,7 +154,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 13,
-      name: '底部话题推荐弹窗',
+      name: '局部广告-底部话题推荐弹窗',
       activityIds: ['com.ss.android.article.news.activity.MainActivity'],
       rules: [
         {
@@ -168,7 +168,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 14,
-      name: '自动观看广告视频',
+      name: '全屏广告-自动观看广告视频',
       desc: '自动观看广告并等待30s后关闭',
       quickFind: true,
       rules: [
@@ -192,7 +192,7 @@ export default defineAppConfig({
     {
       key: 15,
       quickFind: true,
-      name: '局部广告-底部热榜弹窗',
+      name: '局部广告-局部广告-底部热榜弹窗',
       desc: '点击X',
       rules: [
         {

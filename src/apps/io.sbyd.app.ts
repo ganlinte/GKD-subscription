@@ -5,8 +5,8 @@ export default defineAppConfig({
   name: '轻松阅',
   groups: [
     {
-      key: 0,
-      name: '弹窗广告',
+      key: 1,
+      name: '全屏广告-弹窗广告',
       activityIds: 'io.sbyd.app.ui.book.read.ReadBookActivity',
       rules: [
         {

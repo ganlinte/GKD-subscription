@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '测速后广告',
+      name: '全屏广告-测速后广告',
       rules: [
         {
           key: 1,

@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '广告弹窗',
+      name: '全屏广告-广告弹窗',
       activityIds: 'com.zhouyu.music.activities.MainActivity',
       rules: '@[id=null][clickable=true] + View >n View [text$="广告"]',
       snapshotUrls: [
@@ -19,7 +19,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '搜索底部广告',
+      name: '局部广告-搜索底部广告',
       quickFind: true,
 
       activityIds: 'com.zhouyu.music.activities.MainActivity',

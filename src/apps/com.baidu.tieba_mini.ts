@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '首页-信息流广告',
+      name: '局部广告-首页-信息流广告',
       activityIds: ['com.baidu.tieba.tblauncher.MainTabActivity'],
       rules: [
         {

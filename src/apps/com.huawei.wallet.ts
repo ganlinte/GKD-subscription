@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '服务提示',
+      name: '全屏广告-服务提示',
       enable: false,
       matchTime: 10000,
       actionMaximum: 1,

@@ -5,8 +5,8 @@ export default defineAppConfig({
   name: '万能遥控',
   groups: [
     {
-      key: 0,
-      name: '底部横幅广告',
+      key: 1,
+      name: '局部广告-底部横幅广告',
       activityIds:
         'com.xiaomi.mitv.phone.remotecontroller.HoriWidgetMainActivityV2',
       rules:
@@ -14,7 +14,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '申请定位',
+      name: '权限提示-申请定位',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

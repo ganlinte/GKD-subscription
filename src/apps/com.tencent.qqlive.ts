@@ -26,7 +26,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
@@ -35,7 +35,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '更新弹窗',
+      name: '更新提示',
       actionMaximum: 1,
       resetMatch: 'app',
       rules:
@@ -47,7 +47,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '卡片式广告',
+      name: '局部广告-卡片式广告',
       rules: [
         {
           key: 0,
@@ -161,7 +161,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '视频播放时的广告',
+      name: '全屏广告-视频播放时的广告',
       desc: '自动点击 跳过广告',
       activityIds: 'com.tencent.qqlive.ona.activity.VideoDetailActivity',
       rules: [
@@ -213,7 +213,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 20,
-      name: '请求通知权限弹窗',
+      name: '全屏广告-请求通知权限弹窗',
       resetMatch: 'app',
       rules: [
         {

@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '自动安装应用',
+      name: '功能类-自动安装应用',
       quickFind: true,
       rules: [
         {

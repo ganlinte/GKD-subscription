@@ -6,14 +6,14 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '全屏广告-更新弹窗',
       activityIds: 'com.guwendao.gwd.MainActivity',
       rules: '[text="应用升级提醒"] +n LinearLayout > [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/import/12776605',
     },
     {
       key: 2,
-      name: '第三方 SDK 广告弹窗',
+      name: '全屏广告-第三方 SDK 广告弹窗',
       activityIds: 'com.guwendao.gwd.MainActivity',
       rules: [
         // 腾讯广告

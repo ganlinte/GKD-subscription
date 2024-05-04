@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '应用内卡片广告',
+      name: '局部广告-应用内卡片广告',
       activityIds: 'com.tongcheng.android.TongchengMainActivity',
       rules: [
         {

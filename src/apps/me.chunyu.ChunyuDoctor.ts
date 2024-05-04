@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 10,
-      name: '应用评分弹窗',
+      name: '全屏广告-应用评分弹窗',
       activityIds: [
         'me.chunyu.ChunyuDoctor.Activities.WelcomeActivity',
         'me.chunyu.ChunyuDoctor.Activities.MainActivity',

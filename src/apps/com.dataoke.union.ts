@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '开启消息通知',
+      name: '权限提示-开启消息通知',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '应用内广告卡片',
+      name: '局部广告-应用内广告卡片',
       activityIds: 'com.banjixiaoguanjia.app.MainActivity',
       rules: [
         {

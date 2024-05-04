@@ -21,7 +21,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '广告弹窗',
+      name: '全屏广告-广告提示',
       quickFind: true,
 
       activityIds: [
@@ -36,7 +36,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '悬浮窗小广告',
+      name: '局部广告-悬浮窗小广告',
       quickFind: true,
       activityIds: 'com.hihonor.appmarket.module.main.MainActivity',
       rules: '[id="com.hihonor.appmarket:id/iv_floating_close"]',
@@ -44,7 +44,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '推送通知',
+      name: '全屏广告-推送通知',
       quickFind: true,
       activityIds: 'com.hihonor.appmarket.module.main.MainActivity',
       rules:

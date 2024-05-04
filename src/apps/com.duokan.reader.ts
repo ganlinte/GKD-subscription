@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 2,
-      name: '首页-广告弹窗',
+      name: '全屏广告-首页-广告弹窗',
       quickFind: true,
       activityIds: 'com.duokan.reader.DkMainActivity',
       rules: '[id="com.duokan.reader:id/store_feed_layer_close"]',
@@ -14,7 +14,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '小说推荐弹窗',
+      name: '全屏广告-小说推荐弹窗',
       rules: [
         {
           key: 1,
@@ -29,7 +29,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '小说页广告',
+      name: '局部广告-小说页广告',
       desc: '小说页面下方出现的条形广告',
       quickFind: true,
       activityIds: 'com.duokan.reader.DkMainActivity',
@@ -39,7 +39,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '小说页全屏卡片广告',
+      name: '全屏广告-小说页全屏卡片广告',
       desc: '点击关闭和确定按钮',
       quickFind: true,
       rules: [

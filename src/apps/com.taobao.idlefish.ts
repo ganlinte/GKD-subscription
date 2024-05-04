@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '通知提示',
+      name: '全屏广告-通知提示',
       actionMaximum: 1,
       activityIds:
         'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostTransparencyActivity',

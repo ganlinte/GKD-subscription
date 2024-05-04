@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 3,
-      name: '信息流广告',
+      name: '局部广告-信息流广告',
       quickFind: true,
       activityIds: 'com.zivn.cloudbrush3.app.HomeActivity',
       rules: [

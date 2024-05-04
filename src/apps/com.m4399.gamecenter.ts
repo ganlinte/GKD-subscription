@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '悬浮广告',
+      name: '局部广告-悬浮广告',
       rules: [
         {
           key: 0,
@@ -19,7 +19,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '首页右侧悬浮广告',
+          name: '局部广告-首页右侧悬浮广告',
           activityIds:
             'com.m4399.gamecenter.plugin.main.controllers.ApplicationActivity',
           quickFind: true,

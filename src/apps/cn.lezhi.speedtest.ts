@@ -24,7 +24,7 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/13626049',
         },
         {
-          name: '腾讯SDK',
+          name: '腾讯SDK2',
           matches:
             '@View <3 FrameLayout[childCount=4] <2 FrameLayout[childCount=2] < [vid="fl_splash_container"]',
           snapshotUrls: 'https://i.gkd.li/import/13885906',
@@ -33,7 +33,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: 'cn.lezhi.speedtest.main5.MainV5Activity',
       rules:
         '[id="cn.lezhi.speedtest:id/rl_update_dialog_layout"] >n [id="cn.lezhi.speedtest:id/iv_close"]',

@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '升级弹窗',
+      name: '全屏广告-升级弹窗',
       rules: '[id="com.jym.mall:id/tv_cancel"][text="下次再说"]',
       snapshotUrls: 'https://i.gkd.li/import/12496974',
     },

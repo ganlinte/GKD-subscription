@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '悬浮广告',
+      name: '全屏广告-悬浮广告',
       rules: [
         {
           key: 0,

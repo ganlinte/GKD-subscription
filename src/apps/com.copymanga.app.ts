@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
 
       activityIds: [
         'com.copymanga.app.MainActivity',
@@ -121,7 +121,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '卡片式广告',
+      name: '局部广告-卡片式广告',
       rules: [
         {
           key: 0,
@@ -155,7 +155,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '关闭赞助提示',
+      name: '全屏广告-关闭赞助提示',
       activityIds: 'com.copymanga.app.MainActivity',
       rules: [
         {
@@ -166,7 +166,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '自动确认线路',
+      name: '功能类-自动确认线路',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -179,7 +179,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '关闭提示',
+      name: '权限提示-关闭提示',
       matchTime: 30000,
       actionMaximum: 1,
       resetMatch: 'app',

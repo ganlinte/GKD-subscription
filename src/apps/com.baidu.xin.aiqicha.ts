@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: [
         'com.baidu.newbridge.fast.MainFastActivity',
         'com.miui.home.launcher.Launcher',
@@ -20,7 +20,7 @@ export default defineAppConfig({
     },
     {
       key: 10,
-      name: '请求通知权限弹窗',
+      name: '权限提示-请求通知权限弹窗',
       desc: '自动点击【不允许】',
       activityIds: 'com.baidu.newbridge.fast.MainFastActivity',
       rules: '[id="com.baidu.xin.aiqicha:id/notice_dialog_cancel_iv"]',
@@ -28,7 +28,7 @@ export default defineAppConfig({
     },
     {
       key: 11,
-      name: '请求通知权限提示信息',
+      name: '权限提示-请求通知权限提示信息',
       desc: '自动点击x按钮',
       activityIds: 'com.baidu.newbridge.fast.MainFastActivity',
       rules: '@[id="com.baidu.xin.aiqicha:id/close"] +2 [text="打开消息通知"]',

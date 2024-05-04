@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '打车页面广告',
+      name: '局部广告-打车页面广告',
       desc: '点击广告卡片左上角x',
       rules: [
         {

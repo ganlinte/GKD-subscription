@@ -5,8 +5,8 @@ export default defineAppConfig({
   name: 'BOSS直聘',
   groups: [
     {
-      key: 0,
-      name: '通知权限授权弹窗',
+      key: 1,
+      name: '全屏广告-通知权限授权弹窗',
       activityIds: [
         'com.hpbr.bosszhipin.module.main.activity.MainActivity',
         'com.hpbr.bosszhipin.module.launcher.WelcomeActivity',
