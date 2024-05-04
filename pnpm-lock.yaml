@@ -19,9 +19,15 @@ devDependencies:
   '@commitlint/types':
     specifier: ^19.0.3
     version: 19.0.3
-  '@gkd-kit/selector':
-    specifier: 0.0.18
-    version: 0.0.18
+  '@gkd-kit/api':
+    specifier: 0.0.5
+    version: 0.0.5
+  '@gkd-kit/define':
+    specifier: 0.0.1
+    version: 0.0.1(@gkd-kit/api@0.0.5)
+  '@gkd-kit/tools':
+    specifier: 0.2.0
+    version: 0.2.0(@gkd-kit/api@0.0.5)(json5@2.2.3)
   '@types/lodash':
     specifier: ^4.17.0
     version: 4.17.0
@@ -506,8 +512,31 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@gkd-kit/selector@0.0.18:
-    resolution: {integrity: sha512-5aDHh45pkRLd82d+TLE5vbaz64PkcYZABOuqCXhsEQW8PtNMT05sTTW6WQeM+RH/IjGvULz/p9Hl8vpVm2bPCg==}
+  /@gkd-kit/api@0.0.5:
+    resolution: {integrity: sha512-eKHkqcjlhUiQgg1WUepq7CNxVR/Q3PQWr8TMmfbYTqeq0pO7ABYNDuGkOptR+u2jQ1Qr+8bbX/ODfdB6jK8UfQ==}
+    dev: true
+
+  /@gkd-kit/define@0.0.1(@gkd-kit/api@0.0.5):
+    resolution: {integrity: sha512-ql/f0TIlBQOSaJS6e9c8B4rLHYWyCzDctP0vRpc6aYaWGJXnZKZIbuTUr2ET45eNzD4dviCjTU6cSv/wcA07IQ==}
+    peerDependencies:
+      '@gkd-kit/api': '*'
+    dependencies:
+      '@gkd-kit/api': 0.0.5
+    dev: true
+
+  /@gkd-kit/selector@0.0.25:
+    resolution: {integrity: sha512-bW3nFcvKZH5I/DasukPcKEbnSCrEI1ioup9+mUUTj0RoPwPBZri/MRKIu8fQg2WWfZ3D38otpwO1ilG7fJI/cA==}
+    dev: true
+
+  /@gkd-kit/tools@0.2.0(@gkd-kit/api@0.0.5)(json5@2.2.3):
+    resolution: {integrity: sha512-M49dhnzmzGobAmCJ6rXl157aZWQc0FGtcoBPp9Bm96u7q/0BqNoNjNGE8hm4Z0hxLvqB/EUegJYfI+uxNr11CA==}
+    peerDependencies:
+      '@gkd-kit/api': '*'
+      json5: '*'
+    dependencies:
+      '@gkd-kit/api': 0.0.5
+      '@gkd-kit/selector': 0.0.25
+      json5: 2.2.3
     dev: true
 
   /@humanwhocodes/config-array@0.11.14:
