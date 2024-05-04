@@ -18,11 +18,11 @@
 
 ## 说明
 
-当前版本: v15
+当前版本: v16
 
-当前订阅文件已适配 613 个 APP, 共有 1383 规则组
+当前订阅文件已适配 613 个 APP, 共有 1382 规则组
 
-查看 [适配 APP 列表](./AppList.md)
+查看 [适配 APP 列表](./dist/README.md)
 
 查看 [第三方订阅规则汇总](https://github.com/Adpro-Team/GKD_THS_List)
 
@@ -36,4 +36,4 @@
 
 ### 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=ganlinte/GKD-subscription&_v=15)
+![img](https://contrib.rocks/image?repo=ganlinte/GKD-subscription&_v=16)
