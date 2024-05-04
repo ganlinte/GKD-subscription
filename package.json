@@ -77,5 +77,8 @@
   "engineStrict": true,
   "engines": {
     "node": ">=20"
+  },
+  "dependencies": {
+    "picocolors": "^1.0.0"
   }
 }
