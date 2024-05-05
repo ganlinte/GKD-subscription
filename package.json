@@ -9,6 +9,7 @@
     "changelog": "CHANGELOG.md",
     "README.md": "README.md"
   },
+  "unpkg": "./dist/ganlin_gkd.json5",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
