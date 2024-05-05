@@ -219,5 +219,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 20,
+      name: '全屏广告-首页-签到奖励',
+      desc: '点击 X',
+      quickFind: true,
+      matchTime: 20000,
+      actionMaximum: 1,
+      rules: [
+        {
+          matches: 'ImageView[desc="关闭按钮"]',
+          snapshotUrls: 'https://i.gkd.li/import/15212029',
+        }
+      ],
+    }
   ],
 });
