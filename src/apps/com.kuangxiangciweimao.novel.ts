@@ -7,10 +7,10 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind:true,
-      actionMaximum:1,
+      quickFind: true,
+      actionMaximum: 1,
       matchTime: 10000,
-      resetMatch: "app",
+      resetMatch: 'app',
       rules: '[id="com.kuangxiangciweimao.novel:id/mTasksView"]',
       snapshotUrls: 'https://i.gkd.li/import/13056248',
     },
