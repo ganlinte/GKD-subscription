@@ -179,9 +179,10 @@ export default defineGkdApp({
       activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
       rules: [
         {
-          matches: '@ImageView < ViewGroup < ViewGroup + ViewGroup >n TextView[text="去抢购"]',
+          matches:
+            '@ImageView < ViewGroup < ViewGroup + ViewGroup >n TextView[text="去抢购"]',
           snapshotUrls: 'https://i.gkd.li/import/15212017',
-        }
+        },
       ],
     },
     {

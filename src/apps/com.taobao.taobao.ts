@@ -230,8 +230,8 @@ export default defineGkdApp({
         {
           matches: 'ImageView[desc="关闭按钮"]',
           snapshotUrls: 'https://i.gkd.li/import/15212029',
-        }
+        },
       ],
-    }
+    },
   ],
 });
