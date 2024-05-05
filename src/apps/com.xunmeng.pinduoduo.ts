@@ -54,7 +54,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 13,
+      key: 20,
       name: '全屏广告-优惠卷弹窗',
       desc: '点击X',
       quickFind: true,
@@ -92,7 +92,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 14,
+      key: 21,
       name: '全屏广告-免单活动',
       desc: '点击X',
       quickFind: true,
@@ -113,7 +113,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 15,
+      key: 22,
       name: '全屏广告-红包',
       desc: '点击X',
       quickFind: true,
@@ -135,7 +135,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 16,
+      key: 23,
       name: '全屏广告-下单成功',
       desc: '点击X',
       quickFind: true,
@@ -153,7 +153,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 17,
+      key: 24,
       name: '全屏广告-多多视频-每日签到',
       desc: '点击X',
       quickFind: true,
@@ -172,7 +172,20 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 18,
+      key: 25,
+      name: '全屏广告-爆款限时直降',
+      desc: '点击 X',
+      quickFind: true,
+      activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+      rules: [
+        {
+          matches: '@ImageView < ViewGroup < ViewGroup + ViewGroup >n TextView[text="去抢购"]',
+          snapshotUrls: 'https://i.gkd.li/import/15212017',
+        }
+      ],
+    },
+    {
+      key: 30,
       name: '功能类-多多视频-划到广告自动跳过',
       desc: '点击返回自动刷新，从而跳过广告',
       quickFind: true,
@@ -195,7 +208,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 19,
+      key: 31,
       name: '功能类-多多视频-每日自动签到',
       desc: '',
       quickFind: true,
@@ -224,7 +237,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 20,
+      key: 32,
       name: '功能类-自动点击原图',
       activityIds:
         'com.xunmeng.pinduoduo.app_album.album.MultiImageSelectorActivity',
