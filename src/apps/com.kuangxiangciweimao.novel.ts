@@ -14,5 +14,23 @@ export default defineGkdApp({
       rules: '[id="com.kuangxiangciweimao.novel:id/mTasksView"]',
       snapshotUrls: 'https://i.gkd.li/import/13056248',
     },
+    {
+      key: 30,
+      name: '功能类-APP自动退出',
+      desc: '点击 确定',
+      quickFind:true,
+      actionMaximum:1,
+      resetMatch: 'app',
+      activityIds: 'com.kuangxiangciweimao.novel.activity.frame.MainFrameActivity',
+      rules: [
+        {
+          matches: [
+            'TextView[text*="是否退出"]',
+            'TextView[text="确定"]'
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/15294427',
+        }
+      ],
+    },
   ],
 });
