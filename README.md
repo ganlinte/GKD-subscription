@@ -18,9 +18,9 @@
 
 ## 说明
 
-当前版本: v17
+当前版本: v18
 
-当前订阅文件已适配 613 个 APP, 共有 1384 规则组
+当前订阅文件已适配 613 个 APP, 共有 1385 规则组
 
 查看 [适配 APP 列表](./dist/README.md)
 
@@ -38,4 +38,4 @@
 
 ### 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=ganlinte/GKD-subscription&_v=17)
+![img](https://contrib.rocks/image?repo=ganlinte/GKD-subscription&_v=18)
