@@ -118,12 +118,13 @@ export default defineGkdApp({
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: [
         {
-          matches: '@ImageView - LinearLayout[childCount=3] > FrameLayout[childCount=1] > TextView[text!=""]',
+          matches:
+            '@ImageView - LinearLayout[childCount=3] > FrameLayout[childCount=1] > TextView[text!=""]',
           snapshotUrls: [
             'https://i.gkd.li/import/12908734',
-            'https://i.gkd.li/import/13520314',//有唯一ID
+            'https://i.gkd.li/import/13520314', //有唯一ID
             'https://i.gkd.li/import/15294350',
-          ]
+          ],
         },
         {
           matches:
