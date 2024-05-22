@@ -38,6 +38,6 @@ export default defineGkdApp({
       activityIds: 'com.sf.ui.main.MainActivity',
       rules: '@ImageView - ImageView[id="com.sfacg:id/iv_home_float"]',
       snapshotUrls: 'https://i.gkd.li/import/15397824',
-    }
+    },
   ],
 });

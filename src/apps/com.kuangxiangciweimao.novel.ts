@@ -19,7 +19,8 @@ export default defineGkdApp({
       name: '局部广告-阅读中-加入书架',
       desc: '点击 X',
       quickFind: true,
-      activityIds: 'com.kuangxiangciweimao.novel.activity.bookshelf.reader.ReaderActivity4',
+      activityIds:
+        'com.kuangxiangciweimao.novel.activity.bookshelf.reader.ReaderActivity4',
       rules: 'ImageView[id="com.kuangxiangciweimao.novel:id/closeImg"]',
       snapshotUrls: 'https://i.gkd.li/import/15397865',
     },
