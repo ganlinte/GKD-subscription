@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-新春小说折扣季/VIP新书上架',
+      desc: '点击 X',
       matchTime: 10000,
       quickFind: true,
       resetMatch: 'app',
