@@ -1,5 +1,13 @@
 # @ganlinte/GKD-subscription
 
+## 使用前须知
+
+本仓库仅为本人学习研究的成果。
+
+使用者使用过程中所带来的一切后果均与本人无关。
+
+## 说明
+
 随缘更新
 
 `默认规则`仅启用`开屏广告`一类规则, 其它所有规则均需用户手动打开
@@ -35,6 +43,8 @@
 ### 感谢以下项目
 
 [gkd-kit/subscription](https://github.com/gkd-kit/subscription)
+
+[gkd-kit/subscription-template](https://github.com/gkd-kit/subscription-template)
 
 ### 感谢以下开发者的贡献
 
