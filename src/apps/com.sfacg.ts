@@ -16,5 +16,16 @@ export default defineGkdApp({
       rules: 'ImageView[id="com.sfacg:id/imgClose"]',
       snapshotUrls: 'https://i.gkd.li/import/14427490',
     },
+    {
+      key: 2,
+      name: '权限提示-消息推送权限',
+      desc: '点击 不再提醒',
+      quickFind: true,
+      resetMatch: 'app',
+      actionMaximum: 1,
+      activityIds: 'com.sf.ui.message.MessageActivity',
+      rules: 'TextView[id="com.sfacg:id/tvCancel"]',
+      snapshotUrls: 'https://i.gkd.li/import/15397688',
+    },
   ],
 });
