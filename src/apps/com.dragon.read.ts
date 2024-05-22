@@ -133,7 +133,7 @@ export default defineGkdApp({
         },
         {
           name: '卡片-关注作者',
-          matches: '@ImageView + TextView[text*="关注"]',
+          matches: '@ImageView + TextView[text="关注我，掌握书籍最新动态"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13399505',
             'https://i.gkd.li/import/14896809',
