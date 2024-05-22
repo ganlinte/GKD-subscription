@@ -27,5 +27,17 @@ export default defineGkdApp({
       rules: 'TextView[id="com.sfacg:id/tvCancel"]',
       snapshotUrls: 'https://i.gkd.li/import/15397688',
     },
+    {
+      key: 3,
+      name: '局部广告-书库-右侧-上架预定书单',
+      desc: '点击 X',
+      quickFind: true,
+      resetMatch: 'app',
+      actionMaximum: 1,
+      matchTime: 20000,
+      activityIds: 'com.sf.ui.main.MainActivity',
+      rules: '@ImageView - ImageView[id="com.sfacg:id/iv_home_float"]',
+      snapshotUrls: 'https://i.gkd.li/import/15397824',
+    }
   ],
 });
