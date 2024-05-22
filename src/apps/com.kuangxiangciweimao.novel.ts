@@ -15,6 +15,15 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/import/13056248',
     },
     {
+      key: 1,
+      name: '局部广告-阅读中-加入书架',
+      desc: '点击 X',
+      quickFind: true,
+      activityIds: 'com.kuangxiangciweimao.novel.activity.bookshelf.reader.ReaderActivity4',
+      rules: 'ImageView[id="com.kuangxiangciweimao.novel:id/closeImg"]',
+      snapshotUrls: 'https://i.gkd.li/import/15397865',
+    },
+    {
       key: 30,
       name: '功能类-APP自动退出',
       desc: '点击 确定',
