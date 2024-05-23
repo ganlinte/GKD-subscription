@@ -201,43 +201,5 @@ export default defineGkdApp({
         },
       ],
     },
-    {
-      key: 99,
-      name: '局部广告-卡片广告（废弃）',
-      desc: '原卡片广告，重构后暂时废弃，新的卡片广告没问题,则删除此规则',
-      enable: false,
-      activityIds: [
-        'com.dragon.read.ad.banner.ui',
-        'com.dragon.read.reader.ReaderActivity',
-        'com.dragon.read.reader.ui.ReaderActivity',
-      ],
-      rules: [
-        {
-          key: 0,
-          matches: '@[clickable=true] TextView[text="关闭此条广告"]',
-        },
-        {
-          key: 1,
-          matches: '@ImageView - LinearLayout TextView[text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/12908734',
-        },
-        {
-          key: 2,
-          matches:
-            'FrameLayout > FrameLayout > ViewGroup[childCount=4] > @FrameLayout[clickable=true][visibleToUser=true] > ImageView',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12716444',
-            'https://i.gkd.li/import/13062909', // 误触
-          ],
-        },
-        {
-          key: 3,
-          quickFind: true,
-          matches:
-            '[id="com.dragon.read:id/layout_banner_ad_bg"] > [id="com.dragon.read:id/close_button"]',
-          snapshotUrls: 'https://i.gkd.li/import/13520314',
-        },
-      ],
-    },
   ],
 });
