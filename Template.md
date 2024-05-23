@@ -14,13 +14,9 @@
 
 ## GKD 订阅链接
 
-|                                             Github                                             |                                       gitmirror                                        |                                           jsDelivr                                           |
-| :--------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: |
-| [链接](https://raw.githubusercontent.com/ganlinte/GKD-subscription/main/dist/ganlin_gkd.json5) | [链接](https://raw.gitmirror.com/ganlinte/GKD-subscription/main/dist/ganlin_gkd.json5) | [链接](https://cdn.jsdelivr.net/npm/@ganlinte/gkd-subscription@latest/dist/ganlin_gkd.json5) |
-
-|                                     npmmirror(新增白名单,不可用)                                     |
-| :--------------------------------------------------------------------------------------------------: |
-| [链接](https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files/dist/ganlin_gkd.json5) |
+|                                             Github                                             |                                       gitmirror                                        |                                              npmmirror                                               |                                           jsDelivr                                           |
+| :--------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: |
+| [链接](https://raw.githubusercontent.com/ganlinte/GKD-subscription/main/dist/ganlin_gkd.json5) | [链接](https://raw.gitmirror.com/ganlinte/GKD-subscription/main/dist/ganlin_gkd.json5) | [链接](https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files/dist/ganlin_gkd.json5) | [链接](https://cdn.jsdelivr.net/npm/@ganlinte/gkd-subscription@latest/dist/ganlin_gkd.json5) |
 
 ## GKD 订阅仓库
 
