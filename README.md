@@ -14,19 +14,19 @@
 
 ## GKD 订阅链接
 
-|                                             Github                                             |                                              npmmirror                                               |
-| :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: |
-| [链接](https://raw.githubusercontent.com/ganlinte/GKD-subscription/main/dist/ganlin_gkd.json5) | [链接](https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files/dist/ganlin_gkd.json5) |
+|                                             Github                                             |                                       gitmirror                                        |                                              npmmirror                                               |                                           jsDelivr                                           |
+| :--------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: |
+| [链接](https://raw.githubusercontent.com/ganlinte/GKD-subscription/main/dist/ganlin_gkd.json5) | [链接](https://raw.gitmirror.com/ganlinte/GKD-subscription/main/dist/ganlin_gkd.json5) | [链接](https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files/dist/ganlin_gkd.json5) | [链接](https://cdn.jsdelivr.net/npm/@ganlinte/gkd-subscription@latest/dist/ganlin_gkd.json5) |
 
 ## GKD 订阅仓库
 
-|                        Github                        |                              npmjs                               |
-| :--------------------------------------------------: | :--------------------------------------------------------------: |
-| [链接](https://github.com/ganlinte/GKD-subscription) | [链接](https://www.npmjs.com/package/@ganlinte/gkd-subscription) |
+|                        Github                        |                              npmjs                               |                            npmmirror                             |                                jsDelivr                                 |
+| :--------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :---------------------------------------------------------------------: |
+| [链接](https://github.com/ganlinte/GKD-subscription) | [链接](https://www.npmjs.com/package/@ganlinte/gkd-subscription) | [链接](https://npmmirror.com/package/@ganlinte/gkd-subscription) | [链接](https://www.jsdelivr.com/package/npm/@ganlinte/gkd-subscription) |
 
 ## 说明
 
-当前版本: v19
+当前版本: v20
 
 当前订阅文件已适配 613 个 APP, 共有 1388 规则组
 
@@ -48,4 +48,4 @@
 
 ### 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=ganlinte/GKD-subscription&_v=19)
+![img](https://contrib.rocks/image?repo=ganlinte/GKD-subscription&_v=20)
