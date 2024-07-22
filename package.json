@@ -46,7 +46,7 @@
     "@commitlint/types": "19.0.3",
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.5.0",
-    "@gkd-kit/api": "0.0.5",
+    "@gkd-kit/api": "0.3.3",
     "@gkd-kit/define": "0.0.1",
     "@gkd-kit/tools": "^0.2.0",
     "@types/node": "20.14.8",
