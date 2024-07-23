@@ -73,9 +73,10 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/import/14383684',
         },
         {
-          matches: 'FlattenUIImage[name="com.lynx.tasm.ui.image.FlattenUIImage"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/16347298'
-        }
+          matches:
+            'FlattenUIImage[name="com.lynx.tasm.ui.image.FlattenUIImage"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/16347298',
+        },
       ],
     },
     {
@@ -113,21 +114,23 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
-          matches: '@ImageView -3 ViewGroup[childCount=8] > TextView[text="恭喜获得限时会员福利"]',
-          snapshotUrls: 'https://i.gkd.li/import/15197509'
+          matches:
+            '@ImageView -3 ViewGroup[childCount=8] > TextView[text="恭喜获得限时会员福利"]',
+          snapshotUrls: 'https://i.gkd.li/import/15197509',
         },
         {
           activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
-          matches: '@ImageView - ViewGroup[childCount=7] > TextView[text="恭喜获得限时会员福利"]',
-          snapshotUrls: 'https://i.gkd.li/import/16346875'
+          matches:
+            '@ImageView - ViewGroup[childCount=7] > TextView[text="恭喜获得限时会员福利"]',
+          snapshotUrls: 'https://i.gkd.li/import/16346875',
         },
         {
           activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
-          matches: '@ImageView +2 TextView[text="恭喜获得限时会员福利"] <n ViewGroup[childCount=8]',
-          snapshotUrls: 'https://i.gkd.li/import/16347254'
-        }
+          matches:
+            '@ImageView +2 TextView[text="恭喜获得限时会员福利"] <n ViewGroup[childCount=8]',
+          snapshotUrls: 'https://i.gkd.li/import/16347254',
+        },
       ],
-      
     },
     {
       key: 11,

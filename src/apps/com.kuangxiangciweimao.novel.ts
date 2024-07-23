@@ -28,11 +28,12 @@ export default defineGkdApp({
       key: 2,
       name: '全屏广告-阅读-活动弹窗',
       desc: '点击 X',
-      activityIds: 'com.kuangxiangciweimao.novel.activity.frame.MainFrameActivity',
+      activityIds:
+        'com.kuangxiangciweimao.novel.activity.frame.MainFrameActivity',
       actionMaximum: 1,
       quickFind: true,
       rules: 'ImageView[id="com.kuangxiangciweimao.novel:id/imgclose"]',
-      snapshotUrls: 'https://i.gkd.li/import/16347338'
+      snapshotUrls: 'https://i.gkd.li/import/16347338',
     },
     {
       key: 30,
