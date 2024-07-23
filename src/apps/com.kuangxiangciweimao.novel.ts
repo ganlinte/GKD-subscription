@@ -25,8 +25,18 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/import/15397865',
     },
     {
+      key: 2,
+      name: '全屏广告-阅读-活动弹窗',
+      desc: '点击 X',
+      activityIds: 'com.kuangxiangciweimao.novel.activity.frame.MainFrameActivity',
+      actionMaximum: 1,
+      quickFind: true,
+      rules: 'ImageView[id="com.kuangxiangciweimao.novel:id/imgclose"]',
+      snapshotUrls: 'https://i.gkd.li/import/16347338'
+    },
+    {
       key: 30,
-      name: '功能类-APP自动点击退出',
+      name: '功能类-APP自动点击退出(存在延迟双击现象)',
       desc: '点击 确定',
       quickFind: true,
       resetMatch: 'app',
