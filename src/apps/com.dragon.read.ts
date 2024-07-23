@@ -60,17 +60,22 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-书城-周末开红包',
+      desc: '点击 X',
       quickFind: true,
-      matchTime: 20000,
+      matchTime: 100000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
       rules: [
         {
           matches:
-            'FlattenUIText[text*="开心收下"] +n FlattenUIImage[clickable=true]',
+            'FlattenUIText[text="开心收下"] +n FlattenUIImage[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/14383684',
         },
+        {
+          matches: 'FlattenUIImage[name="com.lynx.tasm.ui.image.FlattenUIImage"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/16347298'
+        }
       ],
     },
     {
