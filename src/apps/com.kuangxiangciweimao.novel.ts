@@ -32,7 +32,8 @@ export default defineGkdApp({
         'com.kuangxiangciweimao.novel.activity.frame.MainFrameActivity',
       actionMaximum: 1,
       quickFind: true,
-      rules: '@ImageView[id="com.kuangxiangciweimao.novel:id/imgclose"] - ImageView',
+      rules:
+        '@ImageView[id="com.kuangxiangciweimao.novel:id/imgclose"] - ImageView',
       snapshotUrls: 'https://i.gkd.li/import/16347338',
     },
     {
