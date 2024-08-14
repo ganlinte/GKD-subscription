@@ -34,8 +34,8 @@ importers:
         specifier: 0.0.1
         version: 0.0.1(@gkd-kit/api@0.3.3)
       '@gkd-kit/tools':
-        specifier: ^0.2.0
-        version: 0.2.0(@gkd-kit/api@0.3.3)(json5@2.2.3)
+        specifier: ^0.5.0
+        version: 0.5.0(@gkd-kit/api@0.3.3)(json5@2.2.3)
       '@types/node':
         specifier: 22.2.0
         version: 22.2.0
@@ -331,14 +331,17 @@ packages:
     peerDependencies:
       '@gkd-kit/api': '*'
 
-  '@gkd-kit/selector@0.0.25':
-    resolution: {integrity: sha512-bW3nFcvKZH5I/DasukPcKEbnSCrEI1ioup9+mUUTj0RoPwPBZri/MRKIu8fQg2WWfZ3D38otpwO1ilG7fJI/cA==}
+  '@gkd-kit/selector@0.4.1':
+    resolution: {integrity: sha512-3OxUl5jQpdZbf7zaVi0+hq2hLlCEmmPljowSIHk78Ko09hTQ7RQ/MAyybTVEUNNKT6Xgm6NxLCj+5shOBe7gbg==}
 
-  '@gkd-kit/tools@0.2.0':
-    resolution: {integrity: sha512-M49dhnzmzGobAmCJ6rXl157aZWQc0FGtcoBPp9Bm96u7q/0BqNoNjNGE8hm4Z0hxLvqB/EUegJYfI+uxNr11CA==}
+  '@gkd-kit/tools@0.5.0':
+    resolution: {integrity: sha512-FEMq9xPoABnlcv9P7zjGLfjk5UalSvS4yiwjVwWPQrjafHDoLN1VTYN4Eo5edVRtjRMhREW0tuGaaGSToofi9Q==}
     peerDependencies:
       '@gkd-kit/api': '*'
       json5: '*'
+
+  '@gkd-kit/wasm_matches@0.0.1':
+    resolution: {integrity: sha512-PUYa98MXyumiIVuYHozbYThhPnYwrdvEwyL+tBmneonIq1Vm2CmeUfk3FbJXxaMQE2/3JBa7utfk0HAu/03xDQ==}
 
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -1622,13 +1625,16 @@ snapshots:
     dependencies:
       '@gkd-kit/api': 0.3.3
 
-  '@gkd-kit/selector@0.0.25': {}
+  '@gkd-kit/selector@0.4.1': {}
 
-  '@gkd-kit/tools@0.2.0(@gkd-kit/api@0.3.3)(json5@2.2.3)':
+  '@gkd-kit/tools@0.5.0(@gkd-kit/api@0.3.3)(json5@2.2.3)':
     dependencies:
       '@gkd-kit/api': 0.3.3
-      '@gkd-kit/selector': 0.0.25
+      '@gkd-kit/selector': 0.4.1
+      '@gkd-kit/wasm_matches': 0.0.1
       json5: 2.2.3
+
+  '@gkd-kit/wasm_matches@0.0.1': {}
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
