@@ -5,6 +5,16 @@ export default defineGkdApp({
   name: '华为应用市场',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      actionMaximum: 1,
+      matchTime: 10000,
+      quickFind: true,
+      resetMatch: 'app',
+      rules: '[id="com.huawei.appmarket:id/skip_textview"]',
+      snapshotUrls: 'https://i.gkd.li/import/16611800'
+    },
+    {
       key: 1,
       name: '更新提示',
       matchTime: 10000,
