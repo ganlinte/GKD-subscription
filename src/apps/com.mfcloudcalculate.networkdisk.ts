@@ -11,7 +11,8 @@ export default defineGkdApp({
       quickFind: true,
       rules: [
         {
-          activityIds: 'com.mfcloudcalculate.networkdisk.activity.AdFreeActivity',
+          activityIds:
+            'com.mfcloudcalculate.networkdisk.activity.AdFreeActivity',
           matches:
             '[text="关闭"][id="com.mfcloudcalculate.networkdisk:id/tv_ad_free_colse"]',
           snapshotUrls: 'https://i.gkd.li/import/13546173',
@@ -19,16 +20,18 @@ export default defineGkdApp({
         {
           activityIds: [
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-            'com.meishu.sdk.activity.SdkInterstitialActivity'
+            'com.meishu.sdk.activity.SdkInterstitialActivity',
           ],
-          matches: '[text="关闭"][id="com.mfcloudcalculate.networkdisk:id/tv_ad_free_close"]',
+          matches:
+            '[text="关闭"][id="com.mfcloudcalculate.networkdisk:id/tv_ad_free_close"]',
           snapshotUrls: [
             'https://i.gkd.li/import/15087252',
-          'https://i.gkd.li/import/16611758'
-        ]
+            'https://i.gkd.li/import/16611758',
+          ],
         },
         {
-          activityIds: 'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: 'TextView[text="反馈"] -4 View',
           snapshotUrls: 'https://i.gkd.li/import/15087275',
         },

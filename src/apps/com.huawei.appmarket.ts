@@ -12,7 +12,7 @@ export default defineGkdApp({
       quickFind: true,
       resetMatch: 'app',
       rules: '[id="com.huawei.appmarket:id/skip_textview"]',
-      snapshotUrls: 'https://i.gkd.li/import/16611800'
+      snapshotUrls: 'https://i.gkd.li/import/16611800',
     },
     {
       key: 1,
