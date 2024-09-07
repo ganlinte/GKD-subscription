@@ -11,9 +11,9 @@ export default defineGkdApp({
       matchTime: 20000,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.dragon.read.update.b',
+      activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
       rules: '@[text="以后再说"] + [text="优先体验"]',
-      snapshotUrls: 'https://i.gkd.li/import/12716477',
+      snapshotUrls: 'https://i.gkd.li/import/16918420',
     },
     {
       key: 2,
