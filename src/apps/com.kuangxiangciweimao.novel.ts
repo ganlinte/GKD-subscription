@@ -37,6 +37,17 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/import/16347338',
     },
     {
+      key: 3,
+      name: '青少年模式',
+      desc: '点击 我知道了',
+      actionMaximum: 1,
+      quickFind: true,
+      resetMatch: 'app',
+      activityIds: 'com.kuangxiangciweimao.novel.activity.frame.MainFrameActivity',
+      rules: '[id="com.kuangxiangciweimao.novel:id/nav_btn"]',
+      snapshotUrls: 'https://i.gkd.li/import/17158995'
+    },
+    {
       key: 30,
       name: '功能类-APP自动点击退出(存在延迟双击现象)',
       desc: '点击 确定',
