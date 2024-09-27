@@ -43,9 +43,10 @@ export default defineGkdApp({
       actionMaximum: 1,
       quickFind: true,
       resetMatch: 'app',
-      activityIds: 'com.kuangxiangciweimao.novel.activity.frame.MainFrameActivity',
+      activityIds:
+        'com.kuangxiangciweimao.novel.activity.frame.MainFrameActivity',
       rules: '[id="com.kuangxiangciweimao.novel:id/nav_btn"]',
-      snapshotUrls: 'https://i.gkd.li/import/17158995'
+      snapshotUrls: 'https://i.gkd.li/import/17158995',
     },
     {
       key: 30,
