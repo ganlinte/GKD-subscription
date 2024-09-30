@@ -19,8 +19,8 @@ importers:
         specifier: 19.4.1
         version: 19.4.1
       '@commitlint/types':
-        specifier: 19.0.3
-        version: 19.0.3
+        specifier: 19.5.0
+        version: 19.5.0
       '@eslint/eslintrc':
         specifier: ^3.1.0
         version: 3.1.0
