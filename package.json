@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "19.5.0",
-    "@commitlint/config-conventional": "19.4.1",
+    "@commitlint/config-conventional": "19.5.0",
     "@commitlint/types": "19.0.3",
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.10.0",
