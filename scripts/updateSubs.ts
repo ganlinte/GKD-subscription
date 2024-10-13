@@ -22,7 +22,7 @@ if (!deviceUrl) {
   throw new Error('invalid URL: ' + process.argv[2]);
 }
 deviceUrl.pathname = '/';
-if (!(await fetch(deviceUrl).catch(() => false))) {
+if (!(await fetch(deviceUrl.toString()).catch(() => false))) {
   throw new Error('connect device failed: ' + process.argv[2]);
 }
 
