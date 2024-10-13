@@ -45,7 +45,14 @@ export default defineGkdApp({
       resetMatch: 'app',
       activityIds:
         'com.kuangxiangciweimao.novel.activity.frame.MainFrameActivity',
-      rules: '[id="com.kuangxiangciweimao.novel:id/nav_btn"]',
+      rules: [
+        {
+          matches: [
+            '[text="我知道了"]',
+            '[id="com.kuangxiangciweimao.novel:id/nav_btn"]'
+          ]
+        }
+      ],
       snapshotUrls: 'https://i.gkd.li/import/17158995',
     },
     {
