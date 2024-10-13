@@ -48,10 +48,10 @@ export default defineGkdApp({
           preKeys: 0,
           matches: [
             '[text="直接关闭"]',
-            '[id="com.kmxs.reader:id/bubble_close"]'
+            '[id="com.kmxs.reader:id/bubble_close"]',
           ],
-          snapshotUrls: 'https://i.gkd.li/i/17354753'
-        }
+          snapshotUrls: 'https://i.gkd.li/i/17354753',
+        },
       ],
     },
     {

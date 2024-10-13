@@ -49,9 +49,9 @@ export default defineGkdApp({
         {
           matches: [
             '[text="我知道了"]',
-            '[id="com.kuangxiangciweimao.novel:id/nav_btn"]'
-          ]
-        }
+            '[id="com.kuangxiangciweimao.novel:id/nav_btn"]',
+          ],
+        },
       ],
       snapshotUrls: 'https://i.gkd.li/import/17158995',
     },
