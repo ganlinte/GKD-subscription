@@ -32,6 +32,7 @@ export default defineGkdApp({
       activityIds: 'org.geometerplus.android.fbreader.FBReader',
       rules: [
         {
+          key: 0,
           matches: [
             '[text$="广告"]',
             '[id="com.kmxs.reader:id/ad_direct_close"]',
@@ -42,6 +43,15 @@ export default defineGkdApp({
             'https://i.gkd.li/import/13362272',
           ],
         },
+        {
+          key: 1,
+          preKeys: 0,
+          matches: [
+            '[text="直接关闭"]',
+            '[id="com.kmxs.reader:id/bubble_close"]'
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/17354753'
+        }
       ],
     },
     {
