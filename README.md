@@ -26,7 +26,7 @@
 
 ## 说明
 
-当前版本: v24
+当前版本: v25
 
 当前订阅文件已适配 614 个 APP, 共有 1391 规则组
 
@@ -48,4 +48,4 @@
 
 ### 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=ganlinte/GKD-subscription&_v=24)
+![img](https://contrib.rocks/image?repo=ganlinte/GKD-subscription&_v=25)
