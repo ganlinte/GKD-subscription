@@ -10,22 +10,20 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      quickFind: true,
       rules: [
         {
-          quickFind: true,
           matches: '[text*="跳过"][text.length<=10]',
           snapshotUrls: ['https://i.gkd.li/import/12673680'],
         },
         {
-          quickFind: true,
           matches:
-            '@View <3 FrameLayout <2 FrameLayout < FrameLayout < [vid="fl_third_ad"]',
-          snapshotUrls: 'https://i.gkd.li/import/13826577',
-        },
-        {
-          // 无法使用 quickFind
-          matches: '[id$="tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/13224627',
+            '@View + TextView <(3,4,5) FrameLayout <(1,2) FrameLayout <<(1,2) [id="net.csdn.csdnplus:id/fl_third_ad"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13826577',
+            'https://i.gkd.li/import/13224627',
+            'https://i.gkd.li/i/17405187'
+          ]
         },
       ],
     },
