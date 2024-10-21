@@ -10,7 +10,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       matchTime: 20000,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
       rules: '@[text="以后再说"] + [text="优先体验"]',
       snapshotUrls: 'https://i.gkd.li/import/16918420',
@@ -18,6 +18,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-书城-右侧悬浮红包广告',
+      fastQuery: true,
       activityIds: [
         'com.dragon.read.pages.main.MainFragmentActivity',
         'com.dragon.read.ad.openingscreenad.OpeningScreenADActivity',
@@ -25,7 +26,7 @@ export default defineGkdApp({
       rules: [
         {
           matches:
-            '[id="android:id/content"] > FrameLayout[childCount=1] > RelativeLayout[childCount=1] >2 ImageView[id!=null][clickable=true]',
+            '@ImageView < * < RelativeLayout < FrameLayout - [id="com.dragon.read:id/root_layout"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12716506', //relativeLayout和ImageView之间是RelativeLayoutRelativeLayout
             'https://i.gkd.li/import/13318796', //relativeLayout和ImageView之间是ViewGroup
@@ -36,6 +37,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-书城-优惠券弹窗',
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -61,20 +63,19 @@ export default defineGkdApp({
       key: 4,
       name: '全屏广告-书城-周末开红包',
       desc: '点击 X',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 100000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
       rules: [
         {
-          matches:
-            'FlattenUIText[text="开心收下"] +n FlattenUIImage[clickable=true]',
+          matches: '@FlattenUIImage -n FlattenUIText[text="开心收下"]',
           snapshotUrls: 'https://i.gkd.li/import/14383684',
         },
         {
           matches:
-            'FlattenUIImage[name="com.lynx.tasm.ui.image.FlattenUIImage"][clickable=true]',
+            '@FlattenUIImage[clickable=true] <n FrameLayout < * < * < * < * < * < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/import/16347298',
         },
       ],
@@ -82,14 +83,15 @@ export default defineGkdApp({
     {
       key: 5,
       name: '全屏广告-书城-动画小说',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
       rules: [
         {
-          matches: '@ImageView - RelativeLayout < LinearLayout[childCount=2]',
+          matches:
+            '@ImageView[clickable=true] <2 * < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/import/14813934',
         },
       ],
@@ -98,7 +100,7 @@ export default defineGkdApp({
       key: 6,
       name: '全屏广告-书城-开启推送提醒',
       desc: '自动点击【取消】',
-      enable: false,
+      fastQuery: true,
       activityIds: 'com.dragon.read.widget.ConfirmDialogBuilder',
       rules: '@[text="取消"] < * -2 * > [text="开启推送提醒"]',
       snapshotUrls: 'https://i.gkd.li/import/12716592',
@@ -107,7 +109,7 @@ export default defineGkdApp({
       key: 7,
       name: '全屏广告-限时会员福利',
       desc: '点击 X',
-      quickFind: true,
+      fastQuery: true,
       resetMatch: 'app',
       matchTime: 10000,
       actionMaximum: 1,
@@ -136,8 +138,7 @@ export default defineGkdApp({
       key: 11,
       name: '局部广告-阅读中卡片广告',
       desc: '点击X',
-      enable: false,
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: [
         {
@@ -168,7 +169,7 @@ export default defineGkdApp({
       key: 12,
       name: '全屏广告-阅读中广告',
       desc: '点击右上角【关闭】',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: 'TextView[text="广告"] +2 Button[id="com.dragon.read:id/close"]',
       snapshotUrls: 'https://i.gkd.li/import/13191156',
@@ -176,7 +177,7 @@ export default defineGkdApp({
     {
       key: 13,
       name: '分段广告-阅读中视频广告',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,

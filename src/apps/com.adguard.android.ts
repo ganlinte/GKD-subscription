@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '功能类-自动开启保护',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules:
