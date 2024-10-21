@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-应用内广告弹窗',
       desc: '点击 X 或 关闭',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           activityIds:
@@ -32,7 +32,7 @@ export default defineGkdApp({
         {
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: 'TextView[text="反馈"] -4 View',
+          matches: '@View +4 TextView[text="反馈"]',
           snapshotUrls: 'https://i.gkd.li/import/15087275',
         },
       ],
