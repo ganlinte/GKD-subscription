@@ -70,8 +70,7 @@ export default defineGkdApp({
       activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
       rules: [
         {
-          matches:
-            '@FlattenUIImage -n FlattenUIText[text="开心收下"]',
+          matches: '@FlattenUIImage -n FlattenUIText[text="开心收下"]',
           snapshotUrls: 'https://i.gkd.li/import/14383684',
         },
         {
@@ -91,7 +90,8 @@ export default defineGkdApp({
       activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
       rules: [
         {
-          matches: '@ImageView[clickable=true] <2 * < [id="android:id/content"]',
+          matches:
+            '@ImageView[clickable=true] <2 * < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/import/14813934',
         },
       ],
