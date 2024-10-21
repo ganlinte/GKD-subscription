@@ -10,7 +10,7 @@ export default defineGkdApp({
       name: '全屏广告-弹窗_签到成功',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: [
