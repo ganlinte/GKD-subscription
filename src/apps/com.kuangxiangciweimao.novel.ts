@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       matchTime: 10000,
       resetMatch: 'app',
@@ -18,7 +18,7 @@ export default defineGkdApp({
       key: 1,
       name: '局部广告-阅读中-加入书架',
       desc: '点击 X',
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.kuangxiangciweimao.novel.activity.bookshelf.reader.ReaderActivity4',
       rules: 'ImageView[id="com.kuangxiangciweimao.novel:id/closeImg"]',
@@ -31,9 +31,9 @@ export default defineGkdApp({
       activityIds:
         'com.kuangxiangciweimao.novel.activity.frame.MainFrameActivity',
       actionMaximum: 1,
-      quickFind: true,
+      fastQuery: true,
       rules:
-        '@ImageView[id="com.kuangxiangciweimao.novel:id/imgclose"] - ImageView',
+        '@[id="com.kuangxiangciweimao.novel:id/imgclose"] - [vid="img_activity"]',
       snapshotUrls: 'https://i.gkd.li/import/16347338',
     },
     {
@@ -41,7 +41,7 @@ export default defineGkdApp({
       name: '青少年模式',
       desc: '点击 我知道了',
       actionMaximum: 1,
-      quickFind: true,
+      fastQuery: true,
       resetMatch: 'app',
       activityIds:
         'com.kuangxiangciweimao.novel.activity.frame.MainFrameActivity',
@@ -57,13 +57,22 @@ export default defineGkdApp({
     },
     {
       key: 30,
-      name: '功能类-APP自动点击退出(存在延迟双击现象)',
+      name: '功能类-APP自动点击退出',
       desc: '点击 确定',
-      quickFind: true,
+      fastQuery: true,
       resetMatch: 'app',
+      actionMaximum: 1,
       activityIds:
         'com.kuangxiangciweimao.novel.activity.frame.MainFrameActivity',
-      rules: 'TextView[id="com.kuangxiangciweimao.novel:id/pos_btn"]',
+      rules: [
+        {
+          action: 'clickCenter',
+          matches: [
+            '[id="com.kuangxiangciweimao.novel:id/pos_btn"]',
+            '[text="确定"]',
+          ],
+        },
+      ],
       snapshotUrls: 'https://i.gkd.li/import/15294427',
     },
   ],
