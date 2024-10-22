@@ -158,7 +158,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/import/12716444',
             'https://i.gkd.li/i/17474881',
-          ]
+          ],
         },
         {
           name: '卡片-关注作者',
@@ -189,7 +189,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/17474887',
             'https://i.gkd.li/i/17474889',
-          ]
+          ],
         },
         {
           name: '领金币',
@@ -239,7 +239,8 @@ export default defineGkdApp({
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: [
         {
-          matches: '@ImageView - LinearLayout[childCount=3] > FrameLayout[childCount=1] > TextView[text!=""]',
+          matches:
+            '@ImageView - LinearLayout[childCount=3] > FrameLayout[childCount=1] > TextView[text!=""]',
           snapshotUrls: [
             'https://i.gkd.li/import/12908734',
             'https://i.gkd.li/import/13520314', //有唯一ID
@@ -260,6 +261,6 @@ export default defineGkdApp({
           ],
         },
       ],
-    }
+    },
   ],
 });
