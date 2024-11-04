@@ -26,7 +26,8 @@ export default defineGkdApp({
         {
           action: 'clickCenter',
           activityIds: '.main.MainActivity',
-          matches: '@[id="com.magicalstory.AppStore:id/button_close_ad"] - [id="com.magicalstory.AppStore:id/banner_ad2"]',
+          matches:
+            '@[id="com.magicalstory.AppStore:id/button_close_ad"] - [id="com.magicalstory.AppStore:id/banner_ad2"]',
           snapshotUrls: 'https://i.gkd.li/i/17618820',
         },
       ],
