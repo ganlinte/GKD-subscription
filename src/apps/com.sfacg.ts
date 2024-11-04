@@ -19,13 +19,22 @@ export default defineGkdApp({
     {
       key: 2,
       name: '权限提示-消息推送权限',
-      desc: '点击 不再提醒',
+      desc: '点击【不再提醒】',
       fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
-      activityIds: 'com.sf.ui.message.MessageActivity',
-      rules: 'TextView[id="com.sfacg:id/tvCancel"]',
-      snapshotUrls: 'https://i.gkd.li/import/15397688',
+      rules: [
+        {
+          activityIds: 'com.sf.ui.message.MessageActivity',
+          matches: 'TextView[id="com.sfacg:id/tvCancel"]',
+          snapshotUrls: 'https://i.gkd.li/import/15397688',
+        },
+        {
+          activityIds: 'com.sf.ui.main.MainActivity',
+          matches: '[id="com.sfacg:id/cancel_text"][text="取消"]',
+          snapshotUrls: 'https://i.gkd.li/i/17519120',
+        },
+      ],
     },
     {
       key: 3,
