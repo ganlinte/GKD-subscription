@@ -10,6 +10,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: [
         {
+          action: 'clickCenter',
           activityIds: [
             '.search.searchActivity',
             '.main.fragments.square.section.searchPostActivity',
@@ -21,6 +22,12 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17618529',
             'https://i.gkd.li/i/17618518',
           ],
+        },
+        {
+          action: 'clickCenter',
+          activityIds: '.main.MainActivity',
+          matches: '@[id="com.magicalstory.AppStore:id/button_close_ad"] - [id="com.magicalstory.AppStore:id/banner_ad2"]',
+          snapshotUrls: 'https://i.gkd.li/i/17618820',
         },
       ],
     },
