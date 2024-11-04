@@ -15,7 +15,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           matches: '[text*="跳过"][text.length<=10]',
           excludeMatches: '[id="com.netease.mail:id/ad_skip"][clickable=false]',
           snapshotUrls: [
@@ -53,8 +53,8 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-邮件列表广告',
-      activityIds: ['com.netease.mail.biz.main.MainITabActivity'],
-      quickFind: true,
+      activityIds: 'com.netease.mail.biz.main.MainITabActivity',
+      fastQuery: true,
       rules: [
         {
           key: 0,
