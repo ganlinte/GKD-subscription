@@ -5,10 +5,19 @@ export default defineGkdApp({
   name: '中国电信',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      matchTime: 10000,
+      rules: '[id="com.ct.client:id/btSkip"]',
+      snapshotUrls: 'https://i.gkd.li/i/17584648',
+    },
+    {
       key: 1,
       name: '全屏广告-用户引导',
-      enable: false,
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.ct.client.activity.UserGuideActivity',
       rules: '[id="com.ct.client:id/tvSkip"]',
       snapshotUrls: ['https://i.gkd.li/import/12508971'],
@@ -18,7 +27,7 @@ export default defineGkdApp({
       name: '更新提示',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: 'LinearLayout > [text="取消升级"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12819594',
@@ -30,7 +39,7 @@ export default defineGkdApp({
       key: 3,
       name: '局部广告-浮窗广告',
       desc: '会出现在首页、查询办理页面',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.ct.client.common.ConfirmDialogActivity',
         'com.ct.client.activity.MainActivity',
@@ -52,7 +61,6 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-业务办理-弹窗广告',
-      // quickFind: true, 实机测试使用无法跳过
       activityIds: [
         'com.ct.client.common.webview.OnlineBusinessWebkitActivity',
       ],
@@ -63,7 +71,6 @@ export default defineGkdApp({
       key: 5,
       name: '权限提示-消息-开启消息通知',
       desc: '自动点击关闭',
-      // quickFind: true, 实机测试使用无法跳过
       activityIds: ['com.ct.client.activity.MainActivity'],
       rules: 'ImageView[id="com.ct.client:id/msg_close"]',
       snapshotUrls: ['https://i.gkd.li/import/13043522'],
