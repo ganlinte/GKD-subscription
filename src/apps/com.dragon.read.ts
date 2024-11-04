@@ -160,7 +160,8 @@ export default defineGkdApp({
           ],
         },
         {
-          matches: '@ImageView < FrameLayout - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
+          matches:
+            '@ImageView < FrameLayout - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
           snapshotUrls: 'https://i.gkd.li/i/17565008',
         },
         {
@@ -188,10 +189,10 @@ export default defineGkdApp({
           matchRoot: true,
           matches: [
             '[text="点击关闭广告并退出小说"][visibleToUser=true]',
-            '[id="android:id/content"]'
+            '[id="android:id/content"]',
           ],
           excludeMatches: '@[text="反馈"][visibleToUser=true]',
-          position: { right: 100 , bottom: 300 },
+          position: { right: 100, bottom: 300 },
           snapshotUrls: [
             'https://i.gkd.li/i/17474887',
             'https://i.gkd.li/i/17474889',
