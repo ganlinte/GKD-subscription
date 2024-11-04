@@ -56,6 +56,17 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/import/17158995',
     },
     {
+      key: 4,
+      name: '功能类-签到',
+      desc: '点击【签到】',
+      fastQuery: true,
+      resetMatch: 'app',
+      actionMaximum: 1,
+      activityIds: '.activity.frame.MainFrameActivity',
+      rules: '[id="com.kuangxiangciweimao.novel:id/signBtn"][text="签到"]',
+      snapshotUrls: 'https://i.gkd.li/i/17554248',
+    },
+    {
       key: 30,
       name: '功能类-APP自动点击退出',
       desc: '点击 确定',
