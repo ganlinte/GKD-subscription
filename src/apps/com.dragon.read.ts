@@ -64,19 +64,18 @@ export default defineGkdApp({
       name: '全屏广告-书城-周末开红包',
       desc: '点击 X',
       fastQuery: true,
-      matchTime: 100000,
+      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
       rules: [
         {
-          matches: '@FlattenUIImage -n FlattenUIText[text="开心收下"]',
-          snapshotUrls: 'https://i.gkd.li/import/14383684',
-        },
-        {
           matches:
-            '@FlattenUIImage[clickable=true] <n FrameLayout < * < * < * < * < * < [id="android:id/content"]',
-          snapshotUrls: 'https://i.gkd.li/import/16347298',
+            '@FlattenUIImage[index=parent.childCount.minus(1) ||index=parent.childCount.minus(2)] <n FrameLayout < * < * < * < * < * < [id="android:id/content"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/16347298',
+            'https://i.gkd.li/import/14383684',
+          ],
         },
       ],
     },
@@ -161,6 +160,10 @@ export default defineGkdApp({
           ],
         },
         {
+          matches: '@ImageView < FrameLayout - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
+          snapshotUrls: 'https://i.gkd.li/i/17565008',
+        },
+        {
           name: '卡片-关注作者',
           matches: '@ImageView + TextView[text="关注我，掌握书籍最新动态"]',
           snapshotUrls: [
@@ -173,7 +176,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '全屏广告-阅读中广告',
-      desc: '点击右上角【关闭】',
+      desc: '点击【关闭】/【反馈-不感兴趣】',
       fastQuery: true,
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: [
@@ -183,9 +186,12 @@ export default defineGkdApp({
         },
         {
           matchRoot: true,
+          matches: [
+            '[text="点击关闭广告并退出小说"][visibleToUser=true]',
+            '[id="android:id/content"]'
+          ],
           excludeMatches: '@[text="反馈"][visibleToUser=true]',
-          matches: '[text="点击关闭广告并退出小说"][visibleToUser=true]',
-          position: { left: '1100 - left -100', top: '2400 - top -300' },
+          position: { right: 100 , bottom: 300 },
           snapshotUrls: [
             'https://i.gkd.li/i/17474887',
             'https://i.gkd.li/i/17474889',
@@ -196,23 +202,17 @@ export default defineGkdApp({
           matches: '@ImageView < [id="com.dragon.read:id/parent"]',
           snapshotUrls: 'https://i.gkd.li/i/17474890',
         },
-      ],
-    },
-    {
-      key: 13,
-      name: '分段广告-阅读中视频广告',
-      fastQuery: true,
-      activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
-      rules: [
         {
           key: 0,
           name: '点击反馈按钮',
           matches: '@[text="反馈"][visibleToUser=true]',
+          excludeMatches: '[text$="秒后，继续阅读下一页"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13520160',
             'https://i.gkd.li/i/17468490',
             'https://i.gkd.li/i/17474896',
           ],
+          exampleUrls: 'https://i.gkd.li/i/17564881',
         },
         {
           preKeys: 0,
