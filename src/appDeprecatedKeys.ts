@@ -359,11 +359,6 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     deprecatedKeys: [0],
   },
   {
-    id: 'com.ct.client',
-    name: '中国电信',
-    deprecatedKeys: [0],
-  },
-  {
     id: 'com.ctm',
     name: 'CTM Buddy',
     deprecatedKeys: [0],
