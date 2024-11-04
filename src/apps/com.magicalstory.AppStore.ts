@@ -15,7 +15,8 @@ export default defineGkdApp({
             '.main.fragments.square.section.searchPostActivity',
           ],
           // visibleToUser防止误触
-          matches: '@ImageView[visibleToUser=true] < FrameLayout <n [childCount=5] < * < * < * < * < * < [id="com.magicalstory.AppStore:id/banner2"]',
+          matches:
+            '@ImageView[visibleToUser=true] < FrameLayout <n [childCount=5] < * < * < * < * < * < [id="com.magicalstory.AppStore:id/banner2"]',
           snapshotUrls: [
             'https://i.gkd.li/i/17618529',
             'https://i.gkd.li/i/17618518',
@@ -33,9 +34,10 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          matches:[
+          matches: [
             '[id="com.magicalstory.AppStore:id/txt_dialog_title"][text="公告"]',
-            '[id="com.magicalstory.AppStore:id/btn_selectNegative"][text="隐藏"]',],
+            '[id="com.magicalstory.AppStore:id/btn_selectNegative"][text="隐藏"]',
+          ],
           snapshotUrls: 'https://i.gkd.li/import/13437553',
         },
       ],
