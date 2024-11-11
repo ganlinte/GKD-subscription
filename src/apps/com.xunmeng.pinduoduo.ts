@@ -7,18 +7,16 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      desc: '点击X',
-      quickFind: true,
+      desc: '点击【X】',
+      fastQuery: true,
       rules: [
         {
-          key: 0,
-          activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
+          activityIds: '.activity.NewPageActivity',
           matches:
-            '[text*="新版本"] - ImageView < LinearLayout < LinearLayout + ImageButton[clickable=true]',
+            '@ImageButton - LinearLayout > [text="立即升级"]',
           snapshotUrls: 'https://i.gkd.li/import/12642017',
         },
         {
-          key: 1,
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches: '@Image + Image +n [text="立即升级"]',
           snapshotUrls: 'https://i.gkd.li/import/13195645',
@@ -28,21 +26,22 @@ export default defineGkdApp({
     {
       key: 11,
       name: '局部广告-商品详情页视频讲解窗口',
-      activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
-      rules: '[id="com.xunmeng.pinduoduo:id/iv_float_window_close"] > TextView',
+      fastQuery: true,
+      activityIds: '.activity.NewPageActivity',
+      rules: '@TextView < [id="com.xunmeng.pinduoduo:id/iv_float_window_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13178326',
     },
     {
       key: 12,
       name: '局部广告-多多视频',
-      desc: '点击X',
-      quickFind: true,
-      activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+      desc: '点击【X】',
+      fastQuery: true,
+      activityIds: '.ui.activity.HomeActivity',
       rules: [
         {
           name: '左侧',
           matches:
-            '@TextView[id=null][clickable=true] + Image[id=null][text="webp"]',
+            '@TextView[id=null][clickable=true] + Image[text="webp"][id=null]',
           snapshotUrls: 'https://i.gkd.li/import/12642058',
         },
         {
@@ -56,13 +55,13 @@ export default defineGkdApp({
     {
       key: 20,
       name: '全屏广告-优惠卷弹窗',
-      desc: '点击X',
-      quickFind: true,
+      desc: '点击【X】',
+      fastQuery: true,
       rules: [
         {
-          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          activityIds: 'com.miui.home.launcher.Launcher',
           matches:
-            'FrameLayout > FrameLayout > RelativeLayout[childCount=2] > @ImageView[id!=null][clickable=true][visibleToUser=true] + ImageView',
+            'ImageView - @ImageView < RelativeLayout[childCount=2] < FrameLayout < FrameLayout <2 FrameLayout[parent=null] ',
           snapshotUrls: 'https://i.gkd.li/import/12642015',
         },
         {
@@ -70,12 +69,6 @@ export default defineGkdApp({
           matches:
             '@ImageView < ViewGroup[clickable=true][visibleToUser=true] < ViewGroup + ViewGroup >n [text="开心收下"]',
           snapshotUrls: 'https://i.gkd.li/import/13761182',
-        },
-        {
-          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
-          matches:
-            'View[id=null] > TextView + View > View +(4) View[clickable=true] > Image[id=null]',
-          snapshotUrls: 'https://i.gkd.li/import/12642019',
         },
         {
           activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
@@ -86,7 +79,7 @@ export default defineGkdApp({
         {
           activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
           matches:
-            'View[childCount=1] > Button[id=null][text="关闭弹窗"][clickable=true]',
+            'View[childCount=1] > Button[text="关闭弹窗"][id=null][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/12642053',
         },
       ],
@@ -94,20 +87,22 @@ export default defineGkdApp({
     {
       key: 21,
       name: '全屏广告-免单活动',
-      desc: '点击X',
-      quickFind: true,
-      activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
+      desc: '点击【X】',
+      fastQuery: true,
+      activityIds: '.activity.NewPageActivity',
       rules: [
         {
           name: '免单特权',
-          matches:
-            'TextView[text="免单特权"] < View < View +(5) View[clickable=true] > Image[id=null]',
+          matches:[
+            'TextView[text="免单特权"]',
+            '@Image[text="webp"] < View <7 View <2 View < View + View[id="portal-main-content"]'
+          ],
           snapshotUrls: 'https://i.gkd.li/import/12642032',
         },
         {
           name: '抽免单',
           matches:
-            'TextView[text$="抽免单"] -(2) Image[id=null][clickable=true]',
+            'TextView[text="再拼一单，抽免单"] -2 @Image[text="webp"] < View < View + View[id="portal-main-content"]',
           snapshotUrls: 'https://i.gkd.li/import/12642038',
         },
       ],
@@ -115,8 +110,8 @@ export default defineGkdApp({
     {
       key: 22,
       name: '全屏广告-红包',
-      desc: '点击X',
-      quickFind: true,
+      desc: '点击【X】',
+      fastQuery: true,
       activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
       rules: [
         {
@@ -137,8 +132,8 @@ export default defineGkdApp({
     {
       key: 23,
       name: '全屏广告-下单成功',
-      desc: '点击X',
-      quickFind: true,
+      desc: '点击【X】',
+      fastQuery: true,
       rules: [
         {
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
@@ -155,8 +150,8 @@ export default defineGkdApp({
     {
       key: 24,
       name: '全屏广告-多多视频-每日签到',
-      desc: '点击X',
-      quickFind: true,
+      desc: '点击【X】',
+      fastQuery: true,
       activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
       rules: [
         {
@@ -174,8 +169,8 @@ export default defineGkdApp({
     {
       key: 25,
       name: '全屏广告-爆款限时直降',
-      desc: '点击 X',
-      quickFind: true,
+      desc: '点击【X】',
+      fastQuery: true,
       activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
       rules: [
         {
@@ -189,7 +184,7 @@ export default defineGkdApp({
       key: 30,
       name: '功能类-多多视频-划到广告自动跳过',
       desc: '点击返回自动刷新，从而跳过广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
       rules: [
         {
@@ -212,7 +207,7 @@ export default defineGkdApp({
       key: 31,
       name: '功能类-多多视频-每日自动签到',
       desc: '',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       activityIds: ['com.xunmeng.pinduoduo.ui.activity.HomeActivity'],
@@ -229,10 +224,10 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          preKeys: [0],
+          preKeys: 0,
           name: '在签到后关闭弹窗',
           action: 'clickCenter',
-          matches: ['FrameLayout > TextView[text="明日继续来领"]'],
+          matches: 'FrameLayout > TextView[text="明日继续来领"]',
           snapshotUrls: 'https://i.gkd.li/import/13205634',
         },
       ],
@@ -240,9 +235,9 @@ export default defineGkdApp({
     {
       key: 32,
       name: '功能类-自动点击原图',
+      fastQuery: true,
       activityIds:
         'com.xunmeng.pinduoduo.app_album.album.MultiImageSelectorActivity',
-      quickFind: true,
       rules: '@[text="原图"][checked=false] + [text="发送"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13925378', // checked=false
