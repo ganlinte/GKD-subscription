@@ -67,14 +67,16 @@ export default defineGkdApp({
         {
           key: 0,
           actionDelay: 2000,
-          matches: '[id="com.kuangxiangciweimao.novel:id/signBtn"][text="签到"]',
+          matches:
+            '[id="com.kuangxiangciweimao.novel:id/signBtn"][text="签到"]',
           snapshotUrls: 'https://i.gkd.li/i/17554248',
         },
         {
           preKeys: 0,
           action: 'clickCenter',
           actionDelay: 500,
-          matches: '[id="com.kuangxiangciweimao.novel:id/signBtn"][text="每周福利"]',
+          matches:
+            '[id="com.kuangxiangciweimao.novel:id/signBtn"][text="每周福利"]',
           snapshotUrls: 'https://i.gkd.li/i/17686396',
         },
       ],

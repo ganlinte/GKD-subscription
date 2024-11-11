@@ -167,7 +167,8 @@ export default defineGkdApp({
         },
         {
           name: '卡片-关注作者',
-          matches: '@ImageView[visibleToUser=true] + TextView[text="关注我，掌握书籍最新动态"]',
+          matches:
+            '@ImageView[visibleToUser=true] + TextView[text="关注我，掌握书籍最新动态"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13399505',
             'https://i.gkd.li/import/14896809',
@@ -204,9 +205,9 @@ export default defineGkdApp({
           name: '点击反馈按钮',
           matches: '@[text="反馈"][visibleToUser=true]',
           excludeMatches: [
-            '[text$="秒后，继续阅读下一页"]',//等待
+            '[text$="秒后，继续阅读下一页"]', //等待
             '@[text="关闭"] - [text="反馈"]',
-            '@[text="反馈"][visibleToUser=true][2=parent.childCount]',//插图
+            '@[text="反馈"][visibleToUser=true][2=parent.childCount]', //插图
           ],
           snapshotUrls: [
             'https://i.gkd.li/import/13520160',
@@ -216,7 +217,7 @@ export default defineGkdApp({
           exampleUrls: [
             'https://i.gkd.li/i/17564881',
             'https://i.gkd.li/i/17689909',
-          ]
+          ],
         },
         {
           preKeys: 0,
