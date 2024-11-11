@@ -12,8 +12,7 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: '.activity.NewPageActivity',
-          matches:
-            '@ImageButton - LinearLayout > [text="立即升级"]',
+          matches: '@ImageButton - LinearLayout > [text="立即升级"]',
           snapshotUrls: 'https://i.gkd.li/import/12642017',
         },
         {
@@ -28,7 +27,8 @@ export default defineGkdApp({
       name: '局部广告-商品详情页视频讲解窗口',
       fastQuery: true,
       activityIds: '.activity.NewPageActivity',
-      rules: '@TextView < [id="com.xunmeng.pinduoduo:id/iv_float_window_close"]',
+      rules:
+        '@TextView < [id="com.xunmeng.pinduoduo:id/iv_float_window_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13178326',
     },
     {
@@ -93,9 +93,9 @@ export default defineGkdApp({
       rules: [
         {
           name: '免单特权',
-          matches:[
+          matches: [
             'TextView[text="免单特权"]',
-            '@Image[text="webp"] < View <7 View <2 View < View + View[id="portal-main-content"]'
+            '@Image[text="webp"] < View <7 View <2 View < View + View[id="portal-main-content"]',
           ],
           snapshotUrls: 'https://i.gkd.li/import/12642032',
         },
