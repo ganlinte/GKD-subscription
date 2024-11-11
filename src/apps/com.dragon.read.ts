@@ -180,14 +180,14 @@ export default defineGkdApp({
       name: '全屏广告-阅读中广告',
       desc: '点击【关闭】/【反馈-不感兴趣】',
       fastQuery: true,
+      matchRoot: true,
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: [
         {
-          matches: '@[id="com.dragon.read:id/close"] -2 [text="广告"]',
+          matches: '@[text="关闭"] - [text="反馈"]',
           snapshotUrls: 'https://i.gkd.li/import/13191156',
         },
         {
-          matchRoot: true,
           matches: [
             '[text="点击关闭广告并退出小说"][visibleToUser=true]',
             '[id="android:id/content"]',
@@ -200,21 +200,23 @@ export default defineGkdApp({
           ],
         },
         {
-          name: '领金币',
-          matches: '@ImageView < [id="com.dragon.read:id/parent"]',
-          snapshotUrls: 'https://i.gkd.li/i/17474890',
-        },
-        {
           key: 0,
           name: '点击反馈按钮',
           matches: '@[text="反馈"][visibleToUser=true]',
-          excludeMatches: '[text$="秒后，继续阅读下一页"]',
+          excludeMatches: [
+            '[text$="秒后，继续阅读下一页"]',//等待
+            '@[text="关闭"] - [text="反馈"]',
+            '@[text="反馈"][visibleToUser=true][2=parent.childCount]',//插图
+          ],
           snapshotUrls: [
             'https://i.gkd.li/import/13520160',
             'https://i.gkd.li/i/17468490',
             'https://i.gkd.li/i/17474896',
           ],
-          exampleUrls: 'https://i.gkd.li/i/17564881',
+          exampleUrls: [
+            'https://i.gkd.li/i/17564881',
+            'https://i.gkd.li/i/17689909',
+          ]
         },
         {
           preKeys: 0,
@@ -230,6 +232,11 @@ export default defineGkdApp({
           name: '点击不感兴趣2',
           matches: '@[text="不感兴趣"] + [text="举报"]',
           snapshotUrls: 'https://i.gkd.li/i/17461153',
+        },
+        {
+          name: '领金币',
+          matches: '@ImageView < [id="com.dragon.read:id/parent"]',
+          snapshotUrls: 'https://i.gkd.li/i/17474890',
         },
       ],
     },
