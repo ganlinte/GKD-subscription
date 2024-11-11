@@ -97,12 +97,12 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '全屏广告-书城-开启推送提醒',
+      name: '全屏广告-开启推送提醒',
       desc: '自动点击【取消】',
       fastQuery: true,
-      activityIds: 'com.dragon.read.widget.ConfirmDialogBuilder',
+      activityIds: '.pages.main.MainFragmentActivity',
       rules: '@[text="取消"] < * -2 * > [text="开启推送提醒"]',
-      snapshotUrls: 'https://i.gkd.li/import/12716592',
+      snapshotUrls: 'https://i.gkd.li/i/17661722',
     },
     {
       key: 7,
