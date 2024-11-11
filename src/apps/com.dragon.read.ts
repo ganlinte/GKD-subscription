@@ -138,12 +138,13 @@ export default defineGkdApp({
       name: '局部广告-阅读中卡片广告',
       desc: '点击X',
       fastQuery: true,
-      matchRoot: true,
+      actionCd: 500,
+      forcedTime: 3600000,
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: [
         {
           matches:
-            '@ImageView - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
+            '@ImageView[visibleToUser=true] - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12908734',
             'https://i.gkd.li/import/13520314', //有唯一ID
@@ -153,7 +154,7 @@ export default defineGkdApp({
         },
         {
           matches:
-            '@ImageView < FrameLayout <3 ViewGroup[childCount=4] <n * <n * <n * <n * <n * <n  * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view" || id="android:id/content"]',
+            '@ImageView[visibleToUser=true] < FrameLayout <3 ViewGroup[childCount=4] <n * <n * <n * <n * <n * <n  * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view" || id="android:id/content"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12716444',
             'https://i.gkd.li/i/17474881',
@@ -161,12 +162,12 @@ export default defineGkdApp({
         },
         {
           matches:
-            '@ImageView < FrameLayout - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
+            '@ImageView[visibleToUser=true] < FrameLayout - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
           snapshotUrls: 'https://i.gkd.li/i/17565008',
         },
         {
           name: '卡片-关注作者',
-          matches: '@ImageView + TextView[text="关注我，掌握书籍最新动态"]',
+          matches: '@ImageView[visibleToUser=true] + TextView[text="关注我，掌握书籍最新动态"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13399505',
             'https://i.gkd.li/import/14896809',
