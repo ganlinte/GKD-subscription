@@ -57,16 +57,34 @@ export default defineGkdApp({
     },
     {
       key: 4,
+      name: '全屏广告-绑定账号',
+      desc: '点击【以后】',
+      fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: [
+            '@[text="绑定账号"]',
+            '@[text="以后"] + [text="去绑定"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/17789233',
+        }
+    ],
+    },
+    {
+      key: 5,
       name: '功能类-签到',
       desc: '点击【签到】',
+      actionCdKey: 1,
       fastQuery: true,
       resetMatch: 'app',
-      actionMaximum: 2,
+      actionMaximum: 1,
       activityIds: '.activity.frame.MainFrameActivity',
       rules: [
         {
           key: 0,
-          actionDelay: 2000,
+          actionDelay: 1000,
           matches:
             '[id="com.kuangxiangciweimao.novel:id/signBtn"][text="签到"]',
           snapshotUrls: 'https://i.gkd.li/i/17554248',
@@ -74,7 +92,6 @@ export default defineGkdApp({
         {
           preKeys: 0,
           action: 'clickCenter',
-          actionDelay: 500,
           matches:
             '[id="com.kuangxiangciweimao.novel:id/signBtn"][text="每周福利"]',
           snapshotUrls: 'https://i.gkd.li/i/17686396',
