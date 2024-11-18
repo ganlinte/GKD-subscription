@@ -34,7 +34,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-书城-优惠券弹窗',
+      name: '全屏广告-优惠券弹窗',
       fastQuery: true,
       rules: [
         {
@@ -59,7 +59,7 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-书城-周末开红包',
+      name: '全屏广告-周末开红包',
       desc: '点击 X',
       fastQuery: true,
       matchTime: 20000,
@@ -79,7 +79,7 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '全屏广告-书城-动画小说',
+      name: '全屏广告-动画小说',
       fastQuery: true,
       matchTime: 20000,
       actionMaximum: 1,
