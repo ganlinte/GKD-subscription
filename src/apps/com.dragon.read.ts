@@ -20,17 +20,14 @@ export default defineGkdApp({
       key: 2,
       name: '局部广告-书城-右侧悬浮红包广告',
       fastQuery: true,
-      activityIds: [
-        'com.dragon.read.pages.main.MainFragmentActivity',
-        'com.dragon.read.ad.openingscreenad.OpeningScreenADActivity',
-      ],
+      resetMatch: 'app',
+      activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
       rules: [
         {
-          matches:
-            '@ImageView < * < RelativeLayout < FrameLayout - [id="com.dragon.read:id/root_layout"]',
+          matches: '@ImageView < * < RelativeLayout < FrameLayout <(1,2) [id="android:id/content"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12716506', //relativeLayout和ImageView之间是RelativeLayoutRelativeLayout
-            'https://i.gkd.li/import/13318796', //relativeLayout和ImageView之间是ViewGroup
+            'https://i.gkd.li/import/12716506',
+            'https://i.gkd.li/i/17725414',
           ],
         },
       ],
