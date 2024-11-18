@@ -136,32 +136,31 @@ export default defineGkdApp({
       name: '局部广告-阅读中卡片广告',
       desc: '点击X',
       fastQuery: true,
-      actionCd: 500,
       forcedTime: 3600000,
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: [
         {
-          matches:
+          key: 1,
+          name: '卡片广告',
+          anyMatches: [
             '@ImageView[visibleToUser=true] - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12908734',
-            'https://i.gkd.li/import/13520314', //有唯一ID
-            'https://i.gkd.li/import/15294350',
-            'https://i.gkd.li/i/17474877',
-          ],
-        },
-        {
-          matches:
             '@ImageView[visibleToUser=true] < FrameLayout <3 ViewGroup[childCount=4] <n * <n * <n * <n * <n * <n  * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view" || id="android:id/content"]',
+            '@ImageView[visibleToUser=true] < FrameLayout - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
+          ],
           snapshotUrls: [
-            'https://i.gkd.li/import/12716444',
-            'https://i.gkd.li/i/17474881',
+            'https://i.gkd.li/import/12908734',//1
+            'https://i.gkd.li/import/13520314',//1
+            'https://i.gkd.li/import/15294350',//1
+            'https://i.gkd.li/i/17474877',//1
+            'https://i.gkd.li/import/12716444',//2
+            'https://i.gkd.li/i/17474881',//2
+            'https://i.gkd.li/i/17565008',//3
           ],
         },
         {
-          matches:
-            '@ImageView[visibleToUser=true] < FrameLayout - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
-          snapshotUrls: 'https://i.gkd.li/i/17565008',
+          preKeys: 1,
+          matches: '@TextView[text="关闭此条广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/17793195',
         },
         {
           name: '卡片-关注作者',
@@ -171,6 +170,11 @@ export default defineGkdApp({
             'https://i.gkd.li/import/13399505',
             'https://i.gkd.li/import/14896809',
           ],
+        },
+        {
+          name: '领金币',
+          matches: '@ImageView < [id="com.dragon.read:id/parent"]',
+          snapshotUrls: 'https://i.gkd.li/i/17474890',
         },
       ],
     },
@@ -183,28 +187,18 @@ export default defineGkdApp({
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: [
         {
+          key: 1,
+          name: '点击【关闭】',
           matches: '@[text="关闭"] - [text="反馈"]',
           snapshotUrls: 'https://i.gkd.li/import/13191156',
         },
         {
-          matches: [
-            '[text="点击关闭广告并退出小说"][visibleToUser=true]',
-            '[id="android:id/content"]',
-          ],
-          excludeMatches: '@[text="反馈"][visibleToUser=true]',
-          position: { right: 100, bottom: 300 },
-          snapshotUrls: [
-            'https://i.gkd.li/i/17474887',
-            'https://i.gkd.li/i/17474889',
-          ],
-        },
-        {
-          key: 0,
-          name: '点击反馈按钮',
+          key: 2,
+          name: '点击【反馈】',
           matches: '@[text="反馈"][visibleToUser=true]',
           excludeMatches: [
+            '@[text="关闭"] - [text="反馈"]',//优先【关闭】
             '[text$="秒后，继续阅读下一页"]', //等待
-            '@[text="关闭"] - [text="反馈"]',
             '@[text="反馈"][visibleToUser=true][2=parent.childCount]', //插图
           ],
           snapshotUrls: [
@@ -213,59 +207,36 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17474896',
           ],
           exampleUrls: [
-            'https://i.gkd.li/i/17564881',
-            'https://i.gkd.li/i/17689909',
+            'https://i.gkd.li/i/17564881',//等待
+            'https://i.gkd.li/i/17689909',//插图
           ],
         },
         {
-          preKeys: 0,
-          name: '点击不感兴趣1',
-          matches: '@[text="不感兴趣"] <2 * + ViewGroup > [text="举报"]',
+          preKeys: 2,
+          key: 3,
+          name: '点击【不感兴趣】',
+          anyMatches: [
+            '@[text="不感兴趣"] <2 * + ViewGroup > [text="举报"]',
+            '@[text="不感兴趣"] + [text="举报"]',
+          ],
           snapshotUrls: [
-            'https://i.gkd.li/import/13520219',
-            'https://i.gkd.li/import/13674550',
+            'https://i.gkd.li/import/13520219',//1
+            'https://i.gkd.li/import/13674550',//1
+            'https://i.gkd.li/i/17461153',//2
           ],
         },
         {
-          preKeys: 0,
-          name: '点击不感兴趣2',
-          matches: '@[text="不感兴趣"] + [text="举报"]',
-          snapshotUrls: 'https://i.gkd.li/i/17461153',
-        },
-        {
-          name: '领金币',
-          matches: '@ImageView < [id="com.dragon.read:id/parent"]',
-          snapshotUrls: 'https://i.gkd.li/i/17474890',
-        },
-      ],
-    },
-    {
-      key: 14,
-      name: '局部广告-阅读中卡片广告(旧)',
-      desc: '优化前旧版本',
-      fastQuery: true,
-      activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
-      rules: [
-        {
-          matches:
-            '@ImageView - LinearLayout[childCount=3] > FrameLayout[childCount=1] > TextView[text!=""]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12908734',
-            'https://i.gkd.li/import/13520314', //有唯一ID
-            'https://i.gkd.li/import/15294350',
+          key: 4,
+          actionCdKey: 3,
+          matches: [
+            '[text="点击关闭广告并退出小说"][visibleToUser=true]',
+            '[id="android:id/content"]',
           ],
-        },
-        {
-          matches:
-            'ViewGroup[childCount=4] > @FrameLayout[id!=null][clickable=true] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/12716444',
-        },
-        {
-          name: '卡片-关注作者',
-          matches: '@ImageView + TextView[text="关注我，掌握书籍最新动态"]',
+          excludeMatches: '@[text="反馈"]',//优先【反馈】
+          position: { right: 100, bottom: 300 },
           snapshotUrls: [
-            'https://i.gkd.li/import/13399505',
-            'https://i.gkd.li/import/14896809',
+            'https://i.gkd.li/i/17474887',
+            'https://i.gkd.li/i/17474889',
           ],
         },
       ],
