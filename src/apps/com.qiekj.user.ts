@@ -28,10 +28,7 @@ export default defineGkdApp({
       activityIds: 'com.sigmob.sdk.base.common.PortraitTransparentAdActivity',
       rules: [
         {
-          matches: [
-            '@TextView[text="广告"]',
-            '@TextView[id="close_btn"]',
-          ],
+          matches: ['@TextView[text="广告"]', '@TextView[id="close_btn"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/17789291',
             'https://i.gkd.li/i/17789294',

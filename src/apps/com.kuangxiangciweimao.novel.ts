@@ -64,13 +64,10 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          matches: [
-            '@[text="绑定账号"]',
-            '@[text="以后"] + [text="去绑定"]',
-          ],
+          matches: ['@[text="绑定账号"]', '@[text="以后"] + [text="去绑定"]'],
           snapshotUrls: 'https://i.gkd.li/i/17789233',
-        }
-    ],
+        },
+      ],
     },
     {
       key: 5,

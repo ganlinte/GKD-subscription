@@ -24,7 +24,8 @@ export default defineGkdApp({
       activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
       rules: [
         {
-          matches: '@ImageView < * < RelativeLayout < FrameLayout <(1,2) [id="android:id/content"]',
+          matches:
+            '@ImageView < * < RelativeLayout < FrameLayout <(1,2) [id="android:id/content"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12716506',
             'https://i.gkd.li/i/17725414',
@@ -148,13 +149,13 @@ export default defineGkdApp({
             '@ImageView[visibleToUser=true] < FrameLayout - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
           ],
           snapshotUrls: [
-            'https://i.gkd.li/import/12908734',//1
-            'https://i.gkd.li/import/13520314',//1
-            'https://i.gkd.li/import/15294350',//1
-            'https://i.gkd.li/i/17474877',//1
-            'https://i.gkd.li/import/12716444',//2
-            'https://i.gkd.li/i/17474881',//2
-            'https://i.gkd.li/i/17565008',//3
+            'https://i.gkd.li/import/12908734', //1
+            'https://i.gkd.li/import/13520314', //1
+            'https://i.gkd.li/import/15294350', //1
+            'https://i.gkd.li/i/17474877', //1
+            'https://i.gkd.li/import/12716444', //2
+            'https://i.gkd.li/i/17474881', //2
+            'https://i.gkd.li/i/17565008', //3
           ],
         },
         {
@@ -197,7 +198,7 @@ export default defineGkdApp({
           name: '点击【反馈】',
           matches: '@[text="反馈"][visibleToUser=true]',
           excludeMatches: [
-            '@[text="关闭"] - [text="反馈"]',//优先【关闭】
+            '@[text="关闭"] - [text="反馈"]', //优先【关闭】
             '[text$="秒后，继续阅读下一页"]', //等待
             '@[text="反馈"][visibleToUser=true][2=parent.childCount]', //插图
           ],
@@ -207,8 +208,8 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17474896',
           ],
           exampleUrls: [
-            'https://i.gkd.li/i/17564881',//等待
-            'https://i.gkd.li/i/17689909',//插图
+            'https://i.gkd.li/i/17564881', //等待
+            'https://i.gkd.li/i/17689909', //插图
           ],
         },
         {
@@ -220,9 +221,9 @@ export default defineGkdApp({
             '@[text="不感兴趣"] + [text="举报"]',
           ],
           snapshotUrls: [
-            'https://i.gkd.li/import/13520219',//1
-            'https://i.gkd.li/import/13674550',//1
-            'https://i.gkd.li/i/17461153',//2
+            'https://i.gkd.li/import/13520219', //1
+            'https://i.gkd.li/import/13674550', //1
+            'https://i.gkd.li/i/17461153', //2
           ],
         },
         {
@@ -232,7 +233,7 @@ export default defineGkdApp({
             '[text="点击关闭广告并退出小说"][visibleToUser=true]',
             '[id="android:id/content"]',
           ],
-          excludeMatches: '@[text="反馈"]',//优先【反馈】
+          excludeMatches: '@[text="反馈"]', //优先【反馈】
           position: { right: 100, bottom: 300 },
           snapshotUrls: [
             'https://i.gkd.li/i/17474887',
