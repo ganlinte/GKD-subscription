@@ -98,7 +98,7 @@ export default defineGkdApp({
     {
       key: 30,
       name: '功能类-APP自动点击退出',
-      desc: '点击 确定',
+      desc: '点击【确定】',
       fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
