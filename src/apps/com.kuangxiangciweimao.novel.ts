@@ -108,8 +108,8 @@ export default defineGkdApp({
         {
           action: 'clickCenter',
           matches: [
-            '[id="com.kuangxiangciweimao.novel:id/pos_btn"]',
-            '[text="确定"]',
+            '[id="com.kuangxiangciweimao.novel:id/dia_message"][text="是否退出？"]',
+            '[id="com.kuangxiangciweimao.novel:id/pos_btn"][text="确定"]',
           ],
         },
       ],
