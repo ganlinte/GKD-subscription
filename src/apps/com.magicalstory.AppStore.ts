@@ -8,9 +8,9 @@ export default defineGkdApp({
       key: 1,
       name: '局部广告-卡片式广告',
       fastQuery: true,
+      forcedTime: 1000,
       rules: [
         {
-          action: 'clickCenter',
           activityIds: [
             '.search.searchActivity',
             '.main.fragments.square.section.searchPostActivity',
@@ -24,7 +24,6 @@ export default defineGkdApp({
           ],
         },
         {
-          action: 'clickCenter',
           activityIds: '.main.MainActivity',
           matches:
             '@[id="com.magicalstory.AppStore:id/button_close_ad"] - [id="com.magicalstory.AppStore:id/banner_ad2"]',
