@@ -222,14 +222,12 @@ export default defineGkdApp({
           preKeys: 2,
           key: 3,
           name: '点击【不感兴趣】',
-          anyMatches: [
-            '@[text="不感兴趣"] <2 * + ViewGroup > [text="举报"]',
-            '@[text="不感兴趣"] + [text="举报"]',
-          ],
+          matches:'@TextView[text="不感兴趣"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13520219', //1
-            'https://i.gkd.li/import/13674550', //1
-            'https://i.gkd.li/i/17461153', //2
+            'https://i.gkd.li/import/13520219',
+            'https://i.gkd.li/import/13674550',
+            'https://i.gkd.li/i/17461153',
+            'https://i.gkd.li/i/17928168',
           ],
         },
         {
