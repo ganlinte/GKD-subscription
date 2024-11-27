@@ -160,8 +160,14 @@ export default defineGkdApp({
         },
         {
           preKeys: 1,
-          matches: '@TextView[text="关闭此条广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/17793195',
+          anyMatches: [
+            '@TextView[text="关闭此条广告"]',
+            '@TextView[text="关闭此广告"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/17793195', //1
+            'https://i.gkd.li/i/17928194', //2,
+            ],
         },
         {
           name: '卡片-关注作者',
