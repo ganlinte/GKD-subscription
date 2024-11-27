@@ -167,7 +167,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/17793195', //1
             'https://i.gkd.li/i/17928194', //2,
-            ],
+          ],
         },
         {
           name: '卡片-关注作者',
@@ -222,7 +222,7 @@ export default defineGkdApp({
           preKeys: 2,
           key: 3,
           name: '点击【不感兴趣】',
-          matches:'@TextView[text="不感兴趣"]',
+          matches: '@TextView[text="不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13520219',
             'https://i.gkd.li/import/13674550',
