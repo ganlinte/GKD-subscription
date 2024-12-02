@@ -63,7 +63,6 @@ export default defineGkdApp({
       name: '全屏广告-周末开红包',
       desc: '点击 X',
       fastQuery: true,
-      matchTime: 20000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
