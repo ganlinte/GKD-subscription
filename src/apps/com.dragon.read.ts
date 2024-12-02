@@ -78,22 +78,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 5,
-      name: '全屏广告-动画小说',
-      fastQuery: true,
-      matchTime: 20000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
-      rules: [
-        {
-          matches:
-            '@ImageView[clickable=true] <2 * < [id="android:id/content"]',
-          snapshotUrls: 'https://i.gkd.li/import/14813934',
-        },
-      ],
-    },
-    {
       key: 6,
       name: '全屏广告-开启推送提醒',
       desc: '自动点击【取消】',
