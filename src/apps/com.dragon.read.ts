@@ -149,7 +149,7 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '全屏广告-阅读中广告',
+      name: '全屏广告-阅读中视频广告',
       desc: '点击【关闭】/【反馈-不感兴趣】',
       fastQuery: true,
       matchRoot: true,
@@ -167,7 +167,7 @@ export default defineGkdApp({
           matches: '@[text="反馈"][visibleToUser=true]',
           excludeMatches: [
             '@[text="关闭"] - [text="反馈"]', //优先【关闭】
-            '[text$="秒后，继续阅读下一页"]', //等待
+            '@TextView[text$="秒后，继续阅读下一页"] <n ViewGroup < RelativeLayout <2 * < * - FrameLayout > FrameLayout >n [text="反馈"]', //等待
             '@[text="反馈"][visibleToUser=true][2=parent.childCount]', //插图
           ],
           snapshotUrls: [
@@ -184,6 +184,7 @@ export default defineGkdApp({
           preKeys: 2,
           key: 3,
           name: '点击【不感兴趣】',
+          actionDelay: 100,
           matches: '@TextView[text="不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13520219',
@@ -194,16 +195,22 @@ export default defineGkdApp({
         },
         {
           key: 4,
-          actionCdKey: 3,
+          forcedTime: 3600000,
           matches: [
-            '[text="点击关闭广告并退出小说"][visibleToUser=true]',
             '[id="android:id/content"]',
+          ],
+          anyMatches: [
+            '@[text="去领取"][visibleToUser=true]',
+            '@UISvg +n FlattenUIText[text^="¥"][visibleToUser=true]',
           ],
           excludeMatches: '@[text="反馈"]', //优先【反馈】
           position: { right: 100, bottom: 300 },
           snapshotUrls: [
-            'https://i.gkd.li/i/17474887',
-            'https://i.gkd.li/i/17474889',
+            'https://i.gkd.li/i/17474887', //1
+            'https://i.gkd.li/i/17474889', //1
+            'https://i.gkd.li/i/17932302', //1
+            'https://i.gkd.li/i/17941812', //2
+            'https://i.gkd.li/i/17967442', //2
           ],
         },
       ],
