@@ -91,25 +91,33 @@ export default defineGkdApp({
       name: '局部广告-阅读中卡片广告',
       desc: '点击X',
       fastQuery: true,
-      forcedTime: 3600000,
-      activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
+      activityIds: '.reader.ui.ReaderActivity',
       rules: [
         {
-          key: 1,
-          name: '卡片广告',
+          name: '阅读中卡片广告',
+          forcedTime: 3600000, //1小时
           anyMatches: [
-            '@ImageView[visibleToUser=true] - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
-            '@ImageView[visibleToUser=true] < FrameLayout <3 ViewGroup[childCount=4] <n * <n * <n * <n * <n * <n  * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view" || id="android:id/content"]',
-            '@ImageView[visibleToUser=true] < FrameLayout - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
+            '@ImageView[visibleToUser=true] < FrameLayout <3 ViewGroup[childCount=4] <n * <n * <n * <n * <n * <n  * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
+            '@ImageView[visibleToUser=true] < FrameLayout <3 ViewGroup[childCount=4] <n * <n * <n * <n * <n * <n  * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]'
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/import/12716444', //1
+            'https://i.gkd.li/i/17474881', //2
+          ]
+        },
+        {
+          key: 1,
+          name: '下方卡片广告横幅',
+          anyMatches: [
+            '@ImageView - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
+            '@ImageView < FrameLayout - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/import/12908734', //1
             'https://i.gkd.li/import/13520314', //1
             'https://i.gkd.li/import/15294350', //1
             'https://i.gkd.li/i/17474877', //1
-            'https://i.gkd.li/import/12716444', //2
-            'https://i.gkd.li/i/17474881', //2
-            'https://i.gkd.li/i/17565008', //3
+            'https://i.gkd.li/i/17565008', //2
           ],
         },
         {
@@ -126,7 +134,7 @@ export default defineGkdApp({
         {
           name: '卡片-关注作者',
           matches:
-            '@ImageView[visibleToUser=true] + TextView[text="关注我，掌握书籍最新动态"]',
+            '@ImageView + TextView[text="关注我，掌握书籍最新动态"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13399505',
             'https://i.gkd.li/import/14896809',
