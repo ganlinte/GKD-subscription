@@ -98,12 +98,12 @@ export default defineGkdApp({
           forcedTime: 3600000, //1小时
           anyMatches: [
             '@ImageView[visibleToUser=true] < FrameLayout <3 ViewGroup[childCount=4] <n * <n * <n * <n * <n * <n  * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
-            '@ImageView[visibleToUser=true] < FrameLayout <3 ViewGroup[childCount=4] <n * <n * <n * <n * <n * <n  * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]'
+            '@ImageView[visibleToUser=true] < FrameLayout <3 ViewGroup[childCount=4] <n * <n * <n * <n * <n * <n  * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/import/12716444', //1
             'https://i.gkd.li/i/17474881', //2
-          ]
+          ],
         },
         {
           key: 1,
@@ -133,8 +133,7 @@ export default defineGkdApp({
         },
         {
           name: '卡片-关注作者',
-          matches:
-            '@ImageView + TextView[text="关注我，掌握书籍最新动态"]',
+          matches: '@ImageView + TextView[text="关注我，掌握书籍最新动态"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13399505',
             'https://i.gkd.li/import/14896809',
@@ -196,9 +195,7 @@ export default defineGkdApp({
         {
           key: 4,
           forcedTime: 3600000,
-          matches: [
-            '[id="android:id/content"]',
-          ],
+          matches: ['[id="android:id/content"]'],
           anyMatches: [
             '@[text="去领取"][visibleToUser=true]',
             '@UISvg +n FlattenUIText[text^="¥"][visibleToUser=true]',
