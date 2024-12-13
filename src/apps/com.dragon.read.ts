@@ -213,7 +213,7 @@ export default defineGkdApp({
     {
       key: 13,
       name: '全屏广告-阅读-章节间图片广告',
-      desc: '自动点击右下方空白处翻页，翻页模式【上下】未测试',
+      desc: '自动点击右下方空白处翻页，翻页模式【上下】无法使用',
       fastQuery: true,
       forcedTime: 3600000, //1小时
       rules: [
