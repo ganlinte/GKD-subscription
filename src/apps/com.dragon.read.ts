@@ -90,7 +90,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18124360',
             'https://i.gkd.li/i/18124367',
           ],
-        }
+        },
       ],
     },
     {
@@ -222,7 +222,7 @@ export default defineGkdApp({
           anyMatches: [
             '[text="去领取"][visibleToUser=true]',
             '@UISvg +n FlattenUIText[text^="¥"][visibleToUser=true]',
-            '[text="去抢购"][visibleToUser=true]'
+            '[text="去抢购"][visibleToUser=true]',
           ],
           excludeMatches: '@[text="反馈"]', //优先【反馈】
           position: { right: 100, bottom: 300 },
