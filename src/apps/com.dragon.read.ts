@@ -104,13 +104,13 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '局部广告-阅读中卡片广告',
+      name: '局部广告-阅读-卡片广告',
       desc: '点击X',
       fastQuery: true,
       activityIds: '.reader.ui.ReaderActivity',
       rules: [
         {
-          name: '阅读中卡片广告',
+          name: '卡片广告',
           forcedTime: 3600000, //1小时
           anyMatches: [
             '@ImageView[visibleToUser=true] < FrameLayout <3 ViewGroup[childCount=4] <n * <n * <n * <n * <n * <n  * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
@@ -164,7 +164,7 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '全屏广告-阅读中视频广告',
+      name: '全屏广告-阅读-视频广告',
       desc: '点击【关闭】/【反馈-不感兴趣】',
       fastQuery: true,
       matchRoot: true,
@@ -208,13 +208,21 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17928168',
           ],
         },
+      ],
+    },
+    {
+      key: 13,
+      name: '全屏广告-阅读-章节间图片广告',
+      desc: '自动点击右下方空白处翻页，翻页模式【上下】未测试',
+      fastQuery: true,
+      forcedTime: 3600000, //1小时
+      rules: [
         {
-          key: 4,
-          forcedTime: 3600000,
           matches: ['[id="android:id/content"]'],
           anyMatches: [
-            '@[text="去领取"][visibleToUser=true]',
+            '[text="去领取"][visibleToUser=true]',
             '@UISvg +n FlattenUIText[text^="¥"][visibleToUser=true]',
+            '[text="去抢购"][visibleToUser=true]'
           ],
           excludeMatches: '@[text="反馈"]', //优先【反馈】
           position: { right: 100, bottom: 300 },
@@ -224,6 +232,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17932302', //1
             'https://i.gkd.li/i/17941812', //2
             'https://i.gkd.li/i/17967442', //2
+            'https://i.gkd.li/i/18124417', //3
           ],
         },
       ],
