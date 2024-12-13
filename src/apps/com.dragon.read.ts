@@ -78,6 +78,22 @@ export default defineGkdApp({
       ],
     },
     {
+      key: 5,
+      name: '全屏广告-广告弹窗',
+      desc: '【X】',
+      fastQuery: true,
+      rules: [
+        {
+          activityIds: '.pages.main.MainFragmentActivity',
+          matches: '@ImageView <2 LinearLayout < [id="android:id/content"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18124360',
+            'https://i.gkd.li/i/18124367',
+          ],
+        }
+      ],
+    },
+    {
       key: 6,
       name: '全屏广告-开启推送提醒',
       desc: '自动点击【取消】',
