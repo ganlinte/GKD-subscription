@@ -35,7 +35,7 @@ export default defineGkdApp({
             'https://i.gkd.li/import/12511010', //屏蔽该广告
             'https://i.gkd.li/import/12534848', //屏蔽该广告
             'https://i.gkd.li/import/13259699', //屏蔽该广告
-            'https://i.gkd.li/i/18123775' //不感兴趣
+            'https://i.gkd.li/i/18123775', //不感兴趣
           ],
         },
       ],
