@@ -73,15 +73,15 @@ export default defineGkdApp({
       key: 5,
       name: '功能类-签到',
       desc: '点击【签到】',
-      actionCdKey: 1,
+      actionCdKey: 2,
       fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
       activityIds: '.activity.frame.MainFrameActivity',
+      actionDelay: 500,
       rules: [
         {
           key: 0,
-          actionDelay: 1000,
           matches:
             '[id="com.kuangxiangciweimao.novel:id/signBtn"][text="签到"]',
           snapshotUrls: 'https://i.gkd.li/i/17554248',
@@ -89,6 +89,7 @@ export default defineGkdApp({
         {
           preKeys: 0,
           action: 'clickCenter',
+          actionDelay: 200,
           matches:
             '[id="com.kuangxiangciweimao.novel:id/signBtn"][text="每周福利"]',
           snapshotUrls: 'https://i.gkd.li/i/17686396',
@@ -102,6 +103,7 @@ export default defineGkdApp({
       fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
+      actionDelay: 200,
       activityIds:
         'com.kuangxiangciweimao.novel.activity.frame.MainFrameActivity',
       rules: [
