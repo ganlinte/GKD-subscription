@@ -53,9 +53,9 @@ export default defineGkdApp({
         },
         {
           name: '限时会员福利',
-          matches: '@ImageView[clickable=true] -3 ViewGroup >n TextView[text="恭喜获得限时会员福利"]',
+          matches:
+            '@ImageView[clickable=true] -3 ViewGroup >n TextView[text="恭喜获得限时会员福利"]',
           snapshotUrls: 'https://i.gkd.li/i/18553545',
-
         },
       ],
     },
