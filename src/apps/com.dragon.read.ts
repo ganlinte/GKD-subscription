@@ -36,25 +36,26 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-优惠券弹窗',
+      activityIds: '.pages.main.MainFragmentActivity',
       fastQuery: true,
       rules: [
         {
-          key: 0,
           name: '电商惊喜券',
-          activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
-          quickFind: true,
           matches:
             '@LynxFlattenUI[id=null][text=""][clickable=true] - [text="去逛商城"] -4 [text$="电商惊喜券"]',
           snapshotUrls: 'https://i.gkd.li/import/12910159',
         },
         {
-          key: 1,
           name: '爆款好物一分购',
-          quickFind: true,
-          activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
           matches:
             '@ImageView[clickable=true] <2 LinearLayout[childCount=2] < [id="android:id/content"][childCount=1]',
           snapshotUrls: 'https://i.gkd.li/import/12878266',
+        },
+        {
+          name: '限时会员福利',
+          matches: '@ImageView[clickable=true] -3 ViewGroup >n TextView[text="恭喜获得限时会员福利"]',
+          snapshotUrls: 'https://i.gkd.li/i/18553545',
+
         },
       ],
     },
