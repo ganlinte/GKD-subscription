@@ -78,7 +78,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       actionMaximum: 1,
       activityIds: '.activity.frame.MainFrameActivity',
-      actionDelay: 500,
+      actionDelay: 2000,
       rules: [
         {
           key: 0,
@@ -89,7 +89,7 @@ export default defineGkdApp({
         {
           preKeys: 0,
           action: 'clickCenter',
-          actionDelay: 200,
+          actionDelay: 500,
           matches:
             '[id="com.kuangxiangciweimao.novel:id/signBtn"][text="每周福利"]',
           snapshotUrls: 'https://i.gkd.li/i/17686396',
