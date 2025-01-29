@@ -183,7 +183,7 @@ export default defineGkdApp({
           matches: '@[text="反馈"][visibleToUser=true]',
           excludeMatches: [
             '@[text="关闭"] - [text="反馈"]', //优先【关闭】
-            '@TextView[text$="秒后，继续阅读下一页"] <n ViewGroup < RelativeLayout <2 * < * - FrameLayout > FrameLayout >n [text="反馈"]', //等待
+            '@TextView[text$="秒后，继续阅读下一页"]', //等待
             '@[text="反馈"][visibleToUser=true][2=parent.childCount]', //插图
           ],
           snapshotUrls: [
@@ -221,19 +221,17 @@ export default defineGkdApp({
         {
           matches: ['[id="android:id/content"]'],
           anyMatches: [
-            '[text="去领取"][visibleToUser=true]',
-            '@UISvg +n FlattenUIText[text^="¥"][visibleToUser=true]',
-            '[text="去抢购"][visibleToUser=true]',
+            '[text="点击关闭广告并退出小说" || text="去抢购" || text="去领取" || text^="¥"][visibleToUser=true]',
           ],
-          excludeMatches: '@[text="反馈"]', //优先【反馈】
+          excludeMatches: '@[text="反馈"]', //翻页时容易误触
           position: { right: 100, bottom: 300 },
           snapshotUrls: [
-            'https://i.gkd.li/i/17474887', //1
-            'https://i.gkd.li/i/17474889', //1
-            'https://i.gkd.li/i/17932302', //1
-            'https://i.gkd.li/i/17941812', //2
-            'https://i.gkd.li/i/17967442', //2
-            'https://i.gkd.li/i/18124417', //3
+            'https://i.gkd.li/i/17941812', //¥
+            'https://i.gkd.li/i/17967442', //¥
+            'https://i.gkd.li/i/17474887', //去领取/点击关闭广告并退出小说
+            'https://i.gkd.li/i/17474889', //去领取/点击关闭广告并退出小说
+            'https://i.gkd.li/i/17932302', //去领取
+            'https://i.gkd.li/i/18124417', //去抢购
           ],
         },
       ],
