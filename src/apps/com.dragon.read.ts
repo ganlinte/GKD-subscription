@@ -221,12 +221,13 @@ export default defineGkdApp({
         {
           matches: ['[id="android:id/content"]'],
           anyMatches: [
-            '[text="点击关闭广告并退出小说" || text="去抢购" || text="去领取" || text^="¥"][visibleToUser=true]',
+            'UISvg +n FlattenUIText[text^="¥"][visibleToUser=true]',
+            '[text="点击关闭广告并退出小说" || text="去抢购" || text="去领取"][visibleToUser=true]',
           ],
           excludeMatches: '@[text="反馈"]', //翻页时容易误触
           position: { right: 100, bottom: 300 },
           snapshotUrls: [
-            'https://i.gkd.li/i/17941812', //¥
+            'https://i.gkd.li/i/17941812', //¥ 单判断容易与卡片广告冲突
             'https://i.gkd.li/i/17967442', //¥
             'https://i.gkd.li/i/17474887', //去领取/点击关闭广告并退出小说
             'https://i.gkd.li/i/17474889', //去领取/点击关闭广告并退出小说
