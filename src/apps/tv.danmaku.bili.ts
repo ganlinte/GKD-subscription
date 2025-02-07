@@ -33,12 +33,15 @@ export default defineGkdApp({
     {
       key: 1,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'TextView[text*="青少年模式"] +n TextView[text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/import/13746766',
+      rules: 'TextView[text*="未成年人模式"] +n TextView[text="我知道了"]',
+      snapshotUrls: [
+        'https://i.gkd.li/i/18703460',
+        'https://i.gkd.li/import/13746766', //废弃
+      ],
     },
     {
       key: 2,
