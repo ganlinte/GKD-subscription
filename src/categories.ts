@@ -20,14 +20,13 @@ const categories: RawCategory[] = [
   {
     key: 4,
     name: '通知提示',
+    // 软件用于告知用户信息的弹窗
+    // 具体体现为公告弹窗一类
   },
   {
     key: 5,
-    name: '定位提示',
-  },
-  {
-    key: -1,
     name: '权限提示',
+    // 各种权限请求，如定位权限、通知权限等
   },
   {
     key: 6,
@@ -50,6 +49,10 @@ const categories: RawCategory[] = [
     key: 9,
     name: '功能类',
     // 非广告, 点击某些功能按钮
+  },
+  {
+    key: 10,
+    name: '其他', // 分类不明确
   },
 ];
 
