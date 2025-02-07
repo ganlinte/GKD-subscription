@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: -1,
       name: '开屏广告',
       desc: '开屏广告,任意界面切回APP开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -18,7 +18,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '局部广告-评论区顶部公告横幅',
-      quickFind: true,
+      fastQuery: true,
       excludeActivityIds: [
         'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3', // 直播间
         'tv.danmaku.bili.MainActivityV2', // 主页
@@ -47,7 +47,7 @@ export default defineGkdApp({
       key: 2,
       name: '局部广告-动态推荐广告卡片',
       desc: '点击卡片右上角[广告]按钮-点击不感兴趣',
-      quickFind: true,
+      fastQuery: true,
       matchDelay: 5000,
       activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules: [
@@ -63,13 +63,12 @@ export default defineGkdApp({
         },
       ],
     },
-    // key = 3已弃用
     {
       enable: false,
       key: 4,
       name: '局部广告-视频底部与评论区中间卡片式广告',
       desc: '需点击二次弹窗 屏蔽原因',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.bilibili.video.videodetail.VideoDetailsActivity',
         'com.bilibili.ship.theseus.all.UnitedBizDetailsActivity',
@@ -101,11 +100,10 @@ export default defineGkdApp({
         },
       ],
     },
-    // key = 5已弃用
     {
       key: 6,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       matchDelay: 5000,
       activityIds: [
@@ -130,7 +128,7 @@ export default defineGkdApp({
       key: 7,
       name: '局部广告-视频悬浮广告',
       desc: '领取大会员月卡,B站免流星卡',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       activityIds: [
@@ -151,7 +149,7 @@ export default defineGkdApp({
       key: 8,
       name: '局部广告-直播间卡片广告',
       desc: '直播间底部售卖卡片-点击右上角x',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       activityIds: 'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3',
@@ -162,7 +160,7 @@ export default defineGkdApp({
       enable: false,
       key: 9,
       name: '权限提示-请求通知权限弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -180,7 +178,7 @@ export default defineGkdApp({
       enable: false,
       key: 10,
       name: '局部广告-首页-推荐视频卡片广告', // 流程与 key=4 视频底部广告 基本一致
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules: [
         {
@@ -206,7 +204,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '局部广告-个性化内容推荐弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
