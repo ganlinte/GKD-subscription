@@ -16,7 +16,7 @@ export default defineGkdApp({
           anyMatches: [
             'TextView[text^="跳过" || text="关闭"]',
             'View[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-            '@View <3 FrameLayout <2 FrameLayout < FrameLayout < FrameLayout < RelativeLayout < FrameLayout < FrameLayout < [id="android:id/content"]'
+            '@View <3 FrameLayout <2 FrameLayout < FrameLayout < FrameLayout < RelativeLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/import/12775906', //跳过
