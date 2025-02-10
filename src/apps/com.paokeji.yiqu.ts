@@ -17,10 +17,10 @@ export default defineGkdApp({
             '@View <(2,3) FrameLayout <2 FrameLayout < FrameLayout < [id="com.paokeji.yiqu:id/lyContainer"]',
             '[text="跳过"]',
           ],
-            snapshotUrls: [
-              'https://i.gkd.li/import/14031922',
-              'https://i.gkd.li/import/14427345',
-              'https://i.gkd.li/import/15197461', //跳过
+          snapshotUrls: [
+            'https://i.gkd.li/import/14031922',
+            'https://i.gkd.li/import/14427345',
+            'https://i.gkd.li/import/15197461', //跳过
           ],
         },
       ],
