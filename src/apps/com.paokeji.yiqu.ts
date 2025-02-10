@@ -8,23 +8,20 @@ export default defineGkdApp({
       key: 0,
       name: '开屏广告',
       matchTime: 10000,
-      quickFind: true,
+      fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
-      activityIds:
-        'com.aster.comic.app.ad.view.mediation.MediationSplashAdActivity',
       rules: [
         {
-          matches:
-            'FrameLayout[id="com.paokeji.yiqu:id/lyContainer"] >n FrameLayout[childCount=3 || childCount=4] > View',
-          snapshotUrls: [
-            'https://i.gkd.li/import/14031922',
-            'https://i.gkd.li/import/14427345',
+          anyMatches: [
+            '@View <(2,3) FrameLayout <2 FrameLayout < FrameLayout < [id="com.paokeji.yiqu:id/lyContainer"]',
+            '[text="跳过"]',
           ],
-        },
-        {
-          matches: '[text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/15197461',
+            snapshotUrls: [
+              'https://i.gkd.li/import/14031922',
+              'https://i.gkd.li/import/14427345',
+              'https://i.gkd.li/import/15197461', //跳过
+          ],
         },
       ],
     },
