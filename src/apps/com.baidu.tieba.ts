@@ -10,32 +10,23 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      fastQuery: true,
       rules: [
         {
-          key: 0,
-          quickFind: true,
-          name: '【跳过+倒计时】型',
-          matches: 'TextView[text^="跳过"][text.length<=10]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12775906',
-            'https://i.gkd.li/import/12566191',
-            'https://i.gkd.li/import/12870916',
-            'https://i.gkd.li/import/13233500',
+          anyMatches: [
+            'TextView[text^="跳过" || text="关闭"]',
+            'View[id="com.byted.pangle:id/tt_splash_skip_btn"]',
+            '@View <3 FrameLayout <2 FrameLayout < FrameLayout < FrameLayout < RelativeLayout < FrameLayout < FrameLayout < [id="android:id/content"]'
           ],
-        },
-        {
-          key: 1,
-          name: '【圆圈跳过】型-来自穿山甲SDK',
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/13322227',
-        },
-        {
-          key: 2,
-          quickFind: true,
-          name: '【x+关闭】型',
-          matches:
-            'TextView[text="广告"] - @LinearLayout[clickable=true] > [text="关闭"]',
-          snapshotUrls: 'https://i.gkd.li/import/13168386',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12775906', //跳过
+            'https://i.gkd.li/import/12566191', //跳过
+            'https://i.gkd.li/import/12870916', //跳过
+            'https://i.gkd.li/import/13233500', //跳过
+            'https://i.gkd.li/import/13168386', //关闭
+            'https://i.gkd.li/import/13322227', //id
+            'https://i.gkd.li/i/18730575', //null
+          ],
         },
       ],
     },
