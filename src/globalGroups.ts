@@ -33,4 +33,27 @@ export default defineGkdGlobalGroups([
         [...appList.openAdWhiteListAppIDs].map((id) => ({ id, enable: true })),
       ),
   },
+  {
+    key: 2,
+    name: '青少年模式-全局',
+    order: YOUTH_MODE_ORDER,
+    fastQuery: true,
+    matchTime: 100000,
+    actionMaximum: 1,
+    resetMatch: 'app',
+    rules: [
+      {
+        key: 0,
+        matches: [
+          'TextView[text="未成年人模式"]',
+          'TextView[text="我知道了"]',
+        ],
+      },
+    ],
+    apps: [...appList.yongBlackListAppIDs]
+      .map((id) => ({ id, enable: false }))
+      .concat(
+        [...appList.yongWhiteListAppIDs].map((id) => ({ id, enable: true })),
+      ),
+  }
 ]);
