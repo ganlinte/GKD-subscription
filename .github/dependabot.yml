@@ -12,3 +12,8 @@ updates:
     # Check the npm registry for updates every day (weekdays)
     schedule:
       interval: 'weekly'
+    # 启用安全更新
+    commit-message:
+      prefix: "security"
+    labels:
+      - "security"
