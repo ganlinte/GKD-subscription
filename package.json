@@ -61,7 +61,8 @@
     "prettier": "3.5.0",
     "simple-git-hooks": "2.11.1",
     "tsx": "4.19.2",
-    "typescript": "5.7.3"
+    "typescript": "5.7.3",
+    "esbuild": "^0.25.0"
   },
   "author": "ganlinte",
   "license": "MIT",
@@ -84,5 +85,8 @@
   },
   "dependencies": {
     "picocolors": "^1.1.1"
+  },
+  "overrides": {
+    "esbuild": "^0.25.0"
   }
 }
