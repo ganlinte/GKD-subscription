@@ -5,10 +5,9 @@ export default defineGkdApp({
   name: '不背单词',
   groups: [
     {
-      enable: false,
       key: 1,
       name: '功能类-自动签到',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       rules: [
@@ -21,7 +20,6 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      enable: false,
       name: '局部广告-右下角弹窗',
       quickFind: true,
       matchTime: 10000,
@@ -30,6 +28,20 @@ export default defineGkdApp({
           activityIds: 'cn.com.langeasy.LangEasyLexis.activity.MainActivity',
           matches: '[id="cn.com.langeasy.LangEasyLexis:id/close_float_button"]',
           snapshotUrls: 'https://i.gkd.li/import/13759025',
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '全屏广告-新功能上线',
+      fastQuery: true,
+      actionMaximum: 1,
+      matchTime: 200000,
+      activityIds: '.activity.MainActivity',
+      rules: [
+        {
+          matches: 'ImageView[id="cn.com.langeasy.LangEasyLexis:id/close_btn"]',
+          snapshotUrls: 'https://i.gkd.li/i/18867092',
         },
       ],
     },
