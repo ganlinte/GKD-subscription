@@ -522,27 +522,25 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: [
         'com.tencent.mm.framework.app.UIPageFragmentActivity',
-        '.ui.LauncherUI'
+        '.ui.LauncherUI',
       ],
       rules: [
         {
           matches: [
             '[text="支付成功"]',
             '[text*="￥"||text*="¥"]',
-            '[text="完成"||text="返回商家"]'
+            '[text="完成"||text="返回商家"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/14399355',
             'https://i.gkd.li/i/14558398',
             'https://i.gkd.li/i/14662147',
             'https://i.gkd.li/i/16215946',
-            'https://i.gkd.li/i/18348017'
+            'https://i.gkd.li/i/18348017',
           ],
-          excludeSnapshotUrls: [
-            'https://i.gkd.li/i/14532946'
-          ]
-        }
-      ]
+          excludeSnapshotUrls: ['https://i.gkd.li/i/14532946'],
+        },
+      ],
     },
   ],
 });
