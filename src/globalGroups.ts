@@ -44,7 +44,7 @@ export default defineGkdGlobalGroups([
     rules: [
       {
         key: 0,
-        matches: ['TextView[text="未成年人模式"]', 'TextView[text="我知道了"]'],
+        matches: ['TextView[text="未成年人模式" ||text="开启青少年模式"]', 'TextView[text="我知道了"]'],
       },
     ],
     apps: [...appList.yongBlackListAppIDs]
