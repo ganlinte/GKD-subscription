@@ -10,7 +10,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       actionMaximum: 1,
       matchTime: 10000,
-      quickFind: true,
+      fastQuery: true,
       rules:
         '@View[clickable=true] <2 [id="com.antfortune.wealth:id/welcome_page"]',
       snapshotUrls: 'https://i.gkd.li/import/12776577',

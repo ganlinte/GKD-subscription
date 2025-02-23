@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -25,7 +25,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -38,7 +38,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-广场页卡片广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['cn.soulapp.android.component.startup.main.MainActivity'],
       rules: [
         {
@@ -51,7 +51,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-app评分',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['cn.soulapp.android.component.chat.ConversationActivity'],
       rules: [
         {
@@ -64,7 +64,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-版本更新',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

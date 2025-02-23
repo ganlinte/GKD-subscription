@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -22,7 +22,7 @@ export default defineGkdApp({
       enable: false,
       key: 2,
       name: '局部广告-信息流广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'cn.xiaochuankeji.zuiyouLite.ui.slide.ActivitySlideDetail',
       rules: [
         {

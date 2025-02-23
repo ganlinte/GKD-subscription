@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '青少年模式',
       desc: '点击：知道了',
       activityIds: 'cn.missevan.activity.MainActivity',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[id="cn.missevan:id/iKnowTextView"][text="我知道了"]',

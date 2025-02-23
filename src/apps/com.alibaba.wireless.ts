@@ -21,7 +21,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-首页-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.alibaba.wireless.launch.home.V5HomeActivity',
       rules: 'WebView >n View > Image[text*="FXa-124-124"]',
       snapshotUrls: [

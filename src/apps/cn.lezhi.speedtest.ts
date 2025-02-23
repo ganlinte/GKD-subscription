@@ -10,7 +10,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       matchTime: 10000,
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           name: '字节SDK',

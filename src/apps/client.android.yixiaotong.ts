@@ -65,7 +65,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '局部广告-底部卡片广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',

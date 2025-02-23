@@ -37,7 +37,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-首页-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'cn.wps.moffice.main.AfterLoginActivity',
         'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
@@ -110,7 +110,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '局部广告-首页-底部广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
       rules: '[id="cn.wps.moffice_eng:id/home_banner_ad_spread_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13804525',

@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '功能类-自动安装应用',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,

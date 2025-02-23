@@ -14,7 +14,7 @@ export default defineGkdApp({
           name: '自动签到',
           matches: ['[id="com.alicloud.databox:id/tvTaskAction"][text="领取"]'],
           snapshotUrls: 'https://i.gkd.li/import/12929318',
-          quickFind: true,
+          fastQuery: true,
         },
         {
           key: 1,
@@ -22,7 +22,7 @@ export default defineGkdApp({
           name: '在签到后，关闭弹窗',
           matches: ['[id="com.alicloud.databox:id/ivClose"]'],
           snapshotUrls: 'https://i.gkd.li/import/13038304',
-          quickFind: true,
+          fastQuery: true,
         },
       ],
     },
@@ -50,7 +50,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.alicloud.databox.MainActivity',
       rules: [
         {

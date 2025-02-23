@@ -7,10 +7,10 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-购买会员弹窗',
+      fastQuery: true,
       activityIds: 'cn.chuci.and.wkfenshen.ActMain',
       rules: [
         {
-          quickFind: true,
           matches: [
             '[id="cn.chuci.and.wkfenshen:id/dialog_local_buy_btn"]',
             '[id="cn.chuci.and.wkfenshen:id/action_close"]',

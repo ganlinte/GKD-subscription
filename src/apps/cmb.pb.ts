@@ -15,7 +15,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '权限提示-定位提示-请求定位权限弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'cmb.pb.app.h5container.webviewcontainer.PBWebContainerActivity',
         'cmb.pb.app.search.PBSearchWebActivity',

@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-信息流广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'android.zhibo8.ui.contollers.main.MainActivity',
       rules: [
         {
