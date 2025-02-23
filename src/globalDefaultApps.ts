@@ -76,6 +76,19 @@ export const blackListAppIDs: string[] = [
   'com.alicloud.databox', // 阿里云盘 开屏广告在 https://i.gkd.li/i/15144565 误触导致自动签到规则执行中断
   'cn.gov.pbc.dcep', //数字人民币
   'io.virtualapp.sandvxposed64', //伏羲 X64
+  'me.piebridge.brevent', //黑域
+  'web1n.stopapp', //小黑屋
+  'com.huawei.ohos.inputmethod', //小艺输入法
+  'com.mihotel.activatebrevent', //用Shizuku激活
+  'com.azure.authenticator', //Authenticator
+  'com.deepseek.chat', //DeepSeek
+  'com.xjs.ehviewer', //EhViewer
+  'com.follow.clash', //FlClash
+  'com.jiaohua_browser', //JMComic2
+  'org.lsposed.lspatch', //LSPatch
+  'jp.pxv.android', //pixiv
+  'com.suda.yzune.wakeupschedule', //WakeUp课程表
+  'bin.mt.plus', //MT管理器
 
   'com.canghai.haoka',
   'com.xy.td',
@@ -85,7 +98,6 @@ export const blackListAppIDs: string[] = [
   'xzr.konabess',
   'org.lsposed.manager',
   'com.microsoft.office.officehub',
-  'bin.mt.plus',
   'tw.nekomimi.nekogram',
   'io.github.qauxv',
   'com.rezvorck.tiktokplugin',
