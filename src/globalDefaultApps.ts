@@ -75,6 +75,7 @@ export const blackListAppIDs: string[] = [
   'com.alibaba.aliyun', // 阿里云
   'com.alicloud.databox', // 阿里云盘 开屏广告在 https://i.gkd.li/i/15144565 误触导致自动签到规则执行中断
   'cn.gov.pbc.dcep', //数字人民币
+  'io.virtualapp.sandvxposed64', //伏羲 X64
 
   'com.canghai.haoka',
   'com.xy.td',
