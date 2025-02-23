@@ -24,5 +24,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告-收获更多奖励',
+      desc: '【跳过】',
+      fastQuery: true,
+      activityIds: '.home.RewardVideoAdActivity',
+      rules: [
+        {
+          matches: '[id="com.example.youxyouy:id/iv_replay"][text="跳过"]',
+          snapshotUrls: 'https://i.gkd.li/i/18878101',
+        },
+      ],
+    },
   ],
 });
