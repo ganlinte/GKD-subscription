@@ -265,11 +265,11 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
       key: 7,
       name: '功能类-自动选中发送原图',
-      desc: '图片和视频选择器-自动选中底部中间的发送原图',
-      quickFind: true,
+      desc: '(微信8.0.56有bug无法正确识别)图片和视频选择器-自动选中底部中间的发送原图',
+      fastQuery: true,
+      actionMaximum: 1,
       activityIds: [
         'com.tencent.mm.plugin.gallery.ui.AlbumPreviewUI',
         'com.tencent.mm.plugin.gallery.ui.ImagePreviewUI',
