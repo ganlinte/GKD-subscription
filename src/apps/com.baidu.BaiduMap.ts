@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-地图上方黄页横幅',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.baidu.baidumaps.MapsActivity',
         'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
@@ -23,7 +23,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-打车界面-右侧悬浮球',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: 'RelativeLayout[id="com.baidu.BaiduMap:id/rl_close_content"]',
       snapshotUrls: 'https://i.gkd.li/import/12642307',
@@ -32,7 +32,7 @@ export default defineGkdApp({
       enable: false,
       key: 3,
       name: '全屏广告-美食大礼包弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: '[text="美食大礼包"] +(6) TextView[id=null][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/12642310',
@@ -41,7 +41,7 @@ export default defineGkdApp({
       enable: false,
       key: 4,
       name: '全屏广告-酒店提前订弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: '[id="lottie_box"] + TextView[id=null][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/12642319',
@@ -50,7 +50,7 @@ export default defineGkdApp({
       enable: false,
       key: 5,
       name: '权限提示-请求定位弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.baidu.mapframework.widget.BMBaseDialog',
         'com.baidu.baidumaps.MapsActivity',
@@ -77,7 +77,7 @@ export default defineGkdApp({
       enable: false,
       key: 6,
       name: '全屏广告-打车界面-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.baidu.baidumaps.MapsActivity',
         'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
@@ -93,7 +93,7 @@ export default defineGkdApp({
       enable: false,
       key: 7,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: 'ImageView[id="com.baidu.BaiduMap:id/cancel_update"]',
       snapshotUrls: 'https://i.gkd.li/import/12909385',
@@ -102,7 +102,7 @@ export default defineGkdApp({
       enable: false,
       key: 8,
       name: '权限提示-打开通知权限',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules:
         '[text="打开通知权限"] <n LinearLayout + ImageView[id="com.baidu.BaiduMap:id/push_close"]',
@@ -113,7 +113,7 @@ export default defineGkdApp({
       key: 9,
       name: '全屏广告-通勤卡-添加至桌面',
       desc: '点击取消',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       rules: [
         {

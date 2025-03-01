@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       enable: false,
       activityIds: ['com.bw.zsch.MainActivityTab'],
       rules: '[id="com.bw30.zsch:id/tv_cancel"]',

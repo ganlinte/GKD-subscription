@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.baseus.intelligent.view.home.MainActivity',
           matches: '@[text="取消"] + [text="前往设置"]',
           snapshotUrls: 'https://i.gkd.li/import/13827653',
@@ -19,7 +19,7 @@ export default defineGkdApp({
         {
           preKeys: 0,
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.baseus.intelligent.view.home.MainActivity',
           matches: '@[text="取消"] + [text="授权"]',
           snapshotUrls: 'https://i.gkd.li/import/13827986',

@@ -26,7 +26,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="com.byfen.market:id/idIvClose"]',
       snapshotUrls: 'https://i.gkd.li/import/13801613',
     },
