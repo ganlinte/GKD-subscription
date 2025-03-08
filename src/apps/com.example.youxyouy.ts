@@ -34,7 +34,8 @@ export default defineGkdApp({
       fastQuery: true,
       rules: [
         {
-          activityIds: 'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           anyMatches: [
             'TextView[text="跳过"]',
             '@ImageView < LinearLayout < LinearLayout - FrameLayout > TextView[text="反馈"]',
