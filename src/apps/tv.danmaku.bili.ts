@@ -5,18 +5,28 @@ export default defineGkdApp({
   name: '哔哩哔哩',
   groups: [
     {
-      key: -1,
+      key: 0,
       name: '开屏广告',
       desc: '开屏广告,任意界面切回APP开屏广告',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="tv.danmaku.bili:id/count_down"][text^="跳"]',
-      snapshotUrls: 'https://i.gkd.li/import/12705270',
+      rules: [
+        {
+          anyMatches: [
+            'TextView[id="tv.danmaku.bili:id/count_down"][text^="跳过"]',
+            'TextView[id="tv.danmaku.bili:id/skip"][text^="跳过"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/import/12705270',
+            'https://i.gkd.li/i/19142386',
+          ],
+        }
+      ],
     },
     {
-      key: 0,
+      key: 1,
       name: '局部广告-评论区顶部公告横幅',
       fastQuery: true,
       excludeActivityIds: [
