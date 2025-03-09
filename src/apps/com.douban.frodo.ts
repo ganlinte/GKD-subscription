@@ -5,7 +5,6 @@ export default defineGkdApp({
   name: '豆瓣',
   groups: [
     {
-      enable: false,
       key: 1,
       name: '功能类-不分享/同步作品短评',
       desc: '书影音-作品-状态-不分享/同步短评(5s后可手动)',
@@ -84,10 +83,16 @@ export default defineGkdApp({
             'com.douban.frodo.group.activity.GroupDetailActivity',
             'com.douban.frodo.activity.SplashActivity',
           ],
-          matches: '[id="com.douban.frodo:id/ad_tag"][text="广告"]',
+          anyMatches: [
+            '[id="com.douban.frodo:id/ad_tag"][text="广告"]',
+            '@View[id=null] < FrameLayout -2 FrameLayout >2 TextView[text="广告"]',
+            '@Image[id=null] < View -3 View >2 TextView[text="广告"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/import/12723569',
             'https://i.gkd.li/import/13347455',
+            'https://i.gkd.li/i/19149685', //View[id=null]
+            'https://i.gkd.li/i/19149700', //Image[id=null]
           ],
         },
         {
