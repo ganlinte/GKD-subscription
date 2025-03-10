@@ -99,7 +99,8 @@ export default defineGkdApp({
           key: 3,
           name: '回复-信息流广告',
           activityIds: '.group.activity.GroupTopicActivity',
-          matches: '@ImageView[id="com.douban.frodo:id/menu_item"] <n ViewGroup[id="com.douban.frodo:id/ad_header_new"] < LinearLayout[id="com.douban.frodo:id/sdk_ad_item"]',
+          matches:
+            '@ImageView[id="com.douban.frodo:id/menu_item"] <n ViewGroup[id="com.douban.frodo:id/ad_header_new"] < LinearLayout[id="com.douban.frodo:id/sdk_ad_item"]',
           snapshotUrls: 'https://i.gkd.li/i/19160529',
         },
         {
