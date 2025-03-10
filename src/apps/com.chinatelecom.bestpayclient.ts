@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -20,12 +20,12 @@ export default defineGkdApp({
       name: '全屏广告-弹窗广告',
       actionMaximum: 1,
       resetMatch: 'activity',
+      fastQuery: true,
       rules: [
         {
           key: 0,
           name: '权益页',
           activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
-          quickFind: true,
           matches:
             'Image < @View[clickable=true][index=1] <<n Dialog <<n [id="com.chinatelecom.bestpayclient:id/best_h5_container"]',
           snapshotUrls: 'https://i.gkd.li/import/13402692',
@@ -34,7 +34,6 @@ export default defineGkdApp({
           key: 1,
           name: '首页1',
           activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
-          quickFind: true,
           matches:
             '[id="com.chinatelecom.bestpayclient:id/iv_dialog_close_one"]',
           snapshotUrls: 'https://i.gkd.li/import/13455790',
@@ -43,7 +42,6 @@ export default defineGkdApp({
           key: 2,
           name: '首页2',
           activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
-          quickFind: true,
           matches:
             '@Image[clickable=true][text!=null] < View[childCount=2] <<n FrameLayout[id="com.chinatelecom.bestpayclient:id/h5_pc_container"]',
           snapshotUrls: 'https://i.gkd.li/import/13626324',
@@ -52,7 +50,6 @@ export default defineGkdApp({
           key: 3,
           name: '借贷页',
           activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
-          quickFind: true,
           matches:
             '@View[clickable=true][text=""] <<n [id="com.chinatelecom.bestpayclient:id/best_h5_container"]',
           snapshotUrls: 'https://i.gkd.li/import/13455929',

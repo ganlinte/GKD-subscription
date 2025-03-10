@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-应用内广告弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       rules: [
@@ -20,7 +20,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '权限提示-请求定位权限弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 0,
       name: '开屏广告',
       activityIds: ['com.citiccard.mobilebankapp.WelcomeActivity'],
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[id="com.citiccard.mobilebank:id/btn_skip"]',
@@ -26,7 +26,7 @@ export default defineGkdApp({
       activityIds: [
         'com.citiccard.mobilebank.card.activity.BillDetailHomeActivity',
       ],
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[id="com.citiccard.mobilebank:id/iv_bill_home_cancel"]',
@@ -40,7 +40,7 @@ export default defineGkdApp({
       activityIds: [
         'com.citiccard.mobilebank.card.activity.BillDetailHomeActivity',
       ],
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches:

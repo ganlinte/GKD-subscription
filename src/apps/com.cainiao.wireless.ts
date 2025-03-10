@@ -12,7 +12,7 @@ export default defineGkdApp({
           key: 0,
           activityIds:
             'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.cainiao.wireless:id/draw_dialog_iv_close"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12914371',
@@ -42,7 +42,7 @@ export default defineGkdApp({
       key: 4,
       name: '更新提示',
       enable: false,
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
       ],
@@ -54,7 +54,7 @@ export default defineGkdApp({
       name: '权限提示-开启消息弹窗',
       desc: '自动点击关闭。',
       enable: false,
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
       ],
@@ -72,7 +72,7 @@ export default defineGkdApp({
       key: 7,
       name: '全屏广告-今日手气红包',
       desc: '点击右上角X',
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
       rules: '[vid="dialog_full_image_close"]',

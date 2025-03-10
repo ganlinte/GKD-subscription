@@ -7,8 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      quickFind: true,
-
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -27,7 +26,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-首页弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -42,7 +41,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '局部广告-右侧悬浮广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 2, // 目前只有2个界面会分别弹悬浮窗
       resetMatch: 'app',
@@ -84,7 +83,7 @@ export default defineGkdApp({
       key: 4,
       name: '权限提示-消息页面-通知开关',
       desc: '点击x按钮，不开启系统通知',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: ['com.cmbchina.ccd.pluto.cmbActivity.messagebox'],

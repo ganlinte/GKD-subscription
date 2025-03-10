@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '开屏广告',
       desc: '点击X',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       matchTime: 10000,
       resetMatch: 'app',

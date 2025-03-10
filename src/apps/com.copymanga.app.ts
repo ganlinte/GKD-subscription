@@ -7,7 +7,6 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-
       activityIds: [
         'com.copymanga.app.MainActivity',
         'com.reaper.flutter.reaper_flutter_plugin.activity.ReaperSplashActivity',
@@ -134,7 +133,7 @@ export default defineGkdApp({
           key: 1,
           name: '快手广告-2',
           activityIds: 'com.copymanga.app.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.copymanga.app:id/close_m_image_left_text_right_no_compliance"]',
           snapshotUrls: 'https://i.gkd.li/import/13761154',

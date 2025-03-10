@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[text^="跳过"][text.length<10]',
@@ -28,7 +28,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.androlua.LuaActivity',
       rules: [
         {
@@ -53,7 +53,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      quickFind: true,
+      fastQuery: true,
       name: '全屏广告-首页推广',
       desc: '点击我已知晓',
       rules: [
@@ -67,7 +67,7 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      quickFind: true,
+      fastQuery: true,
       name: '全屏广告-公告',
       desc: '点击不再提示',
       rules: [
@@ -80,7 +80,7 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      quickFind: true,
+      fastQuery: true,
       name: '全屏广告-首页广告弹窗',
       desc: '点击X',
       rules: [

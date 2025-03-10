@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '更新提示',
       activityIds: 'com.cf.dubaji.module.main.MainActivity',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,

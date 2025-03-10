@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '权限提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       rules: [
         {
@@ -19,7 +19,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '权限提示-通知提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       activityIds: 'com.zhangyue.iReader.bookshelf.ui.ActivityBookShelf',

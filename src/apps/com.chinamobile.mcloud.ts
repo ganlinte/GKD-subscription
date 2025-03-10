@@ -20,7 +20,7 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.chinamobile.mcloud.client.ui.MenuActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.chinamobile.mcloud:id/rl_container"] + [id="com.chinamobile.mcloud:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/import/13627826',
@@ -40,7 +40,7 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.chinamobile.mcloud.client.ui.MenuActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.chinamobile.mcloud:id/iv_logo"] + [id="com.chinamobile.mcloud:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/import/13627834',
@@ -51,7 +51,7 @@ export default defineGkdApp({
       key: 4,
       name: '全屏广告-请求开启自动备份弹窗',
       activityIds: 'com.chinamobile.mcloud.client.ui.MenuActivity',
-      quickFind: true,
+      fastQuery: true,
       rules:
         '[text="开启自动备份"] +n [id="com.chinamobile.mcloud:id/tv_skip"]',
       snapshotUrls: 'https://i.gkd.li/import/13627830',

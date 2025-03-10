@@ -9,7 +9,7 @@ export default defineGkdApp({
       key: 1,
       enable: true,
       matchTime: 10000,
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -24,7 +24,7 @@ export default defineGkdApp({
       key: 2,
       desc: '【首页-今日要闻-不再提示】和【首页-今日要闻-关闭】只开启一个即可',
       enable: false,
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.ruipeng.zipu.ui.main.uniauto.UniautoHomeActivity',
       rules: [
         {
@@ -38,7 +38,7 @@ export default defineGkdApp({
       key: 3,
       desc: '【首页-今日要闻-不再提示】和【首页-今日要闻-关闭】只开启一个即可',
       enable: false,
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.ruipeng.zipu.ui.main.uniauto.UniautoHomeActivity',
       rules: [
         {

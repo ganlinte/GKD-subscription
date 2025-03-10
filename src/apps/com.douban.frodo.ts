@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '功能类-不分享/同步作品短评',
       desc: '书影音-作品-状态-不分享/同步短评(5s后可手动)',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 5000,
       resetMatch: 'activity',
       activityIds: 'com.douban.frodo.subject.activity.RatingActivity',
@@ -32,6 +32,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-剧照广告',
+      fastQuery: true,
       activityIds: 'com.douban.frodo.baseproject.image.SociableImageActivity',
       rules: [
         {
@@ -51,7 +52,7 @@ export default defineGkdApp({
       key: 3,
       name: '局部广告-信息流广告',
       desc: '首页动态/推荐,小组讨论列表,帖子底部,点击广告关闭后出现关闭原因底部菜单-点击不感兴趣',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.douban.frodo.activity.SplashActivity',
         'com.douban.frodo.status.activity.StatusDetailActivity',
@@ -122,7 +123,7 @@ export default defineGkdApp({
       desc: '书影音-卡片广告-点击卡片右下角"广告"文字',
       // 豆瓣在屏幕之外渲染了大量节点, 在节点肉眼不可见但是无障碍可见的情况下, 仍然会触发大量点击
       // 发现增加一个较高的 cd 值可以避免后续广告节点出现, 从而不会触发点击
-      quickFind: true,
+      fastQuery: true,
       snapshotUrls: 'https://i.gkd.li/import/12548160',
       activityIds: 'com.douban.frodo.activity.SplashActivity',
       rules: [
@@ -145,7 +146,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '全屏广告-关闭评分反馈弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.douban.frodo.activity.SplashActivity',
       rules: {
         matches: '[text="下次再说"][id="com.douban.frodo:id/neutral"]',
@@ -246,7 +247,7 @@ export default defineGkdApp({
     {
       key: 11, //与key12完全重复
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

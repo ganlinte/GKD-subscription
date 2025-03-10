@@ -18,7 +18,7 @@ export default defineGkdApp({
       ],
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           key: 0,
           matches:
             '[id$="tt_splash_skip_btn"] <<n [id="com.coolapk.market:id/ad_container"]',
@@ -29,8 +29,8 @@ export default defineGkdApp({
           ],
         },
         {
-          quickFind: true,
           key: 1,
+          fastQuery: true,
           matches: '[text^="跳过"][text.length<=4]',
           excludeMatches: '[id="com.coolapk.market:id/item_view"]',
           snapshotUrls: [
@@ -43,7 +43,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           matches:
             '@View[clickable=true] <(2,3) FrameLayout <2 FrameLayout <<n FrameLayout[id="com.coolapk.market:id/ad_container"]',
           snapshotUrls: [
@@ -57,7 +57,7 @@ export default defineGkdApp({
       key: 0,
       name: '局部广告-卡片广告',
       desc: '点击卡片右上角按钮->免广告-点击不感兴趣->选择关闭原因-点击不感兴趣',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.coolapk.market.view.main.MainActivity', // 缺少快照
         'com.coolapk.market.view.base.SimpleAlphaActivity', // 缺少快照
@@ -108,7 +108,7 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      quickFind: true,
+      fastQuery: true,
       name: '更新提示',
       activityIds: 'com.coolapk.market.view.main.MainActivity',
       snapshotUrls: 'https://i.gkd.li/import/12503762',
@@ -116,7 +116,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      quickFind: true,
+      fastQuery: true,
       name: '权限提示-关闭推送通知',
       activityIds: 'com.coolapk.market.view.main.MainActivity',
       rules: '[text="去开启"] - [text="以后再说"]',
