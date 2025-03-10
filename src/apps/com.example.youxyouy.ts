@@ -39,10 +39,14 @@ export default defineGkdApp({
           anyMatches: [
             'TextView[text="跳过"]',
             '@ImageView < LinearLayout < LinearLayout - FrameLayout > TextView[text="反馈"]',
+            '@Image[text!=null] < View < View - View > TextView[text="任意滑动领取奖励"]',
+            'TextView[text="继续播放视频"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/19117630',
             'https://i.gkd.li/i/19117646',
+            'https://i.gkd.li/i/19160331',
+            'https://i.gkd.li/i/19160329',
           ],
         },
         {
