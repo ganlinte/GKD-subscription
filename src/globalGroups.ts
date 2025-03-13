@@ -19,9 +19,7 @@ export default defineGkdGlobalGroups([
     priorityTime: 10000,
     rules: [
       {
-        anyMatches: [
-          '[text*="跳过"][text.length<10][visibleToUser=true]',
-        ],
+        anyMatches: ['[text*="跳过"][text.length<10][visibleToUser=true]'],
       },
     ],
     apps: [...appList.openAdBlackListAppIDs]
