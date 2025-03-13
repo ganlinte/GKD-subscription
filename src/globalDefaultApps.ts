@@ -55,6 +55,7 @@ export const blackListAppIDs: string[] = [
   'com.rosan.installer.x', // installerX
   'com.salt.music', // Salt Player
   'com.samsung.agc.gcam84', // 相机
+  'com.ss.android.ugc.aweme', //抖音
   'com.suda.yzune.wakeupschedule', //WakeUp课程表
   'com.tencent.mm', // 微信
   'com.tencent.wetype', // 微信输入法
