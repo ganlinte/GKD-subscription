@@ -61,9 +61,10 @@ export default defineGkdApp({
       activityIds: '.module.main.MainActivity',
       rules: [
         {
-          matches: 'Button[id="com.hihonor.appmarket:id/app_recommendation_cancel_btn"][text="取消"]',
+          matches:
+            'Button[id="com.hihonor.appmarket:id/app_recommendation_cancel_btn"][text="取消"]',
           snapshotUrls: 'https://i.gkd.li/i/19222443',
-        }
+        },
       ],
     },
     {
@@ -77,9 +78,10 @@ export default defineGkdApp({
       activityIds: '.module.main.MainActivity',
       rules: [
         {
-          matches: 'Button[id="com.hihonor.appmarket:id/app_cancel_btn"][text="我再想想"]',
+          matches:
+            'Button[id="com.hihonor.appmarket:id/app_cancel_btn"][text="我再想想"]',
           snapshotUrls: 'https://i.gkd.li/i/19222473',
-        }
+        },
       ],
     },
     {
@@ -93,9 +95,10 @@ export default defineGkdApp({
       activityIds: '.module.main.MainActivity',
       rules: [
         {
-          matches: 'Button[id="android:id/button2"][text="取消"] + Button[id="android:id/button1"][text="同意"]',
+          matches:
+            'Button[id="android:id/button2"][text="取消"] + Button[id="android:id/button1"][text="同意"]',
           snapshotUrls: 'https://i.gkd.li/i/19222508',
-        }
+        },
       ],
     },
     {
@@ -109,9 +112,10 @@ export default defineGkdApp({
       activityIds: '.module.main.MainActivity',
       rules: [
         {
-          matches: '@Button[id="android:id/button2"][text="取消"] + Button[id="android:id/button1"][text="立即开启"]',
+          matches:
+            '@Button[id="android:id/button2"][text="取消"] + Button[id="android:id/button1"][text="立即开启"]',
           snapshotUrls: 'https://i.gkd.li/i/19222532',
-        }
+        },
       ],
     },
   ],
