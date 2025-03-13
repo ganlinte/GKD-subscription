@@ -5,6 +5,20 @@ export default defineGkdApp({
   name: '菜鸟',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '@View + TextView[index=parent.childCount.minus(1)] <n FrameLayout < FrameLayout < FrameLayout[id="com.cainiao.wireless:id/fl_third_splash_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/19222366',
+        }
+      ],
+    },
+    {
       key: 1,
       name: '全屏广告-弹窗广告',
       rules: [
