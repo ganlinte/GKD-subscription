@@ -85,7 +85,7 @@ export default defineGkdApp({
           ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/import/12707070', // 由于 activityId 切换延迟导致规则仍然运行, 使用 FrameLayout 避免误触
-          ]
+          ],
         },
         {
           preKeys: 0,
