@@ -61,7 +61,6 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
       key: 4,
       name: '局部广告-视频底部与评论区中间卡片式广告',
       desc: '需点击二次弹窗 屏蔽原因',
@@ -75,24 +74,28 @@ export default defineGkdApp({
         {
           key: 0,
           name: '点击广告卡片右侧菜单图标',
-          matches:
-            'FrameLayout[id="tv.danmaku.bili:id/ad_tint_frame"] >n [id^="tv.danmaku.bili:id/more"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12642260', // n = 2
-            'https://i.gkd.li/import/12705266', // n = 3
-            'https://i.gkd.li/import/12776568', // id="tv.danmaku.bili:id/more_layout"
-            'https://i.gkd.li/import/12707070', // 由于 activityId 切换延迟导致规则仍然运行, 使用 FrameLayout 避免误触
+          anyMatches: [
+            '@ImageView < FrameLayout[id="tv.danmaku.bili:id/more" || id="tv.danmaku.bili:id/more_layout"] <n * < FrameLayout[id="tv.danmaku.bili:id/ad_tint_frame"]',
+            '@ImageView < FrameLayout[id="tv.danmaku.bili:id/more"] <n RelativeLayout < FrameLayout < FrameLayout[id="tv.danmaku.bili:id/ad_tint_frame"]',
           ],
+          snapshotUrls: [
+            'https://i.gkd.li/import/12642260', // id="tv.danmaku.bili:id/more"
+            'https://i.gkd.li/import/12705266', // id="tv.danmaku.bili:id/more"
+            'https://i.gkd.li/import/12776568', // id="tv.danmaku.bili:id/more_layout"
+          ],
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/import/12707070', // 由于 activityId 切换延迟导致规则仍然运行, 使用 FrameLayout 避免误触
+          ]
         },
         {
           preKeys: 0,
           key: 1,
           name: '点击屏蔽广告',
           matches:
-            '[id="tv.danmaku.bili:id/dislike_reasons"] @RelativeLayout > [text*="不感兴趣"]',
+            '@TextView[text="不感兴趣"||text="与视频内容不相关"] < RelativeLayout < LinearLayout < LinearLayout[id="tv.danmaku.bili:id/dislike_reasons"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12642261', // 屏蔽广告菜单弹窗
-            'https://i.gkd.li/import/13495649',
+            'https://i.gkd.li/import/12642261', //[text="与视频内容不相关"]
+            'https://i.gkd.li/import/13495649', //[text="不感兴趣"]
           ],
         },
       ],
