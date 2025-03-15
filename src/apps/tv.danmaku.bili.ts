@@ -115,7 +115,7 @@ export default defineGkdApp({
             'TextView[id="tv.danmaku.bili:id/common_dialog_nagetive_btn"][text="暂不开启"]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/19260138',
-        }
+        },
       ],
     },
     {
