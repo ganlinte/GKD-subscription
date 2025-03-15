@@ -101,6 +101,24 @@ export default defineGkdApp({
       ],
     },
     {
+      key: 5,
+      name: '其他-悬浮窗功能',
+      desc: '暂不开启',
+      fastQuery: true,
+      resetMatch: 'app',
+      actionMaximum: 1,
+      activityIds: 'com.bilibili.video.story.StoryVideoActivity',
+      rules: [
+        {
+          matches: [
+            'TextView[id="tv.danmaku.bili:id/common_dialog_title"][text^="开启悬浮窗功能"]',
+            'TextView[id="tv.danmaku.bili:id/common_dialog_nagetive_btn"][text="暂不开启"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/19260138',
+        }
+      ],
+    },
+    {
       key: 6,
       name: '更新提示',
       fastQuery: true,
