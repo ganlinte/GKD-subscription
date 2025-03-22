@@ -109,7 +109,8 @@ export default defineGkdApp({
           key: 4,
           name: '搜索-信息流广告',
           activityIds: '.search.activity.NewSearchActivity',
-          matches: '@ImageView[id="com.douban.frodo:id/menu_item"] <n ViewGroup < LinearLayout[id="com.douban.frodo:id/sdk_ad_item"]',
+          matches:
+            '@ImageView[id="com.douban.frodo:id/menu_item"] <n ViewGroup < LinearLayout[id="com.douban.frodo:id/sdk_ad_item"]',
           snapshotUrls: 'https://i.gkd.li/i/19402518',
         },
         {

@@ -251,8 +251,8 @@ export default defineGkdApp({
             'TextView[id="tv.danmaku.bili:id/close"][text="暂不开启"]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/19402549',
-        }
+        },
       ],
-    }
+    },
   ],
 });
