@@ -107,14 +107,20 @@ export default defineGkdApp({
       fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
-      activityIds: 'com.bilibili.video.story.StoryVideoActivity',
+      activityIds: [
+        'com.bilibili.video.story.StoryVideoActivity',
+        'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
+      ],
       rules: [
         {
           matches: [
             'TextView[id="tv.danmaku.bili:id/common_dialog_title"][text^="开启悬浮窗功能"]',
             'TextView[id="tv.danmaku.bili:id/common_dialog_nagetive_btn"][text="暂不开启"]',
           ],
-          snapshotUrls: 'https://i.gkd.li/i/19260138',
+          snapshotUrls: [
+            'https://i.gkd.li/i/19260138',
+            'https://i.gkd.li/i/19402551',
+          ],
         },
       ],
     },
@@ -231,5 +237,22 @@ export default defineGkdApp({
         '[text="开启个性化内容推荐"] +3 [id="tv.danmaku.bili:id/close_button"]',
       snapshotUrls: 'https://i.gkd.li/import/13448905',
     },
+    {
+      key: 12,
+      name: '通知提示-订阅感兴趣的通知',
+      fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'kntr.common.compose.launcher.ComposeContainerActivity',
+          matches: [
+            'TextView[id="tv.danmaku.bili:id/title"][text="订阅感兴趣的通知"]',
+            'TextView[id="tv.danmaku.bili:id/close"][text="暂不开启"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/19402549',
+        }
+      ],
+    }
   ],
 });
