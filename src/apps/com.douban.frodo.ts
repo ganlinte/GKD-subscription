@@ -60,6 +60,7 @@ export default defineGkdApp({
         'com.douban.frodo.subject.activity.ForumTopicActivity',
         'com.douban.frodo.group.activity.GroupDetailActivity',
         'com.douban.frodo.group.activity.GroupTopicActivity',
+        '.search.activity.NewSearchActivity',
       ],
       rules: [
         {
@@ -105,13 +106,21 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/19160529',
         },
         {
+          key: 4,
+          name: '搜索-信息流广告',
+          activityIds: '.search.activity.NewSearchActivity',
+          matches: '@ImageView[id="com.douban.frodo:id/menu_item"] <n ViewGroup < LinearLayout[id="com.douban.frodo:id/sdk_ad_item"]',
+          snapshotUrls: 'https://i.gkd.li/i/19402518',
+        },
+        {
           name: '点击不感兴趣',
-          preKeys: [1, 2, 3],
+          preKeys: [1, 2, 3, 4],
           matches:
             '@LinearLayout[clickable=true] > [id="com.douban.frodo:id/mainText"][text="不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12548016',
             'https://i.gkd.li/import/12723422',
+            'https://i.gkd.li/i/19402536',
           ],
         },
       ],
