@@ -46,9 +46,9 @@ https://cdn.jsdelivr.net/npm/@ganlinte/gkd-subscription@latest/dist/ganlin_gkd.j
 
 ## 说明
 
-当前版本: v44
+当前版本: v45
 
-当前订阅文件已适配 615 个 APP, 共有 1400 规则组
+当前订阅文件已适配 616 个 APP, 共有 1401 规则组
 
 查看 [适配 APP 列表](./dist/README.md)
 
@@ -68,4 +68,4 @@ https://cdn.jsdelivr.net/npm/@ganlinte/gkd-subscription@latest/dist/ganlin_gkd.j
 
 ### 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=ganlinte/GKD-subscription&_v=44)
+![img](https://contrib.rocks/image?repo=ganlinte/GKD-subscription&_v=45)
