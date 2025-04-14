@@ -57,7 +57,7 @@
     "eslint-define-config": "2.1.0",
     "eslint-plugin-unused-imports": "4.1.4",
     "json5": "2.2.3",
-    "lint-staged": "15.5.0",
+    "lint-staged": "15.5.1",
     "prettier": "3.5.3",
     "simple-git-hooks": "2.12.1",
     "esbuild": "0.25.2",
