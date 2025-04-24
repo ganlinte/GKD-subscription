@@ -5,6 +5,24 @@ export default defineGkdApp({
   name: '菠萝包轻小说',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      fastQuery: true,
+      activityIds: [
+        'com.sf.ui.launcher.LauncherActivity',
+        'com.sf.ui.ad.SfHotLauncherActivity',
+      ],
+      rules:[
+        {
+          matches: 'TextView[text^="跳过"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/19888120',
+            'https://i.gkd.li/i/19888054',
+          ],
+        }
+      ]
+    },
+    {
       key: 1,
       name: '局部广告-新春小说折扣季/VIP新书上架',
       desc: '点击 X',
