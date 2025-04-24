@@ -56,6 +56,8 @@ https://cdn.jsdelivr.net/npm/@ganlinte/gkd-subscription@latest/dist/ganlin_gkd.j
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
+[GKD官网](https://gkd.li/)
+
 快照 [网页审查工具](https://i.gkd.li/)
 
 ## 致谢
