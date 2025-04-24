@@ -12,15 +12,15 @@ export default defineGkdApp({
         'com.sf.ui.launcher.LauncherActivity',
         'com.sf.ui.ad.SfHotLauncherActivity',
       ],
-      rules:[
+      rules: [
         {
           matches: 'TextView[text^="跳过"]',
           snapshotUrls: [
             'https://i.gkd.li/i/19888120',
             'https://i.gkd.li/i/19888054',
           ],
-        }
-      ]
+        },
+      ],
     },
     {
       key: 1,
