@@ -35,6 +35,7 @@ export const blackListAppIDs: string[] = [
   'com.huawei.ohos.inputmethod', //小艺输入法
   'com.idaodan.clean.master', // 雪豹速清
   'com.jiaohua_browser', //JMComic2
+  'com.jiuyu.sptcc.cordova', //上海交通卡
   'com.ktls.automation', // 自动点击工具
   'com.ktls.fileinfo', // 存储空间清理
   'com.lalilu.lmusic', // LMusic
