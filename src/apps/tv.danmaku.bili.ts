@@ -91,7 +91,7 @@ export default defineGkdApp({
           preKeys: 0,
           key: 1,
           name: '点击屏蔽广告',
-          matchDelay: 100,
+          actionDelay: 100,
           matches:
             '@TextView[text="不感兴趣"||text="与视频内容不相关"] < RelativeLayout < LinearLayout < LinearLayout[id="tv.danmaku.bili:id/dislike_reasons"]',
           snapshotUrls: [
