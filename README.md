@@ -46,15 +46,17 @@ https://cdn.jsdelivr.net/npm/@ganlinte/gkd-subscription@latest/dist/ganlin_gkd.j
 
 ## 说明
 
-当前版本: v45
+当前版本: v46
 
-当前订阅文件已适配 616 个 APP, 共有 1401 规则组
+当前订阅文件已适配 616 个 APP, 共有 1402 规则组
 
 查看 [适配 APP 列表](./dist/README.md)
 
 查看 [第三方订阅规则汇总](https://github.com/Adpro-Team/GKD_THS_List)
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
+
+[GKD官网](https://gkd.li/)
 
 快照 [网页审查工具](https://i.gkd.li/)
 
@@ -68,4 +70,4 @@ https://cdn.jsdelivr.net/npm/@ganlinte/gkd-subscription@latest/dist/ganlin_gkd.j
 
 ### 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=ganlinte/GKD-subscription&_v=45)
+![img](https://contrib.rocks/image?repo=ganlinte/GKD-subscription&_v=46)
