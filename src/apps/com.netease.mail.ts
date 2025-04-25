@@ -7,36 +7,28 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      actionCdKey: 0,
-      actionMaximumKey: 0,
       rules: [
         {
-          key: 0,
-          fastQuery: true,
-          matches: '[text*="跳过"][text.length<=10]',
+          anyMatches: [
+            'TextView[text*="跳过"]',
+            'View <(2,3) FrameLayout <(1,3) FrameLayout < [vid="ad_placeholder"]',
+          ],
           excludeMatches: '[id="com.netease.mail:id/ad_skip"][clickable=false]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12893573',
-            'https://i.gkd.li/import/12923776',
-            'https://i.gkd.li/import/13195662',
-            'https://i.gkd.li/import/12818335',
-            'https://i.gkd.li/import/13206298', // 使用 excludeMatches 防止提前触发规则
-            'https://i.gkd.li/import/13207736', // TODO 一整块图片，无法跳过
+            'https://i.gkd.li/import/12893573', // 跳过
+            'https://i.gkd.li/import/12923776', // 跳过
+            'https://i.gkd.li/import/13195662', // 跳过
+            'https://i.gkd.li/import/12818335', // 跳过
+            'https://i.gkd.li/import/14046124',// View
+            'https://i.gkd.li/i/19905985', // View
           ],
-        },
-        {
-          key: 1,
-          matches: '[id$="tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/12999739',
-        },
-        {
-          key: 2,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
-          snapshotUrls: 'https://i.gkd.li/import/14046124',
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/import/13206298', // 使用 excludeMatches 防止提前触发规则
+          ]
         },
       ],
     },
