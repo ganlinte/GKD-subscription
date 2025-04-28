@@ -8,8 +8,8 @@
 
 本项目基于 nodejs + typescript
 
-- 安装 [nodejs](https://nodejs.org/) 或者 [volta](https://volta.sh/)
-- 安装 [pnpm](https://pnpm.io/zh/installation)
+- 安装 [nodejs](https://nodejs.org/) 和 [volta](https://volta.sh/)
+- 安装 pnpm `volta install pnpm@latest`
 - 建议安装 [Visual Studio Code](https://code.visualstudio.com/)
 - Fork 本项目, 然后 Clone 至本地, 切换到项目根目录，安装依赖 `pnpm install`
 
