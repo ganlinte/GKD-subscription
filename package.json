@@ -49,18 +49,17 @@
     "@gkd-kit/api": "0.7.1",
     "@gkd-kit/define": "0.0.1",
     "@gkd-kit/tools": "^0.6.0",
-    "@types/node": "22.15.2",
-    "@typescript-eslint/eslint-plugin": "7.0.0",
-    "@typescript-eslint/parser": "6.21.0",
-    "eslint": "^8.57.0",
+    "@types/node": "22.15.3",
+    "@typescript-eslint/eslint-plugin": "8.31.0",
+    "@typescript-eslint/parser": "8.31.0",
+    "esbuild": "0.25.3",
+    "eslint": "^9.25.1",
     "eslint-config-prettier": "10.1.2",
-    "eslint-define-config": "2.1.0",
     "eslint-plugin-unused-imports": "4.1.4",
     "json5": "2.2.3",
     "lint-staged": "15.5.1",
     "prettier": "3.5.3",
     "simple-git-hooks": "2.13.0",
-    "esbuild": "0.25.2",
     "tsx": "4.19.3",
     "typescript": "5.8.3"
   },
@@ -75,21 +74,15 @@
     "url": "git+https://github.com/ganlinte/gkd-subscription.git"
   },
   "volta": {
-    "node": "22.9.0",
-    "npm": "11.2.0"
+    "node": "23.11.0",
+    "npm": "11.3.0"
   },
-  "packageManager": "pnpm@9.0.6",
+  "packageManager": "pnpm@10.10.0",
   "engineStrict": true,
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "dependencies": {
     "picocolors": "^1.1.1"
-  },
-  "pnpm": {
-    "overrides": {
-      "esbuild@>=0.23.0": "0.25.0",
-      "tsx>esbuild": "0.25.0"
-    }
   }
 }
