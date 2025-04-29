@@ -161,6 +161,16 @@ export default defineGkdApp({
           matches: '@ImageView < [id="com.dragon.read:id/parent"]',
           snapshotUrls: 'https://i.gkd.li/i/17474890',
         },
+        {
+          name: '免广告权益',
+          matches: '@ImageView - TextView[text="免广告权益"]',
+          snapshotUrls: 'https://i.gkd.li/i/19937082',
+        },
+        {
+          name: '限时会员福利',
+          matches: '@ImageView + View + TextView[text="恭喜获得限时会员福利"]',
+          snapshotUrls: 'https://i.gkd.li/i/19937239',
+        },
       ],
     },
     {
