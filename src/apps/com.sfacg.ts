@@ -8,10 +8,8 @@ export default defineGkdApp({
       key: 0,
       name: '开屏广告',
       fastQuery: true,
-      activityIds: [
-        'com.sf.ui.launcher.LauncherActivity',
-        'com.sf.ui.ad.SfHotLauncherActivity',
-      ],
+      matchTime: 10000,
+      resetMatch: 'app',
       rules: [
         {
           matches: 'TextView[text^="跳过"]',
