@@ -12,10 +12,11 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          matches: 'TextView[text^="跳过"]',
+          matches: 'TextView[text*="跳过"]',
           snapshotUrls: [
             'https://i.gkd.li/i/19888120',
             'https://i.gkd.li/i/19888054',
+            'https://i.gkd.li/i/20114219',
           ],
         },
       ],
@@ -24,7 +25,7 @@ export default defineGkdApp({
       key: 1,
       name: '局部广告-新春小说折扣季/VIP新书上架',
       desc: '点击 X',
-      matchTime: 10000,
+      matchTime: 20000,
       fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
