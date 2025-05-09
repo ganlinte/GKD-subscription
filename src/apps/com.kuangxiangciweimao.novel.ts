@@ -103,9 +103,11 @@ export default defineGkdApp({
       fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
-      actionDelay: 200,
-      activityIds:
+      actionDelay: 100,
+      activityIds: [
         'com.kuangxiangciweimao.novel.activity.frame.MainFrameActivity',
+        '.activity.bookshelf.detail.BookDetailActivity',
+      ],
       rules: [
         {
           action: 'clickCenter',
@@ -115,7 +117,10 @@ export default defineGkdApp({
           ],
         },
       ],
-      snapshotUrls: 'https://i.gkd.li/import/15294427',
+      snapshotUrls: [
+        'https://i.gkd.li/import/15294427',
+        'https://i.gkd.li/i/20115698',
+      ],
     },
   ],
 });
