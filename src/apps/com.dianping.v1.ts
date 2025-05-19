@@ -39,7 +39,7 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.dianping.v1.NovaMainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.dianping.v1:id/operate_cross_icon"]',
           snapshotUrls: 'https://i.gkd.li/import/13538340',
         },

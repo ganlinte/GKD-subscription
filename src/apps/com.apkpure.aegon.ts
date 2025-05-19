@@ -45,7 +45,7 @@ export default defineGkdApp({
         'com.apkpure.aegon.cms.activity.CommonActivity',
         'com.apkpure.aegon.main.activity.AppMoreActivity',
       ],
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           name: '点击三点图标',

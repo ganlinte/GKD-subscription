@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: [
         'com.google.android.apps.photos.update.treatment.UpdateAppTreatmentPromoPageActivity',
       ],
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches:
@@ -22,7 +22,7 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      quickFind: true,
+      fastQuery: true,
       name: '全屏广告-优惠提示',
       desc: '点击X',
       rules: [

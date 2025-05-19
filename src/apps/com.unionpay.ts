@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['com.unionpay.base.UPDialog'],
       rules: [
         {
@@ -22,7 +22,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-支付完成界面广告卡片',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
       rules: [
         {
@@ -44,7 +44,7 @@ export default defineGkdApp({
       // matchTime: 10000, 部分广告不在10s内
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['com.unionpay.activity.UPActivityMain'],
       rules: [
         {
@@ -60,7 +60,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.unionpay.activity.UPActivityMain',
       rules: '[id="com.unionpay:id/view_locate_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13634882',
@@ -70,7 +70,7 @@ export default defineGkdApp({
       key: 11,
       name: '全屏广告-访问位置请求弹窗',
       desc: '自动点击【不允许】。默认关闭，请手动开启',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['com.unionpay.base.UPDialog'],
       rules: [
         {
@@ -85,7 +85,7 @@ export default defineGkdApp({
       key: 12,
       name: '全屏广告-开启消息通知弹窗',
       desc: '默认关闭，请手动开启',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['com.unionpay.base.UPDialog'],
       rules: [
         {
@@ -122,7 +122,7 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      quickFind: true,
+      fastQuery: true,
       name: '全屏广告-领取优惠弹窗',
       desc: '点击X',
       rules: [

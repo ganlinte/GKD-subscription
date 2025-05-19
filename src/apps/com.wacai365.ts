@@ -8,7 +8,7 @@ export default defineGkdApp({
       enable: false,
       key: 1,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       activityIds: [
         'com.wacai365.HomeActivity',
@@ -25,7 +25,7 @@ export default defineGkdApp({
       enable: false,
       key: 2,
       name: '全屏广告-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       activityIds: 'com.wacai365.HomeActivity',
       rules: '[id^="com.wacai365:id/promote_banner_close"]',
@@ -40,13 +40,13 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           matches: '@View[clickable=true] <2 * <2 * < [vid="flTTContainer"]',
           snapshotUrls: 'https://i.gkd.li/import/14021540',
         },
         {
           key: 3,
-          quickFind: true,
+          fastQuery: true,
           matches: '[text^="跳过"][text.length<=6]',
           snapshotUrls: 'https://i.gkd.li/import/13399124',
         },

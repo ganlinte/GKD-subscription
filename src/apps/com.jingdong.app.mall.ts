@@ -104,7 +104,7 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.jingdong.app.mall.MainFrameActivity',
           matches: 'RelativeLayout > ImageView[desc="关闭页面"]',
           excludeMatches: 'ImageView[desc="关闭页面"] - [text="优惠券"]',
@@ -132,7 +132,7 @@ export default defineGkdApp({
       key: 7,
       name: '全屏广告-首页弹窗-打开通知',
       desc: '自动点击正下方的【x】',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           activityIds: 'com.jingdong.app.mall.MainFrameActivity',
@@ -165,7 +165,7 @@ export default defineGkdApp({
       key: 12,
       name: '全屏广告-购物车界面-支付成功广告弹窗',
       desc: '自动点击正下方的【x】',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           activityIds: 'com.jd.lib.cart.ShoppingCartNewActivity',

@@ -38,7 +38,7 @@ export default defineGkdApp({
           ],
         },
         {
-          quickFind: true,
+          fastQuery: true,
           matches: '[text="授权提醒"] +3 [text="拒绝"]',
           snapshotUrls: ['https://i.gkd.li/import/13775652'],
         },

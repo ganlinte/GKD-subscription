@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -17,7 +17,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-赏好评弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.baidu.homework.activity.init.InitActivity',
       rules: 'TextView[id="com.zuoyebang.knowledge:id/btn_cancle"]',
       snapshotUrls: 'https://i.gkd.li/import/13043228',

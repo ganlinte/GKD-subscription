@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '权限提示-開啟通知提示',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.mem.life.ui.launch.LaunchActivity',
       rules: '[id="com.mem.MacaoLife:id/cancel"]',
       snapshotUrls: 'https://i.gkd.li/import/13350665',
@@ -15,7 +15,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-浮窗廣告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.mem.life.ui.home.HomeActivity',
       rules: '[id="com.mem.MacaoLife:id/close"]',
       snapshotUrls: 'https://i.gkd.li/import/13350685',

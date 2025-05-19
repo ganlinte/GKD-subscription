@@ -170,7 +170,7 @@ export default defineGkdApp({
       key: 14,
       name: '全屏广告-自动观看广告视频',
       desc: '自动观看广告并等待30s后关闭',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -191,7 +191,7 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      quickFind: true,
+      fastQuery: true,
       name: '局部广告-局部广告-底部热榜弹窗',
       desc: '点击X',
       rules: [

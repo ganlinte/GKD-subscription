@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '功能类-动画疯年龄限制',
       desc: '点击同意',
       activityIds: 'tw.com.gamer.android.animad.VideoActivity',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches:

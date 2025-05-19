@@ -12,7 +12,7 @@ export default defineGkdApp({
         'youqu.android.todesk.activity.WelcomeActivity',
         'youqu.android.todesk.activity.MainActivity', //新增activityIds
       ],
-      quickFind: true,
+      fastQuery: true,
       rules:
         '[id="youqu.android.todesk:id/sivDeviceBanner"] + [id="youqu.android.todesk:id/llClose"]',
       snapshotUrls: [

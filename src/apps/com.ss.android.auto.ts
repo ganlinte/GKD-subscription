@@ -9,7 +9,7 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-首页推荐卡片广告',
       desc: '需二次点击关闭原因',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.ss.android.auto.activity.SplashActivity',
       rules: [
         {
@@ -38,7 +38,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: [
@@ -52,7 +52,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '局部广告-右下角悬浮窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',
@@ -72,7 +72,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '局部广告-文章底部卡片式广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.ss.android.article.base.feature.detail2.view.NewDetailActivity',
       rules:
@@ -83,7 +83,7 @@ export default defineGkdApp({
       key: 5,
       name: '局部广告-评论区信息流广告',
       desc: '像正常内容的广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.ss.android.article.base.feature.detail2.view.NewDetailActivity',
         'com.ss.android.auto.ugc.video.activity.UgcLongPostActivity',
@@ -100,7 +100,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '权限提示-请求推送通知弹窗',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: [
@@ -113,7 +113,7 @@ export default defineGkdApp({
     {
       key: 7,
       name: '局部广告-选车页卡片广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.ss.android.auto.activity.ConcernDetailActivity',
       rules:
         'TextView[text.length=1][id=null][clickable=false] < @FrameLayout[clickable=true][id!=null] -2 [text="广告"]',

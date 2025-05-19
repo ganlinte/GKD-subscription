@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.yitong.mbank.psbc.module.app.view.customview.dialog.DialogUpdateApk',
         'com.yitong.mbank.psbc.module.home.view.activity.MainActivity',

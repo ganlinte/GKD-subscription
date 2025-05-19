@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 0,
       name: '局部广告-首页悬浮窗广告',
       activityIds: 'com.xiaomi.market.ui.FloatWebActivity',
-      quickFind: true,
+      fastQuery: true,
       rules: {
         matches: [
           '[id="com.xiaomi.market:id/webview_container"]',
@@ -20,7 +20,7 @@ export default defineGkdApp({
     {
       key: 9,
       name: '局部广告-应用升级界面-顶部广告横幅',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
       rules: '[id="com.xiaomi.market:id/iv_close_tip"]',
       snapshotUrls: 'https://i.gkd.li/import/13197334',
@@ -29,7 +29,7 @@ export default defineGkdApp({
       enable: false,
       key: 10,
       name: '全屏广告-忽略升级',
-      quickFind: true,
+      fastQuery: true,
       desc: '应用升级界面-自动点击忽略',
       exampleUrls:
         'https://github.com/gkd-kit/subscription/assets/45487685/a3a61df9-7757-428e-b4fe-a960e09a0bbe',
@@ -60,7 +60,7 @@ export default defineGkdApp({
       key: 11,
       name: '全屏广告-请求通知权限提示弹窗',
       desc: '自动点击关闭按钮',
-      quickFind: true,
+      fastQuery: true,
 
       activityIds: [
         'com.xiaomi.market.ui.UpdateListActivity',
@@ -88,7 +88,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '全屏广告-个性化推荐弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

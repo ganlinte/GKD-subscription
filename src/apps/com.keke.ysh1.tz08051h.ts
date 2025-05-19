@@ -15,7 +15,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '网址更新',
-          quickFind: true,
+          fastQuery: true,
           matches:
             'TextView[text="可可影视"] < LinearLayout >n @TextView[text*="知道了"]',
           snapshotUrls: 'https://i.gkd.li/import/13548412',

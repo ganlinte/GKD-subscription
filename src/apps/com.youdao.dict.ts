@@ -11,7 +11,7 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.youdao.dict.activity.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[text="广告"] - [vid="close"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12668574',
@@ -21,7 +21,7 @@ export default defineGkdApp({
         {
           key: 1,
           activityIds: 'com.youdao.dict.activity.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[vid="close_pop"][text="收起广告"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12668583',
@@ -41,7 +41,7 @@ export default defineGkdApp({
             'com.youdao.dict.activity.MainActivity',
             'com.youdao.dict.activity.DictSplashActivity',
           ],
-          quickFind: true,
+          fastQuery: true,
           matches: '@ImageView[id="com.youdao.dict:id/iv_close_bt"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12893419',
@@ -55,7 +55,7 @@ export default defineGkdApp({
             'com.youdao.dict.edu.main.MainPopDialog',
             'com.youdao.dict.activity.MainActivity',
           ],
-          quickFind: true,
+          fastQuery: true,
           matches: '@ImageView[id="com.youdao.dict:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/import/12893450',
         },
@@ -63,7 +63,7 @@ export default defineGkdApp({
           key: 2,
           name: '抽奖机会-弹窗广告',
           activityIds: 'com.youdao.dict.activity.DictSplashActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[vid="skip_bottom_view"]',
           snapshotUrls: 'https://i.gkd.li/import/13931202',
         },
@@ -74,14 +74,14 @@ export default defineGkdApp({
       name: '全屏广告-VIP-弹窗',
       activityIds: 'com.youdao.dict.vip.activity.RecallSevenDayVipActivity',
       rules: '@ImageView[id="com.youdao.dict:id/iv_close"]',
-      quickFind: true,
+      fastQuery: true,
       snapshotUrls: 'https://i.gkd.li/import/13263706',
     },
     {
       key: 5,
       name: '全屏广告-评价弹窗',
       activityIds: 'com.youdao.dict.activity.MainActivity',
-      quickFind: true,
+      fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
       matchDelay: 10000,
@@ -91,7 +91,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules:

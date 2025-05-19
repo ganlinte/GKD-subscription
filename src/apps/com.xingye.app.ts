@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '青少年模式',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="com.xingye.app:id/teenagerDialogConfirmTv"]',
       snapshotUrls: 'https://i.gkd.li/import/13766001',
     },

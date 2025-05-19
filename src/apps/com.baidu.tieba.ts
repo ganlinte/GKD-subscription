@@ -208,7 +208,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '评论区左侧悬浮广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.baidu.tieba.pb.pb.main.PbActivity',
           matches: 'LinearLayout[childCount=2] > @ImageView + [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/import/13296280',

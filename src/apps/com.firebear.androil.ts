@@ -12,7 +12,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       actionCdKey: 0,
       actionMaximumKey: 0,
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,

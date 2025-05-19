@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 1,
@@ -66,7 +66,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      quickFind: true,
+      fastQuery: true,
       name: '功能类-自动签到',
       matchTime: 10000,
       actionMaximum: 1,

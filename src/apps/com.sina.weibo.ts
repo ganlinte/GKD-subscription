@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 3,
       name: '全屏广告-兴趣领域推荐',
       desc: '出现在长久未登录的账户再次登录时',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.sina.weibo.account.interest.InterestActivity',
       rules:
         '[id="com.sina.weibo:id/rl_account_title_bar"] > [id="com.sina.weibo:id/tv_title_bar_skip"][text="跳过"]',
@@ -18,7 +18,7 @@ export default defineGkdApp({
       key: 4,
       name: '全屏广告-精选博主推荐',
       desc: '出现在长久未登录的账户再次登录时',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.sina.weibo.account.recommend.RecommendActivity',
       rules: [
         '[id="com.sina.weibo:id/tv_option"&&text="取消勾选"]',
@@ -33,7 +33,7 @@ export default defineGkdApp({
       key: 5,
       name: '局部广告-博文内容区与评论区中间卡片式广告',
       desc: '点击右上角x',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -70,7 +70,7 @@ export default defineGkdApp({
       key: 6,
       name: '局部广告-评论区博主内容推荐',
       desc: '评论区同一博主其他博文推荐',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -99,7 +99,7 @@ export default defineGkdApp({
     {
       key: 7,
       name: '局部广告-首页顶部话题分享窗口',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['com.sina.weibo.MainTabActivity'],
       rules:
         '[id="com.sina.weibo:id/tvGuide"] + [id="com.sina.weibo:id/v_close"] + [id="com.sina.weibo:id/iv_close"]',
@@ -112,7 +112,7 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.sina.weibo.business',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '@[id="com.sina.weibo:id/btn_close"] - FrameLayout > [id="com.sina.weibo:id/ad_tag"]',
           snapshotUrls: 'https://i.gkd.li/import/12750090',
@@ -127,7 +127,7 @@ export default defineGkdApp({
         {
           key: 2,
           activityIds: 'com.sina.weibo.page.ad.DiscoverAdDialog',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.sina.weibo:id/ad_portrait_layout"] + [id="com.sina.weibo:id/btn_close"]',
           snapshotUrls: 'https://i.gkd.li/import/12705974',
@@ -139,7 +139,7 @@ export default defineGkdApp({
       key: 9,
       name: '全屏广告-请求开启通知弹窗',
       desc: '自动点击暂不开启',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['com.sina.weibo.notifyguidev2.NotifyGuideV2Activity'],
       rules:
         '@[id="com.sina.weibo:id/bt_cancel"][text="暂不开启"] + [id="com.sina.weibo:id/bt_confirm"]',
@@ -150,7 +150,7 @@ export default defineGkdApp({
       key: 10,
       name: '全屏广告-请求开启通知提示信息',
       desc: '自动点击x按钮',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['com.sina.weibo.MainTabActivity'],
       rules:
         '[text^="打开通知"] < LinearLayout + ImageView[id="com.sina.weibo:id/right_icon"]',
@@ -161,7 +161,7 @@ export default defineGkdApp({
       key: 11,
       name: '局部广告-首页顶部签到卡片',
       desc: '自动点击x按钮',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['com.sina.weibo.MainTabActivity'],
       rules:
         '[id="com.sina.weibo:id/ll_check_in_container"] < FrameLayout - FrameLayout > TextView + [id="com.sina.weibo:id/v_close"]',
@@ -171,7 +171,7 @@ export default defineGkdApp({
       key: 13,
       name: '局部广告-悬浮广告',
       desc: '自动点击x按钮',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.sina.weibo.MainTabActivity',
       rules: [
         {
@@ -197,7 +197,7 @@ export default defineGkdApp({
     {
       key: 14,
       name: '全屏广告-请求定位权限弹窗',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -224,7 +224,7 @@ export default defineGkdApp({
       key: 15,
       name: '局部广告-评论区底部-账号推荐关注悬浮窗',
       desc: '点击【x】',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
       rules:
         '@[id="com.sina.weibo:id/close_layout"] - LinearLayout [id="com.sina.weibo:id/btnFollow"]',
@@ -234,7 +234,7 @@ export default defineGkdApp({
       key: 16,
       name: '局部广告-评论区底部-转发推荐悬浮窗',
       desc: '点击【x】',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
       rules:
         '[text*="一键转发"] < LinearLayout +2 [id="com.sina.weibo:id/tv_close"]',
@@ -242,7 +242,7 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      quickFind: true,
+      fastQuery: true,
       name: '分段广告-评论区信息流广告',
       desc: '点击X-点击不感兴趣',
       rules: [
@@ -265,7 +265,7 @@ export default defineGkdApp({
       key: 18,
       name: '全屏广告-APP评分弹窗',
       desc: '点击【x】',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.sina.weibo.MainTabActivity',
@@ -274,7 +274,7 @@ export default defineGkdApp({
     },
     {
       key: 19,
-      quickFind: true,
+      fastQuery: true,
       name: '功能类-自动点击查看原图',
       rules: [
         {

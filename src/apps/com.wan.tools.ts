@@ -10,7 +10,7 @@ export default defineGkdApp({
       name: '全屏广告-公告弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: 'LinearLayout[childCount=2] > @[text="取消"] + [text="确认"]',
       snapshotUrls: 'https://i.gkd.li/import/13392027',
     },

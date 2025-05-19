@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -85,7 +85,7 @@ export default defineGkdApp({
             'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
             'com.tencent.mobileqq.activity.SplashActivity',
           ],
-          quickFind: true,
+          fastQuery: true,
           matches: '@[clickable=true] > ImageView + [text="关闭此条广告"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12840889',
@@ -99,7 +99,7 @@ export default defineGkdApp({
             'com.tencent.mobileqq.activity.SplashActivity',
             'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
           ],
-          quickFind: true,
+          fastQuery: true,
           matches: '@[clickable=true] > * > ImageView + [text="隐藏此条动态"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13761147',
@@ -127,7 +127,7 @@ export default defineGkdApp({
       rules: [
         {
           name: '弹窗广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.tencent.mobileqq.activity.SplashActivity',
             'com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog',
@@ -198,7 +198,7 @@ export default defineGkdApp({
       key: 7,
       name: '功能类-扫一扫-登录确认',
       desc: '自动点击登录。包括 PC 登录确认、QQ 互联登录确认。',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 1,
@@ -331,7 +331,7 @@ export default defineGkdApp({
       enable: false,
       key: 15,
       name: '局部广告-好友动态-为你推荐',
-      quickFind: true,
+      fastQuery: true,
 
       activityIds: [
         'com.tencent.mobileqq.activity.SplashActivity',
@@ -378,7 +378,7 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.tencent.mobileqq:id/iyx"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13188722',
@@ -399,7 +399,7 @@ export default defineGkdApp({
       enable: false,
       key: 19,
       name: '全屏广告-内测邀请弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules: [
         {
@@ -413,7 +413,7 @@ export default defineGkdApp({
       enable: false,
       key: 20,
       name: '全屏广告-钱包-卡片广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules: [
         {

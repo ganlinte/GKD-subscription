@@ -19,7 +19,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-消息通知弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

@@ -8,7 +8,7 @@ export default defineGkdApp({
       enable: false,
       key: 1,
       name: '全屏广告-评分弹窗',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       activityIds:
         'com.fenbi.android.leo.imgsearch.sdk.activity.NewCheckCameraActivity',

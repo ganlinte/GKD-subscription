@@ -15,7 +15,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           name: '全局规则-1',
           matches: '[text*="跳过"][text.length<=10]',
           snapshotUrls: 'https://i.gkd.li/import/13987038',
@@ -41,7 +41,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       actionMaximum: 1,
       matchTime: 10000,
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: [

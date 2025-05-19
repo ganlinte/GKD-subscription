@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text$="青少年模式"] +n [text="我知道了"]',
@@ -16,7 +16,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@[desc="关闭"] - LinearLayout > [text="立即升级"]',
@@ -25,7 +25,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-通知弹窗',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'activity',
       rules:
@@ -35,7 +35,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '全屏广告-红包弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

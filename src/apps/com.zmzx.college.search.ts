@@ -8,7 +8,7 @@ export default defineGkdApp({
       enable: false,
       key: 1,
       name: '全屏广告-首页-推送通知',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -24,7 +24,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '腾讯广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.zmzx.college.search.activity.main.activity.MainActivity',
             'com.zmzx.college.search.activity.questionsearch.camera.activity.PicSearchResultActivity',
@@ -74,7 +74,7 @@ export default defineGkdApp({
         {
           key: 5,
           name: '字节广告-3',
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
           matches:
@@ -89,7 +89,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.zmzx.college.search.activity.booksearch.result.activity.SearchScanCodeResultDxActivity',
           matches: '[vid="close_m_image_left_text_right_app_compliance"]',
@@ -97,7 +97,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.zmzx.college.search.activity.booksearch.result.activity.SearchScanCodeResultDxActivity',
           matches:
@@ -110,7 +110,7 @@ export default defineGkdApp({
       key: 5,
       name: '更新提示',
       enable: false,
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -128,7 +128,7 @@ export default defineGkdApp({
       key: 6,
       name: '权限提示-申请开启推送通知弹窗',
       enable: false,
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       rules: [
@@ -144,7 +144,7 @@ export default defineGkdApp({
       name: '全屏广告-请求好评弹窗',
       activityIds:
         'com.zmzx.college.search.activity.camerasdk.ZybCameraSDKActivity',
-      quickFind: true,
+      fastQuery: true,
       rules:
         '[id="com.zmzx.college.search:id/iv_logo"] + [id="com.zmzx.college.search:id/siv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13476308',
@@ -152,7 +152,7 @@ export default defineGkdApp({
     {
       key: 8,
       name: '局部广告-教材内弹窗广告1',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
       ],
@@ -162,7 +162,7 @@ export default defineGkdApp({
     {
       key: 9,
       name: '局部广告-教材内弹窗广告2',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.zmzx.college.search.activity.booksearch.result.activity.AnswerBrowseActivity',
       ],
@@ -172,7 +172,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '局部广告-教材内底部广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.zmzx.college.search.activity.booksearch.result.activity.AnswerBrowseActivity',
       ],

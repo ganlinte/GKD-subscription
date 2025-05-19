@@ -60,7 +60,7 @@ export default defineGkdApp({
       matchDelay: 6500, // 时间太小会导致低性能手机赶不上
       matchTime: 10000,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: 'TextView[text="xxxxx"]',
     },
   ],

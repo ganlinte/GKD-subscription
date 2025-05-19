@@ -47,7 +47,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-漂流瓶-提示弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.maxhom.weibu.tool.home.activity.ToolBottleActivity',
         'com.maxhom.weibu.tool.home.activity.NewMainActivity',
@@ -67,7 +67,7 @@ export default defineGkdApp({
       name: '全屏广告-漂流瓶-定位弹窗',
       desc: '自动点击取消',
       enable: false,
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.maxhom.weibu.tool.home.activity.ToolBottleActivity',
         'com.maxhom.weibu.tool.msg.MyBottleActivity',

@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -45,7 +45,7 @@ export default defineGkdApp({
           key: 1,
           name: '课程广告',
           activityIds: 'com.handsgo.jiakao.android.main.activity.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.handsgo.jiakao.android:id/adsdk__ids_cta_layout"] - * > [id="com.handsgo.jiakao.android:id/close"]',
           snapshotUrls: 'https://i.gkd.li/import/13523033',
@@ -56,7 +56,7 @@ export default defineGkdApp({
       key: 3,
       name: '全屏广告-请求开启通知权限弹窗',
       activityIds: [],
-      quickFind: true,
+      fastQuery: true,
       rules:
         '[text="开启专属学习资料推送"] + [id="com.handsgo.jiakao.android:id/closeIv"]',
       snapshotUrls: 'https://i.gkd.li/import/13520296',

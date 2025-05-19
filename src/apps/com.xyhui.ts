@@ -99,7 +99,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-首页-右侧浮窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.xyhui.start.PUMainActivity',
         'com.xyhui.start.LoadingActivity',
@@ -114,7 +114,7 @@ export default defineGkdApp({
       enable: false,
       key: 3,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.xyhui.start.PUMainActivity',
         'com.xyhui.start.LoadingActivity',

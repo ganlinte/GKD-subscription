@@ -9,7 +9,7 @@ export default defineGkdApp({
       enable: false,
       key: 8,
       name: '全屏广告-请求通知权限弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.yanzhenjie.permission.PermissionActivity',
         'com.hellobike.atlas.business.portal.PortalActivity',
@@ -24,7 +24,7 @@ export default defineGkdApp({
       enable: false,
       key: 9,
       name: '全屏广告-请求定位权限弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.hellobike.atlas.business.portal.PortalActivity',
       rules:
         '[text="系统定位服务已关闭"] < FrameLayout +n FrameLayout >2 [text="取消"]',
@@ -48,7 +48,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '全屏广告-哈啰智能电动车-广告弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.hellobike.evehicle.business.main.EVehicleHomeManagerActivity',
       ],
@@ -59,7 +59,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '局部广告-右侧悬浮广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['com.hellobike.atlas.business.portal.PortalActivity'],
       rules:
         '@[id="com.jingyao.easybike:id/closeFloatArea"] + [id="com.jingyao.easybike:id/floatADContainer"]',
@@ -82,7 +82,7 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      quickFind: true,
+      fastQuery: true,
       name: '功能类-新人教学弹窗',
       desc: '点击跳过',
       activityIds: ['com.alipay.mobile.nebulacore.ui.H5Activity'],

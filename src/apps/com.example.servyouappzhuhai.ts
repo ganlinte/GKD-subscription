@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 0,
       name: '全屏广告-通知权限授权弹窗',
       enable: false,
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',

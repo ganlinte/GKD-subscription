@@ -13,7 +13,7 @@ export default defineGkdApp({
           name: '点击右上角x按钮',
           activityIds:
             'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.xunlei.downloadprovider:id/hermes_ad_banner_negative"]',
           snapshotUrls: 'https://i.gkd.li/import/12707701',
@@ -27,7 +27,7 @@ export default defineGkdApp({
             'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
             'com.xunlei.downloadprovider.feedback.view',
           ],
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.xunlei.downloadprovider:id/feedback_not_interested_layout"]',
           snapshotUrls: [
@@ -40,7 +40,7 @@ export default defineGkdApp({
           key: 2,
           name: '点击关闭按钮',
           activityIds: 'com.xunlei.downloadprovider.feedback.view',
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.xunlei.downloadprovider:id/ad_ima_skip"]',
           snapshotUrls: 'https://i.gkd.li/import/12882988',
         },
@@ -49,7 +49,7 @@ export default defineGkdApp({
           name: '点击右上角x按钮2',
           activityIds:
             'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.xunlei.downloadprovider:id/play_detail_ad_title"] + [id="com.xunlei.downloadprovider:id/close_iv"]',
           snapshotUrls: 'https://i.gkd.li/import/13228423',
@@ -60,7 +60,7 @@ export default defineGkdApp({
       key: 2,
       name: '局部广告-视频详情-直播推荐',
       desc: '自动点击【减少推荐】',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -147,7 +147,7 @@ export default defineGkdApp({
           key: 23,
           activityIds:
             'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.xunlei.downloadprovider:id/hermes_ad_banner_negative"]',
           snapshotUrls: 'https://i.gkd.li/import/13597068',
@@ -197,7 +197,7 @@ export default defineGkdApp({
       key: 4,
       name: '局部广告-【下载页】广告卡片',
       desc: '需选二次弹窗关闭原因',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -239,7 +239,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '局部广告-搜索页面-顶部banner广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.xunlei.downloadprovider.search.ui.search.SearchOperateActivity',
       rules: '[id="com.xunlei.downloadprovider:id/search_banner_ad_close"]',
@@ -248,7 +248,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.xunlei.upgrade.XUpgradeActivity',
       rules: '[id="com.xunlei.downloadprovider:id/x_upgrade_cancel"]',
       snapshotUrls: 'https://i.gkd.li/import/13228920',
@@ -256,7 +256,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '全屏广告-会员续费广告',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,

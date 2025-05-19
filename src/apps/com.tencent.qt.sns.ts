@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '全屏广告-首页活动弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       rules: '[id="com.tencent.qt.sns:id/closebtn"]',
       snapshotUrls: 'https://i.gkd.li/import/13497978',
@@ -21,7 +21,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[text="版本更新"] +4 LinearLayout > [text="取消"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13497984',

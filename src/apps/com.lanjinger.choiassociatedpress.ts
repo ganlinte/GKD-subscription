@@ -11,7 +11,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       enable: false,
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.lanjinger.choiassociatedpress.main.OperateActivity',
       rules: '@ImageView[id$="iv_back"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/13749206',

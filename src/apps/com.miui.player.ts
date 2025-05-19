@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '局部广告-浮窗广告',
       desc: '关闭右侧飘窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.tencent.qqmusiclite.activity.player.MusicPlayerActivity',
       rules:
@@ -19,7 +19,7 @@ export default defineGkdApp({
       key: 2,
       name: '局部广告-横幅广告',
       desc: '关闭播放页面横幅广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.tencent.qqmusiclite.activity.player.MusicPlayerActivity',
       rules: '[id="com.miui.player:id/ad_skip_text"][text="关闭"]',
@@ -39,7 +39,7 @@ export default defineGkdApp({
       key: 4,
       name: '局部广告-飘窗广告_首页右侧',
       activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
-      quickFind: true,
+      fastQuery: true,
       rules:
         '[id="com.miui.player:id/cl_floating_promote"] > [id="com.miui.player:id/iv_close"]',
       snapshotUrls: ['https://i.gkd.li/import/13562649'],
@@ -48,7 +48,7 @@ export default defineGkdApp({
       key: 5,
       name: '全屏广告-首页-弹窗广告',
       activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="com.miui.player:id/iv_close_dialog_button"]',
       snapshotUrls: ['https://i.gkd.li/import/13623503'],
     },
@@ -77,7 +77,7 @@ export default defineGkdApp({
       rules: [
         {
           actionDelay: 15000,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.tencentmusic.ad.tmead.reward.TMERewardActivity',
           matches: '[id="com.miui.player:id/tme_ad_skip_button"]',
           snapshotUrls: 'https://i.gkd.li/import/13610667',

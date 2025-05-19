@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[text*="跳过"][text.length<=10]',
@@ -30,7 +30,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -52,7 +52,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-信息流广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['net.csdn.csdnplus.activity.MainActivity'],
       rules: [
         {
@@ -80,7 +80,7 @@ export default defineGkdApp({
       name: '全屏广告-关闭好评弹窗',
       resetMatch: 'app',
       actionMaximum: 1,
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'net.csdn.csdnplus.activity.MainActivity',
       rules: '[id="net.csdn.csdnplus:id/tv_cancel"][text="残忍拒绝"]',
       snapshotUrls: 'https://i.gkd.li/import/13251085',
@@ -88,7 +88,7 @@ export default defineGkdApp({
     {
       enable: false,
       key: 10,
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -104,7 +104,7 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      quickFind: true,
+      fastQuery: true,
       name: '分段广告-底部广告',
       desc: '点击X-点击不感兴趣',
       rules: [

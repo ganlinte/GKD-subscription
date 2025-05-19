@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       // matchTime: 10000, 部分更新提示不在10s内
       actionMaximum: 1,
       resetMatch: 'app',
@@ -26,7 +26,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '红包弹窗1',
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'me.ele.component.pops2.Pops2MistDialog',
             'me.ele.component.webcontainer.view.AppUCWebActivity',
@@ -57,7 +57,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-活动弹窗',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 1,
@@ -100,7 +100,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '全屏广告-付款后广告弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'me.ele.component.pops2.TransparentAppWebActivity',
       rules: 'bb Button[text="关闭"]',
       snapshotUrls: 'https://i.gkd.li/import/13205301',
@@ -108,7 +108,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '全屏广告-吃货卡续费弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'me.ele.component.webcontainer.view.AppUCWebActivity',
       rules: '@View + View >2 [text="买校园版超级吃货卡"]',
       snapshotUrls: 'https://i.gkd.li/import/13295007',
@@ -126,7 +126,7 @@ export default defineGkdApp({
       name: '全屏广告-开启定位提醒',
       desc: '自动点击X',
       enable: false,
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -144,7 +144,7 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      quickFind: true,
+      fastQuery: true,
       name: '全屏广告-通知提示-获取订单信息通知',
       desc: '点击X',
       rules: [

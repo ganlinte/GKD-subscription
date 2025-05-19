@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -28,7 +28,7 @@ export default defineGkdApp({
       name: '青少年模式',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: 'TextView[text*="青少年模式"] +n TextView[text="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/import/12700145',
     },
@@ -121,7 +121,7 @@ export default defineGkdApp({
         {
           key: 98,
           name: '广告反馈卡片-选择原因',
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.tencent.qqlive.qaduikit.common.dialog.feedback.variable.QAdFeedbackVariableDislikeItemDialog',
             'com.tencent.qqlive.ona.activity.SplashHomeActivity',
@@ -141,7 +141,7 @@ export default defineGkdApp({
           preKeys: [98],
           key: 99,
           name: '广告反馈卡片-确认原因',
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.tencent.qqlive.qaduikit.common.dialog.feedback.variable.QAdFeedbackVariableDislikeItemDialog',
             'com.tencent.qqlive.ona.activity.SplashHomeActivity',
@@ -167,7 +167,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '全屏广告',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '@[text$="跳过广告"][clickable=true] < LinearLayout > [text="VIP可关闭该广告"]',
           snapshotUrls: [
@@ -185,7 +185,7 @@ export default defineGkdApp({
         {
           key: 2,
           name: '全屏广告2',
-          quickFind: true,
+          fastQuery: true,
           matches: '@[text$="关闭广告"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/13526547',
         },
@@ -203,7 +203,7 @@ export default defineGkdApp({
       name: '全屏广告-首页-广告弹窗',
       resetMatch: 'app',
       actionMaximum: 1,
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.tencent.qqlive.redpacket.rain.OpenRedPacketActivity',
       rules:
         '@ImageView[clickable=true] < ViewGroup[childCount=5] < [id="android:id/content"]',
@@ -218,7 +218,7 @@ export default defineGkdApp({
         {
           key: 0,
           actionMaximum: 1,
-          quickFind: true,
+          fastQuery: true,
           matches: 'LinearLayout > @[text="以后再说"] + [text="好的"]',
           snapshotUrls: 'https://i.gkd.li/import/12700139',
         },

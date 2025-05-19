@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      quickFind: true,
+      fastQuery: true,
       name: '更新提示-版本更新弹窗',
       desc: '点击不再提示',
       rules: [

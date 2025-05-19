@@ -20,7 +20,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-搜索底部广告',
-      quickFind: true,
+      fastQuery: true,
 
       activityIds: 'com.zhouyu.music.activities.MainActivity',
       rules: '[id="com.zhouyu.music:id/ksad_ad_dislike"]',

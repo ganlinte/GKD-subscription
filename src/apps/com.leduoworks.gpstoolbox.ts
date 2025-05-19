@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '局部广告-首页占位广告',
       activityIds: 'com.leduoworks.gpstoolbox.frmt.MainFrmtActivity',
 
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="com.leduoworks.gpstoolbox:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13062612',
     },

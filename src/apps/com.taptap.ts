@@ -38,7 +38,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-版本更新',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.taptap.upgrade.library.dialog.UpgradeDialogAct',
       rules: [
         {

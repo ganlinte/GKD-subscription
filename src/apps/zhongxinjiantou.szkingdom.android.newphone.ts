@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-通知权限',
       desc: '点击放弃通知',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.szkingdom.android.phone.ZXJTUserMainActivity',
       rules: [
         {

@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告_VIP',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.nowcasting.activity.WeatherActivity',
       rules: [
         {
@@ -20,7 +20,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-弹窗广告_外部应用',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.nowcasting.activity.WeatherActivity',
       rules: [
         {
@@ -35,7 +35,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '局部广告-插页广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.nowcasting.activity.WeatherActivity',
       rules: [
         {

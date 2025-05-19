@@ -22,7 +22,7 @@ export default defineGkdApp({
       desc: '关闭推荐浏览页面广告',
       key: 2,
       activityIds: ['com.duitang.main.business.main.NAMainActivity'],
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[id="com.duitang.main:id/adOptionEntry"]',
@@ -35,7 +35,7 @@ export default defineGkdApp({
       desc: '点击[下次再说]',
       key: 3,
       actionMaximum: 1,
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['com.miui.home.launcher.Launcher'],
       rules: [
         {

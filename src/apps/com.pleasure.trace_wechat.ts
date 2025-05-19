@@ -9,7 +9,7 @@ export default defineGkdApp({
       key: 5,
       name: '局部广告-我的-卡片式广告',
       desc: '需点击二次弹窗确认',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.camellia.trace.activity.MainActivity',
       rules: [
         {

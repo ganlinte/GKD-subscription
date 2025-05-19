@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      quickFind: true,
+      fastQuery: true,
       name: '局部广告-附近的人-广告卡片',
       activityIds: 'com.soft.blued.ui.home.HomeActivity',
       rules: [
@@ -26,7 +26,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      quickFind: true,
+      fastQuery: true,
       name: '局部广告-来访-广告卡片',
       activityIds: 'com.blued.android.core.ui.TerminalActivity',
       rules: [

@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-通知提醒',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       activityIds: [
         'com.jd.jrapp.bm.mainbox.main.MainActivity',
@@ -30,7 +30,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

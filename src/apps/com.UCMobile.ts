@@ -16,7 +16,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/import/13188653',
         },
         {
-          quickFind: true,
+          fastQuery: true,
           matches:
             '@View[clickable=true] < RelativeLayout <2 FrameLayout < FrameLayout < FrameLayout <4 FrameLayout < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/import/13197655',

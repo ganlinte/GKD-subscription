@@ -9,7 +9,7 @@ export default defineGkdApp({
       key: 0,
       name: '分段广告-朋友圈广告',
       desc: '点击广告卡片右上角广告,直接关闭/出现菜单,确认关闭',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.tencent.mm.plugin.sns.ui.SnsTimeLineUI',
         'com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI',
@@ -66,7 +66,7 @@ export default defineGkdApp({
       name: '分段广告-朋友圈广告[英文]',
       desc: '点击广告卡片右上角[Sponsored],直接关闭/出现菜单点击[Close the ad],确认关闭',
       activityIds: 'com.tencent.mm.plugin.sns.ui.SnsTimeLineUI',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -99,7 +99,7 @@ export default defineGkdApp({
       name: '分段广告-朋友圈广告[繁体]',
       desc: '点击广告卡片右上角[廣告],出现菜单点击[關閉此廣告],确认关闭',
       activityIds: 'com.tencent.mm.plugin.sns.ui.SnsTimeLineUI',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -122,7 +122,7 @@ export default defineGkdApp({
       enable: false,
       key: 1,
       name: '功能类-电脑微信快捷自动登录',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',
@@ -141,7 +141,7 @@ export default defineGkdApp({
       key: 2,
       name: '功能类-浏览器扫码微信登录自动授权',
       desc: '自动允许使用头像昵称等',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',
@@ -157,7 +157,7 @@ export default defineGkdApp({
       key: 3,
       name: '功能类-第三方APP申请使用授权弹窗',
       desc: '自动点击允许,但由于此界面可以额外新建昵称头像,默认不启用',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',
@@ -169,7 +169,7 @@ export default defineGkdApp({
       enable: false,
       key: 4,
       name: '功能类-微信读书网页版扫码登录自动授权',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',
@@ -335,7 +335,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '全屏广告-微信小程序-开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       // actionMaximum: 1, // 经常需要点2次，首次点击过早大概率跳不过
       // resetMatch: 'activity',
@@ -366,7 +366,7 @@ export default defineGkdApp({
       enable: false,
       key: 11,
       name: '功能类-网页版文件传输助手扫码自动授权',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',
@@ -403,7 +403,7 @@ export default defineGkdApp({
       key: 14,
       name: '分段广告-小程序-内部广告',
       activityIds: ['com.tencent.mm.plugin.appbrand.ui.AppBrandUI'],
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -456,7 +456,7 @@ export default defineGkdApp({
     {
       key: 17,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: [
@@ -500,7 +500,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '8.0.44以下',
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.tencent.mm.plugin.brandservice.ui.timeline.BizTimeLineUI',
           matches: '[text="展开更早的消息"] < [id="com.tencent.mm:id/aqc"]',

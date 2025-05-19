@@ -28,7 +28,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-阅读结束后显示的广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'org.geometerplus.android.fbreader.FBReader',
       rules: [
         {
@@ -78,7 +78,7 @@ export default defineGkdApp({
     {
       key: 8,
       name: '局部广告-书架顶部广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.kmxs.reader.home.ui.HomeActivity',
       rules: '[id="com.kmxs.reader:id/bookshelf_book_item_direct_close"]',
       snapshotUrls: ['https://i.gkd.li/import/13489942'],
@@ -104,7 +104,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '点击【x】',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.byted.pangle:id/tt_reward_full_count_down_after_close"]',
           snapshotUrls: 'https://i.gkd.li/import/13459182',

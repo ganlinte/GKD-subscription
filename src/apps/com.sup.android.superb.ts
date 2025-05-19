@@ -9,14 +9,14 @@ export default defineGkdApp({
       name: '青少年模式',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[text$="青少年模式"] + [text="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/import/13796869',
     },
     {
       key: 5,
       name: '全屏广告-请求开启通知权限弹窗',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="开启推送通知"] +2 * > [text="以后再说"]',
@@ -35,7 +35,7 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      quickFind: true,
+      fastQuery: true,
       name: '更新提示',
       desc: '点击我再想想',
       rules: [

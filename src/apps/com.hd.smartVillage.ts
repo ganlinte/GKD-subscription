@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-关闭开启通知弹窗',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       activityIds: [
         'com.hd.smartVillage.modules.main.MainActivity',
@@ -23,7 +23,7 @@ export default defineGkdApp({
       enable: false,
       key: 2,
       name: '全屏广告-更新弹窗',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       activityIds: 'com.hd.smartVillage.modules.main.MainActivity',
       rules:

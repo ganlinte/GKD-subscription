@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 5,
       name: '全屏广告-通知弹窗',
       enable: false,
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.loyea.adnmb.activity.MainActivity',
       rules: 'LinearLayout > Button[text="确定"]',
       snapshotUrls: 'https://i.gkd.li/import/13623450',

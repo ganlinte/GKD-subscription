@@ -26,7 +26,7 @@ export default defineGkdApp({
       name: '全屏广告-升级提示',
       desc: '点击以后再说',
       activityIds: 'com.hihonor.magichome.business.MainActivity',
-      quickFind: true,
+      fastQuery: true,
       rules:
         'TextView[text="立即更新"] -2 [id="com.hihonor.magichome:id/negative_btn"][text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/import/12916700',

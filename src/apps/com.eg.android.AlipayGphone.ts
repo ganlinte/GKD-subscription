@@ -22,7 +22,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/import/12737055', //com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main
         },
         {
-          quickFind: true,
+          fastQuery: true,
           matches: [
             '[text="根据相关法律法规要求，请尽快完成花呗升级"]',
             'FrameLayout > FrameLayout  > FrameLayout > [text="关闭"]',
@@ -34,7 +34,7 @@ export default defineGkdApp({
           ],
         },
         {
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[text="花呗服务未升级，将影响后续使用"] <<n FrameLayout @FrameLayout[clickable=true] [text="暂不升级，继续付款"]',
           snapshotUrls: 'https://i.gkd.li/import/13631362',
@@ -50,7 +50,7 @@ export default defineGkdApp({
       enable: false,
       key: 1,
       name: '全屏广告-定位提示-请求定位权限弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
       rules:
         '@[id="com.alipay.mobile.antui:id/closeButton"] - [id="com.alipay.mobile.antui:id/textAndButtonLayout"] [id="com.alipay.mobile.antui:id/tipTextView"][text^="开启定位权限"]',
@@ -61,7 +61,7 @@ export default defineGkdApp({
       name: '全屏广告-通知提示-请求通知弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -88,7 +88,7 @@ export default defineGkdApp({
       name: '更新提示-版本更新弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.alipay.mobile.alipassapp.alkb.kb.ALPMainPage63',
         'com.eg.android.AlipayGphone.AlipayLogin',
@@ -123,7 +123,7 @@ export default defineGkdApp({
       key: 4,
       name: '全屏广告-设置支付宝小组件',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
       rules: [
         {
@@ -149,7 +149,7 @@ export default defineGkdApp({
         {
           preKeys: 0,
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           matches: '[text="对该内容不感兴趣"]',
           action: 'clickCenter',
           snapshotUrls: 'https://i.gkd.li/import/13763315',

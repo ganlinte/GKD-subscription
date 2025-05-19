@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.qq.reader:id/tv_i_know"]',

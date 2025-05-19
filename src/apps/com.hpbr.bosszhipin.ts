@@ -11,7 +11,7 @@ export default defineGkdApp({
         'com.hpbr.bosszhipin.module.main.activity.MainActivity',
         'com.hpbr.bosszhipin.module.launcher.WelcomeActivity',
       ],
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',

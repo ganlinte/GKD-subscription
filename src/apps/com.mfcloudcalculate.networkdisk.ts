@@ -46,7 +46,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           matches:
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="com.mfcloudcalculate.networkdisk:id/frame_ad_splash_container"]',
           snapshotUrls: 'https://i.gkd.li/import/14018247',
@@ -54,7 +54,7 @@ export default defineGkdApp({
         // 该应用存在特殊开屏广告，被全局规则排除，以下为之前的开屏广告规则
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.mfcloudcalculate.networkdisk:id/frame_ad_splash_container"] >n [text^="跳过"][text.length<=4]',
           snapshotUrls: [
@@ -64,7 +64,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id$="tt_splash_skip_btn"] <<n [id="com.mfcloudcalculate.networkdisk:id/frame_ad_splash_container"]',
           snapshotUrls: [

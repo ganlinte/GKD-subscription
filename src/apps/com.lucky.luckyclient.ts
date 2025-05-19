@@ -18,7 +18,7 @@ export default defineGkdApp({
       desc: '关闭超值换购弹窗',
       enable: false,
       activityIds: 'com.lucky.luckyclient.preview2.OrderPreviewActivity2',
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="com.lucky.luckyclient:id/close_iv"][visibleToUser=true]',
       snapshotUrls: 'https://i.gkd.li/import/12922834',
     },

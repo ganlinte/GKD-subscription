@@ -14,7 +14,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '【跳过+倒计时】型',
-          quickFind: true,
+          fastQuery: true,
           matches: '[text*="跳过"][text.length<=10]',
           snapshotUrls: 'https://i.gkd.li/import/13346166',
         },

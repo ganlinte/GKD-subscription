@@ -21,7 +21,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-右下角弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       rules: [
         {

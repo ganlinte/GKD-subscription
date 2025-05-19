@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-社区消息-更新提示',
-      quickFind: true,
+      fastQuery: true,
       enable: false,
       rules: [
         {
@@ -21,7 +21,7 @@ export default defineGkdApp({
       key: 4,
       name: '全屏广告-NSFW 内容提示',
       desc: '自动点击 continue',
-      quickFind: true,
+      fastQuery: true,
       enable: false,
       rules: [
         {

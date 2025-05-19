@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '开屏广告',
       matchTime: 10000,
       actionMaximum: 1,
-      quickFind: true,
+      fastQuery: true,
       resetMatch: 'app',
       rules: [
         '[id="gov.pianzong.androidnga:id/iv_tg_ad"]',

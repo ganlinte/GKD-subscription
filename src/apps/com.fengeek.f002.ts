@@ -14,7 +14,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '点击连接耳机按钮',
-          quickFind: true,
+          fastQuery: true,
           action: 'clickCenter',
           matches: '[clickable=true][id="com.fengeek.f002:id/av_elc"]',
           snapshotUrls: 'https://i.gkd.li/import/13161277',
@@ -23,7 +23,7 @@ export default defineGkdApp({
           preKeys: [0],
           key: 1,
           name: '点击扫描到的设备',
-          quickFind: true,
+          fastQuery: true,
           action: 'clickNode',
           matches:
             '[clickable=true][id="com.fengeek.f002:id/device_container"]',

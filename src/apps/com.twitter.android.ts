@@ -10,7 +10,7 @@ export default defineGkdApp({
       desc: '点击右上角关闭,点击我不喜欢',
       activityIds: 'com.twitter.app.main.MainActivity',
       actionCd: 3000, // https://github.com/gkd-kit/subscription/issues/832
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -40,7 +40,7 @@ export default defineGkdApp({
       key: 2,
       name: '局部广告-信息流广告-帖子详情页、搜索页',
       desc: '点击右上角关闭,点击屏蔽用户,确认屏蔽.点击[我不喜欢]会返回主页,因此点击[屏蔽]',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.twitter.tweetdetail.TweetDetailActivity',
         'com.twitter.android.search.implementation.results.SearchActivity',
@@ -105,7 +105,7 @@ export default defineGkdApp({
       key: 3,
       name: '局部广告-信息流广告-用户资料页',
       desc: '点击右上角关闭,点击我不喜欢',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['com.twitter.app.profiles.ProfileActivity'],
       actionCd: 3000,
       rules: [
@@ -142,7 +142,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-评价弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       enable: false,
       rules: [
@@ -155,7 +155,7 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      quickFind: true,
+      fastQuery: true,
       name: '全屏广告-通知提示-请求通知权限弹窗',
       desc: '点击"Not now"',
       rules: [

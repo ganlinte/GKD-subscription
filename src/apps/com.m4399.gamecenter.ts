@@ -22,7 +22,7 @@ export default defineGkdApp({
           name: '局部广告-首页右侧悬浮广告',
           activityIds:
             'com.m4399.gamecenter.plugin.main.controllers.ApplicationActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '@[id="com.m4399.gamecenter:id/close"] + [id="com.m4399.gamecenter:id/image"]',
           snapshotUrls: 'https://i.gkd.li/import/13297466',

@@ -11,7 +11,7 @@ export default defineGkdApp({
       matchTime: 10000,
       resetMatch: 'app',
       actionMaximum: 1,
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches:

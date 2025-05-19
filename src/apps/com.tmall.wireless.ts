@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.tmall.wireless.splash.TMSplashActivity',
         'com.tmall.wireless.maintab.module.TMMainTabActivity',

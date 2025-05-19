@@ -12,7 +12,7 @@ export default defineGkdApp({
         'com.google.android.apps.youtube.app.watchwhile.MainActivity',
         'com.google.android.youtube',
       ],
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,

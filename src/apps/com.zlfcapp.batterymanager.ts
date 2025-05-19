@@ -12,7 +12,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           matches: '@View[clickable=true] <<n [vid="splash_container"]',
           snapshotUrls: 'https://i.gkd.li/import/13960341',
         },

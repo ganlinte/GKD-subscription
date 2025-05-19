@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '更新提示',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules:
         '[id="com.redfinger.app:id/btn_update"] + [id="com.redfinger.app:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13761821',
@@ -21,7 +21,7 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.redfinger.app.activity.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.redfinger.app:id/rl_screen_ad_close"]',
           snapshotUrls: 'https://i.gkd.li/import/13761825',
         },

@@ -10,7 +10,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.blued.android.core.ui.TerminalActivity',
             'com.soft.blued.ui.home.HomeActivity',

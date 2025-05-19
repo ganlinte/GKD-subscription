@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-我的',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       rules: [
         {
@@ -25,7 +25,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.zzw.october:id/interact_ad_root"] >n ImageView[id="com.zzw.october:id/iv_close"]',
           snapshotUrls: [

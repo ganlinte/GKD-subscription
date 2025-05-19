@@ -9,7 +9,7 @@ export default defineGkdApp({
       key: 10,
       name: '功能类-自动继续安装',
       desc: 'USB安装应用,点击继续安装',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.miui.permcenter.install.AdbInstallActivity',
       rules: [
         {
@@ -23,7 +23,7 @@ export default defineGkdApp({
       key: 11,
       name: '全屏广告-禁止获取定位',
       desc: '关闭【允许联网及定位】后，每次打开手机管家都会出现',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.miui.securityscan.MainActivity', // app版本v8
         'com.miui.permcenter.permissions.SystemAppPermissionDialogActivity', // app版本v5
@@ -46,7 +46,7 @@ export default defineGkdApp({
       key: 12,
       name: '全屏广告-忽略体检分数',
       desc: '退出时忽略体检优化分数',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.miui.securityscan.MainActivity',
       rules: [
         {

@@ -16,7 +16,7 @@ export default defineGkdApp({
         {
           key: 1,
           actionCd: 2000,
-          quickFind: true,
+          fastQuery: true,
           matches: '@[focusable=true] + [text="今日不再出现"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12745042',
@@ -38,7 +38,7 @@ export default defineGkdApp({
           preKeys: 1,
           key: 3,
           actionDelay: 300,
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.sgcc.wsgw.cn:id/news_remind_laytout"] >n [id="com.sgcc.wsgw.cn:id/btn_remind_close"]',
           snapshotUrls: ['https://i.gkd.li/import/12745042'],
@@ -48,7 +48,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

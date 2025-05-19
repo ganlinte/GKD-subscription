@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -36,7 +36,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '分段广告',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 1,

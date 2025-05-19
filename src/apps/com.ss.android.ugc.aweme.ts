@@ -52,7 +52,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-关闭朋友推荐弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['com.ss.android.ugc.aweme.main.MainActivity'],
       rules: '[text="朋友推荐"] +2 [id="com.ss.android.ugc.aweme:id/close"]',
       snapshotUrls: [
@@ -64,7 +64,7 @@ export default defineGkdApp({
       key: 3,
       name: '更新提示',
 
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
@@ -85,14 +85,14 @@ export default defineGkdApp({
     {
       key: 5,
       name: '全屏广告-广告弹窗',
-      quickFind: true,
+      fastQuery: true,
       rules:
         '[id="android:id/content"] >2 RelativeLayout[childCount<=5] > @ImageView[clickable=true][id!=null] - TextView[text="广告"][id!=null]',
       snapshotUrls: 'https://i.gkd.li/import/12769137',
     },
     {
       key: 6,
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       name: '全屏广告-去商店评分',
@@ -106,7 +106,7 @@ export default defineGkdApp({
     {
       key: 7,
       enable: false,
-      quickFind: true,
+      fastQuery: true,
       name: '全屏广告-设置无声进入抖音',
       desc: '点击[拒绝]',
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
@@ -120,7 +120,7 @@ export default defineGkdApp({
       desc: '自动点击“暂不”',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: [
         {
@@ -141,7 +141,7 @@ export default defineGkdApp({
       key: 11,
       name: '功能类-自动勾选原图',
       desc: '聊天发送图片时自动勾选原图',
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.ss.android.ugc.aweme.im.sdk.media.choose.MediaChooseActivity',
       rules: '[text="原图"][desc="未选中/复选框 原图"]',
@@ -154,7 +154,7 @@ export default defineGkdApp({
       enable: false,
       key: 12,
       name: '全屏广告-休息提醒',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[text="可进入使用管理助手更改设置"] -2 Button[text="取消"]',

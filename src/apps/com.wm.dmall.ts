@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-首页-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.wm.dmall.MainActivity',
       rules: '[id="com.wm.dmall:id/advert_close"]',
       snapshotUrls: ['https://i.gkd.li/import/13197627'],
@@ -15,7 +15,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-首页-浮窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.wm.dmall.MainActivity',
       rules: [
         '@[id="com.wm.dmall:id/iv_close"] + [id="com.wm.dmall:id/view_float"]',
@@ -29,7 +29,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.wm.dmall.MainActivity',
       rules: {
         matches: [
@@ -43,7 +43,7 @@ export default defineGkdApp({
       key: 4,
       name: '全屏广告-优惠劵提示',
       enable: false,
-      quickFind: true,
+      fastQuery: true,
 
       rules: {
         matches: [

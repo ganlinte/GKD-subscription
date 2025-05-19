@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-通知弹窗',
       desc: '点击稍后再说',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

@@ -9,7 +9,7 @@ export default defineGkdApp({
       key: 1,
       name: '分段广告',
       desc: '有二次确认弹窗',
-      quickFind: true,
+      fastQuery: true,
       // matchDelay: 3000, 我又想不起来为什么要有这个了
       rules: [
         {
@@ -81,7 +81,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-我的页面-中间滚动广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['com.netease.cloudmusic.activity.MainActivity'],
       rules:
         '[id="com.netease.cloudmusic:id/auto_scroll_switcher"] + [id="com.netease.cloudmusic:id/close_btn"]',
@@ -90,7 +90,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '功能类-主页-免费听歌',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['com.netease.cloudmusic.activity.MainActivity'],
       rules: ['@ImageView + ViewGroup > TextView[text="VIP歌曲免费听30分钟"]'],
       snapshotUrls: ['https://i.gkd.li/import/12843383'],
@@ -124,7 +124,7 @@ export default defineGkdApp({
       enable: false,
       key: 5,
       name: '全屏广告-VIP 弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -176,7 +176,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
 
       rules: [
         {
@@ -199,7 +199,7 @@ export default defineGkdApp({
       key: 7,
       name: '局部广告-播放界面广告',
       desc: '右上角VIP小悬浮、巨幅卡片式广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.netease.cloudmusic.activity.PlayerActivity',
       rules: [
         {
@@ -225,7 +225,7 @@ export default defineGkdApp({
       key: 8,
       name: '局部广告-发现-顶部视频广告',
       desc: '自动点击跳过。',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           activityIds: 'com.netease.cloudmusic.activity.MainActivity',
@@ -267,7 +267,7 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      quickFind: true,
+      fastQuery: true,
       name: '全屏广告-播放页赞赏好音乐弹窗',
       desc: '点击X',
       rules: [

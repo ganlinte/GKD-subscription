@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '局部广告-首页右侧浮动广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.android:id/main_ad_broadside_close_real"]',
       snapshotUrls: ['https://i.gkd.li/import/12472620'],
@@ -15,7 +15,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-播放页面-播放控制区域的广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: [
         {
@@ -45,7 +45,7 @@ export default defineGkdApp({
       key: 2,
       name: '局部广告-播放页面-底部推荐列表-夹杂广告',
       desc: '点击关闭-点击屏蔽',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           activityIds: [
@@ -73,7 +73,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-播放页面-播放前广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.ximalaya.ting.android.host.activity.MainActivity',
         'com.ximalaya.ting.android.framework.view.dialog',
@@ -95,7 +95,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.ximalaya.ting.android:id/xm_ad_close_real"]',
           snapshotUrls: 'https://i.gkd.li/import/12506253',
         },
@@ -108,7 +108,7 @@ export default defineGkdApp({
         {
           preKeys: [0, 1],
           name: '点击关闭原因【屏蔽】',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '@[name="android.widget.RelativeLayout" || name="android.widget.LinearLayout"] > [text="屏蔽"]',
           snapshotUrls: [
@@ -134,14 +134,14 @@ export default defineGkdApp({
     {
       key: 6,
       name: '全屏广告-关闭更新弹窗',
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="com.ximalaya.ting.android:id/host_tv_update_later"]',
       snapshotUrls: 'https://i.gkd.li/import/12506287',
     },
     {
       key: 7,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       snapshotUrls: 'https://i.gkd.li/import/12506209',
       rules: {
@@ -155,7 +155,7 @@ export default defineGkdApp({
       key: 8,
       name: '局部广告-评论区广告',
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
-      quickFind: true,
+      fastQuery: true,
       rules:
         '[id="com.ximalaya.ting.android:id/main_ad_close_real"][visibleToUser=true]',
       snapshotUrls: 'https://i.gkd.li/import/12869426',
@@ -164,7 +164,7 @@ export default defineGkdApp({
       key: 9,
       enable: false,
       name: '局部广告-卡片式广告',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -201,7 +201,7 @@ export default defineGkdApp({
       enable: false,
       key: 10,
       name: '全屏广告-首页-专辑订阅推荐弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -213,7 +213,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '全屏广告-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules:
         '@[id="com.ximalaya.ting.android:id/host_close_firework"] +2 [id="com.ximalaya.ting.android:id/host_firework_ad_tag"]',
@@ -226,7 +226,7 @@ export default defineGkdApp({
       rules: [
         {
           actionMaximum: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
           matches: '[id=`com.ximalaya.ting.android:id/cancel_btn`]',
           exampleUrls:

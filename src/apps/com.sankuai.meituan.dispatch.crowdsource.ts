@@ -11,7 +11,7 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.meituan.banma.main.activity.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.sankuai.meituan.dispatch.crowdsource:id/image_ad_close"]',
           snapshotUrls: 'https://i.gkd.li/import/13694935',

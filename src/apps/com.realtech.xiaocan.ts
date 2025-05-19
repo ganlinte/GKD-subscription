@@ -13,7 +13,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           matches: '[text^="跳过"][text.length<=10]',
           snapshotUrls: [
             'https://i.gkd.li/import/12843368',
@@ -23,14 +23,14 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           matches:
             '@[id$="tt_splash_skip_btn"] <<n [id="com.realtech.xiaocan:id/splash_ad_container"]',
           snapshotUrls: 'https://i.gkd.li/import/12854728',
         },
         {
           key: 3,
-          quickFind: true,
+          fastQuery: true,
           matches:
             '@View[visibleToUser=true][clickable=true] <n FrameLayout[childCount=4||childCount=3] <<n [id="com.realtech.xiaocan:id/splash_ad_container"]',
           snapshotUrls: [

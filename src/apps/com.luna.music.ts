@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 2,
       name: '全屏广告-VIP弹窗',
       desc: '直接关闭所有底部半屏弹窗',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: [
@@ -60,7 +60,7 @@ export default defineGkdApp({
         {
           preKeys: 0,
           name: '点击【坚持退出】',
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.byted.pangle:id/tt_negtive"][text="坚持退出"]',
           snapshotUrls: 'https://i.gkd.li/import/13613184',
         },

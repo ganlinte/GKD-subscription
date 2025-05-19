@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-通知权限弹窗',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       matchTime: 30000,
       resetMatch: 'app',
@@ -36,7 +36,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       matchTime: 30000,
       resetMatch: 'app',
@@ -60,7 +60,7 @@ export default defineGkdApp({
       key: 3,
       name: '局部广告-信息流广告',
       desc: '长按【赞助】/【广告】标识的卡片-点【不感兴趣】',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.xingin.xhs.index.v2.IndexActivityV2',
       rules: [
         {

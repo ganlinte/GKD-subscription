@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '权限提示-开启消息通知',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

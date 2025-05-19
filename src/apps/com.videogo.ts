@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-主页广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['com.videogo.main.MainTabActivity'],
       rules: [
         {
