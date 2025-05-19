@@ -75,7 +75,7 @@
   },
   "volta": {
     "node": "23.11.0",
-    "npm": "11.3.0"
+    "npm": "11.4.0"
   },
   "packageManager": "pnpm@10.11.0",
   "engineStrict": true,
