@@ -19,8 +19,8 @@ importers:
         specifier: 19.8.0
         version: 19.8.0
       '@commitlint/types':
-        specifier: 19.8.0
-        version: 19.8.0
+        specifier: 19.8.1
+        version: 19.8.1
       '@eslint/eslintrc':
         specifier: ^3.3.1
         version: 3.3.1
@@ -149,10 +149,6 @@ packages:
 
   '@commitlint/top-level@19.8.1':
     resolution: {integrity: sha512-Ph8IN1IOHPSDhURCSXBz44+CIu+60duFwRsg6HqaISFHQHbmBtxVw4ZrFNIYUzEP7WwrNPxa2/5qJ//NK1FGcw==}
-    engines: {node: '>=v18'}
-
-  '@commitlint/types@19.8.0':
-    resolution: {integrity: sha512-LRjP623jPyf3Poyfb0ohMj8I3ORyBDOwXAgxxVPbSD0unJuW2mJWeiRfaQinjtccMqC5Wy1HOMfa4btKjbNxbg==}
     engines: {node: '>=v18'}
 
   '@commitlint/types@19.8.1':
@@ -1263,7 +1259,7 @@ snapshots:
 
   '@commitlint/config-conventional@19.8.0':
     dependencies:
-      '@commitlint/types': 19.8.0
+      '@commitlint/types': 19.8.1
       conventional-changelog-conventionalcommits: 7.0.2
 
   '@commitlint/config-validator@19.8.1':
@@ -1352,11 +1348,6 @@ snapshots:
   '@commitlint/top-level@19.8.1':
     dependencies:
       find-up: 7.0.0
-
-  '@commitlint/types@19.8.0':
-    dependencies:
-      '@types/conventional-commits-parser': 5.0.1
-      chalk: 5.4.1
 
   '@commitlint/types@19.8.1':
     dependencies:
