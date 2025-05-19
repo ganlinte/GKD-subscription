@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '局部广告-首页-推荐-卡片广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.lite:id/main_ad_top_home_iv_close"]',
     },
@@ -28,7 +28,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-小说推荐弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.lite:id/main_iv_novel_back"]',
       snapshotUrls: 'https://i.gkd.li/import/13229127',
@@ -37,7 +37,7 @@ export default defineGkdApp({
       key: 3,
       name: '全屏广告-支付宝提现广告弹窗',
       desc: '点击右上角圆形x',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.lite:id/main_login_guide_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13256447',
@@ -45,7 +45,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-关闭开启通知弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.WelComeActivity',
       rules:
         '[text="立即开启"] + [id="com.ximalaya.ting.lite:id/host_dialog_cancel_iv"]',

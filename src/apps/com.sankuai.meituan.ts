@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.meituan.android.upgrade.ui.',
         'com.meituan.android.upgrade.UpgradeDialogActivity',
@@ -76,7 +76,7 @@ export default defineGkdApp({
       name: '全屏广告-订单调查弹窗',
       matchTime: 10000,
       actionMaximum: 1,
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           name: '我的页面-小调查',
@@ -132,7 +132,7 @@ export default defineGkdApp({
       key: 8,
       name: '全屏广告-请求开启通知权限弹窗',
       desc: '点击跳过',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       rules: [
         {
@@ -147,7 +147,7 @@ export default defineGkdApp({
       key: 9,
       name: '全屏广告-订单完成后的红包弹窗',
       desc: '直接关闭整个模块',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       rules: [
