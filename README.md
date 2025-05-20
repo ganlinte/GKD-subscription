@@ -46,7 +46,7 @@ https://cdn.jsdelivr.net/npm/@ganlinte/gkd-subscription@latest/dist/ganlin_gkd.j
 
 ## 说明
 
-当前版本: v48
+当前版本: v49
 
 当前订阅文件已适配 616 个 APP, 共有 1402 规则组
 
@@ -70,4 +70,4 @@ https://cdn.jsdelivr.net/npm/@ganlinte/gkd-subscription@latest/dist/ganlin_gkd.j
 
 ### 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=ganlinte/GKD-subscription&_v=48)
+![img](https://contrib.rocks/image?repo=ganlinte/GKD-subscription&_v=49)
