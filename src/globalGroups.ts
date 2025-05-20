@@ -2,8 +2,8 @@ import { defineGkdGlobalGroups } from '@gkd-kit/define';
 import * as appList from './globalDefaultApps';
 
 export const OPEN_AD_ORDER = -10; // 开屏广告
-export const UPDATE_PROMPT_ORDER = -9; // 更新提示
-export const YOUTH_MODE_ORDER = -8; // 青少年模式
+export const YOUTH_MODE_ORDER = -9; // 青少年模式
+export const UPDATE_PROMPT_ORDER = -8; // 更新提示
 
 export default defineGkdGlobalGroups([
   {
@@ -29,7 +29,7 @@ export default defineGkdGlobalGroups([
       ),
   },
   {
-    key: 2,
+    key: 1,
     name: '青少年模式-全局',
     order: YOUTH_MODE_ORDER,
     fastQuery: true,
@@ -49,6 +49,28 @@ export default defineGkdGlobalGroups([
       .map((id) => ({ id, enable: false }))
       .concat(
         [...appList.yongWhiteListAppIDs].map((id) => ({ id, enable: true })),
+      ),
+  },
+  {
+    key: 2,
+    name: '更新提示-全局',
+    order: UPDATE_PROMPT_ORDER,
+    fastQuery: true,
+    matchTime: 100000,
+    actionMaximum: 1,
+    resetMatch: 'app',
+    rules: [
+      {
+        key: 0,
+        matches: [
+          '@[text="取消"||text="暂不升级"] + [text="更新"||text="立即升级"]',
+        ],
+      },
+    ],
+    apps: [...appList.updateBlackListAppIDs]
+      .map((id) => ({ id, enable: false }))
+      .concat(
+        [...appList.updateWhiteListAppIDs].map((id) => ({ id, enable: true })),
       ),
   },
 ]);
