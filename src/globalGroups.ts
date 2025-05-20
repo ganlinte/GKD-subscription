@@ -63,7 +63,7 @@ export default defineGkdGlobalGroups([
       {
         key: 0,
         matches: [
-          '@[text="取消"||text="暂不升级"] + [text="更新"||text="立即升级"]',
+          '@[text="取消"||text="暂不升级"||text="以后再说"] + [text="更新"||text="立即升级"||text="优先体验"]',
         ],
       },
     ],

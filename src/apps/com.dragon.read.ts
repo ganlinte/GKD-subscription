@@ -5,18 +5,6 @@ export default defineGkdApp({
   name: '番茄免费小说',
   groups: [
     {
-      key: 1,
-      name: '更新提示',
-      actionMaximum: 1,
-      fastQuery: true,
-      resetMatch: 'app',
-      matchTime: 20000,
-      forcedTime: 20000,
-      activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
-      rules: '@[text="以后再说"] + [text="优先体验"]',
-      snapshotUrls: 'https://i.gkd.li/import/16918420',
-    },
-    {
       key: 2,
       name: '局部广告-书城-右侧悬浮红包广告',
       fastQuery: true,
@@ -96,7 +84,7 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '全屏广告-开启推送提醒',
+      name: '通知提示-开启推送提醒',
       desc: '自动点击【取消】',
       fastQuery: true,
       activityIds: '.pages.main.MainFragmentActivity',
@@ -124,7 +112,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          name: '下方卡片广告横幅',
+          name: '底部卡片广告',
           anyMatches: [
             '@ImageView - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
             '@ImageView < FrameLayout - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
@@ -139,13 +127,10 @@ export default defineGkdApp({
         },
         {
           preKeys: 1,
-          anyMatches: [
-            '@TextView[text="关闭此条广告"]',
-            '@TextView[text="关闭此广告"]',
-          ],
+          matches: 'TextView[text~="(?is)关闭.*广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/17793195', //1
-            'https://i.gkd.li/i/17928194', //2,
+            'https://i.gkd.li/i/17793195',
+            'https://i.gkd.li/i/17928194',
           ],
         },
         {
@@ -193,7 +178,7 @@ export default defineGkdApp({
           matches: '@[text="反馈"][visibleToUser=true]',
           excludeMatches: [
             '@[text="关闭"] - [text="反馈"]', //优先【关闭】
-            '@TextView[text$="秒后，继续阅读下一页"]', //等待
+            'TextView[text~="(?is)[0-9]+秒后，继续阅读下一页"]', //等待
             '@[text="反馈"][visibleToUser=true][2=parent.childCount]', //插图
           ],
           snapshotUrls: [
@@ -246,6 +231,21 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18124417', //去抢购
             'https://i.gkd.li/i/20279981', //看全集
           ],
+        },
+      ],
+    },
+    {
+      key: 14,
+      name: '局部广告-阅读-右侧图书福利浮窗',
+      desc: '点击X',
+      fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches:
+            '@ImageView - ImageView < * < * < FrameLayout + LinearLayout > LinearLayout > TextView[text="目录"]',
+          snapshotUrls: 'https://i.gkd.li/i/20340317',
         },
       ],
     },
