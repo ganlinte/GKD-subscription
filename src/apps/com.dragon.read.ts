@@ -233,7 +233,7 @@ export default defineGkdApp({
           anyMatches: [
             'UISvg +n FlattenUIText[text^="¥"][visibleToUser=true]',
             '[text="点击关闭广告并退出小说" || text="去抢购" || text="去领取"][visibleToUser=true]',
-            'TextView[text~="(?is)全[0-9]+集"] <2 ViewGroup + TextView[text="看全集"]',
+            'TextView[text~="(?is)全[0-9]+集"] <2 ViewGroup + TextView[text="看全集"][visibleToUser=true]',
           ],
           excludeMatches: '[text="反馈"]', //翻页时容易误触
           position: { right: 100, bottom: 300 },
