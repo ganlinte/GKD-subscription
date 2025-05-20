@@ -11,12 +11,11 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'cmccwm.mobilemusic.ui.base.MainActivity',
+      activityIds: '.ui.base.MainActivity',
       rules: [
         {
-          action: 'back',
           matches:
-            '[id="cmccwm.mobilemusic.libraries_feature:id/tv_title"][text="发现新版本"]',
+            '@ImageView[id="cmccwm.mobilemusic.libraries_feature:id/iv_back"] - TextView[id="cmccwm.mobilemusic.libraries_feature:id/tv_title"][text="发现新版本"]',
           snapshotUrls: 'https://i.gkd.li/import/13448898',
         },
       ],

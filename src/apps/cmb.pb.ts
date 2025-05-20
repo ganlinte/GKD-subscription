@@ -6,9 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 10,
-      name: '全屏广告-朝朝宝-广告弹窗',
-      activityIds:
-        'cmb.pb.app.h5container.webviewcontainer.PBWebContainerActivity',
+      name: '全屏广告-朝朝宝弹窗',
+      activityIds: '.app.h5container.webviewcontainer.PBWebContainerActivity',
       rules: '[id="cover-img"] + [text="关闭推荐"]',
       snapshotUrls: 'https://i.gkd.li/import/12706022',
     },
