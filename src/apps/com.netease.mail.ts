@@ -14,17 +14,16 @@ export default defineGkdApp({
       rules: [
         {
           anyMatches: [
-            'TextView[text*="跳过"]',
+            '@TextView[text*="跳过"] -n FrameLayout[id="com.netease.mail:id/ad_placeholder"]',
+            '@TextView[text*="跳过"] <<n FrameLayout[id="com.netease.mail:id/ad_placeholder"]',
             'View <(2,3) FrameLayout <(1,3) FrameLayout < [vid="ad_placeholder"]',
           ],
-          excludeMatches: '[id="com.netease.mail:id/ad_skip"][clickable=false]',
           snapshotUrls: [
             'https://i.gkd.li/import/12893573', // 跳过
             'https://i.gkd.li/import/12923776', // 跳过
             'https://i.gkd.li/import/13195662', // 跳过
             'https://i.gkd.li/import/12818335', // 跳过
             'https://i.gkd.li/import/14046124', // View
-            'https://i.gkd.li/i/19905985', // View
           ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/import/13206298', // 使用 excludeMatches 防止提前触发规则
