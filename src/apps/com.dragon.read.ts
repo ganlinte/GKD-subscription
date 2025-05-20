@@ -233,8 +233,9 @@ export default defineGkdApp({
           anyMatches: [
             'UISvg +n FlattenUIText[text^="¥"][visibleToUser=true]',
             '[text="点击关闭广告并退出小说" || text="去抢购" || text="去领取"][visibleToUser=true]',
+            'TextView[text~="(?is)全[0-9]+集"] <2 ViewGroup + TextView[text="看全集"]',
           ],
-          excludeMatches: '@[text="反馈"]', //翻页时容易误触
+          excludeMatches: '[text="反馈"]', //翻页时容易误触
           position: { right: 100, bottom: 300 },
           snapshotUrls: [
             'https://i.gkd.li/i/17941812', //¥ 单判断容易与卡片广告冲突
@@ -243,6 +244,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17474889', //去领取/点击关闭广告并退出小说
             'https://i.gkd.li/i/17932302', //去领取
             'https://i.gkd.li/i/18124417', //去抢购
+            'https://i.gkd.li/i/20279981', //看全集
           ],
         },
       ],
