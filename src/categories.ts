@@ -1,6 +1,6 @@
-import type { RawCategory } from './types';
+import { defineGkdCategories } from '@gkd-kit/define';
 
-const categories: RawCategory[] = [
+export default defineGkdCategories([
   {
     key: 0,
     name: '开屏广告',
@@ -54,6 +54,4 @@ const categories: RawCategory[] = [
     key: 10,
     name: '其他', // 分类不明确
   },
-];
-
-export default categories;
+]);
