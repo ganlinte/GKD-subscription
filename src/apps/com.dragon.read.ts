@@ -54,7 +54,8 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
+      activityIds: '.pages.main.MainFragmentActivity',
+      forcedTime: 20000,
       rules: [
         {
           matches:
