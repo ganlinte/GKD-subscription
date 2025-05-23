@@ -19,10 +19,10 @@ export default defineGkdApp({
             'View <(2,3) FrameLayout <(1,3) FrameLayout < [vid="ad_placeholder"]',
           ],
           snapshotUrls: [
-            'https://i.gkd.li/import/12893573', // 跳过
-            'https://i.gkd.li/import/12923776', // 跳过
-            'https://i.gkd.li/import/13195662', // 跳过
-            'https://i.gkd.li/import/12818335', // 跳过
+            'https://i.gkd.li/import/12818335', // 跳过 -n
+            'https://i.gkd.li/import/12893573', // 跳过 <<n
+            'https://i.gkd.li/import/12923776', // 跳过 <<n
+            'https://i.gkd.li/import/13195662', // 跳过 <<n
             'https://i.gkd.li/import/14046124', // View
           ],
           excludeSnapshotUrls: [
