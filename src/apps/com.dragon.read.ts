@@ -132,7 +132,7 @@ export default defineGkdApp({
         },
         {
           preKeys: 1,
-          matches: 'TextView[text~="(?is)关闭此.*广告"]',
+          matches: 'TextView[text="关闭此广告"||text="关闭此条广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/17928194', //关闭此广告
             'https://i.gkd.li/i/17793195', //关闭此条广告
