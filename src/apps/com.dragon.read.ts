@@ -106,9 +106,13 @@ export default defineGkdApp({
             '@ImageView[visibleToUser=true] < FrameLayout <3 ViewGroup[childCount=4] <n * <n * <n * <n * <n * <n  * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
             '@ImageView[visibleToUser=true] < FrameLayout <3 ViewGroup[childCount=4] <n * <n * <n * <n * <n * <n  * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
           ],
+          excludeMatches: ['TextView[text="目录"]'],
           snapshotUrls: [
             'https://i.gkd.li/import/12716444', //1
             'https://i.gkd.li/i/17474881', //2
+          ],
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/i/20340317', //卡片广告关闭按钮和听书按钮重叠会误触
           ],
         },
         {
@@ -128,10 +132,10 @@ export default defineGkdApp({
         },
         {
           preKeys: 1,
-          matches: 'TextView[text~="(?is)关闭.*广告"]',
+          matches: 'TextView[text~="(?is)关闭此.*广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/17793195',
-            'https://i.gkd.li/i/17928194',
+            'https://i.gkd.li/i/17928194', //关闭此广告
+            'https://i.gkd.li/i/17793195', //关闭此条广告
           ],
         },
         {
@@ -237,7 +241,7 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '局部广告-阅读-右侧图书福利浮窗',
+      name: '局部广告-阅读-菜单右侧图书福利浮窗',
       desc: '点击X',
       fastQuery: true,
       actionMaximum: 1,
