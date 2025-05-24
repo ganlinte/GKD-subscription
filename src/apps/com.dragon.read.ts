@@ -59,7 +59,7 @@ export default defineGkdApp({
       rules: [
         {
           matches:
-            '@FlattenUIImage[index=parent.childCount.minus(1) ||index=parent.childCount.minus(2)] <n FrameLayout < * < * < * < * < * < [id="android:id/content"]',
+            '@FlattenUIImage[index=parent.childCount.minus(1) ||index=parent.childCount.minus(2)] <n FrameLayout <<6 [id="android:id/content"]',
           snapshotUrls: [
             'https://i.gkd.li/import/16347298',
             'https://i.gkd.li/import/14383684',
@@ -102,14 +102,13 @@ export default defineGkdApp({
         {
           name: '卡片广告',
           forcedTime: 3600000, //1小时
-          anyMatches: [
-            '@ImageView[visibleToUser=true] < FrameLayout <3 ViewGroup[childCount=4] <n * <n * <n * <n * <n * <n  * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
-            '@ImageView[visibleToUser=true] < FrameLayout <3 ViewGroup[childCount=4] <n * <n * <n * <n * <n * <n  * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
+          matches: [
+            '@ImageView[visibleToUser=true] < FrameLayout <3 ViewGroup[childCount=4] <<n [id="com.dragon.read:id/root_view"]',
           ],
           excludeMatches: ['TextView[text="目录"]'],
           snapshotUrls: [
-            'https://i.gkd.li/import/12716444', //1
-            'https://i.gkd.li/i/17474881', //2
+            'https://i.gkd.li/import/12716444', //10 <n *
+            'https://i.gkd.li/i/17474881', //11 <n *
           ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/20340317', //卡片广告关闭按钮和听书按钮重叠会误触
@@ -119,8 +118,8 @@ export default defineGkdApp({
           key: 1,
           name: '底部卡片广告',
           anyMatches: [
-            '@ImageView - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
-            '@ImageView < FrameLayout - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
+            '@ImageView - LinearLayout <<n [id="com.dragon.read:id/root_view"]',
+            '@ImageView < FrameLayout - LinearLayout <<n [id="com.dragon.read:id/root_view"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/import/12908734', //1
