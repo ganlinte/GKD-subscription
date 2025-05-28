@@ -16,7 +16,7 @@ export default defineGkdApp({
       rules: [
         {
           matches:
-            'FrameLayout[id="cn.ccspeed:id/float_layout"] > ImageView - ImageView',
+            'ImageView[id="cn.ccspeed:id/iv_float"] - @ImageView < FrameLayout[id="cn.ccspeed:id/float_layout"]',
           snapshotUrls: 'https://i.gkd.li/import/13539299',
         },
       ],

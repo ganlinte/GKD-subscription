@@ -12,8 +12,7 @@ export default defineGkdApp({
       rules: [
         {
           matches: [
-            '[id="cn.chuci.and.wkfenshen:id/dialog_local_buy_btn"]',
-            '[id="cn.chuci.and.wkfenshen:id/action_close"]',
+            '@ImageView[id="cn.chuci.and.wkfenshen:id/action_close"] + ViewGroup[id="cn.chuci.and.wkfenshen:id/local_cl_content"]',
           ],
           snapshotUrls: 'https://i.gkd.li/import/13226988',
         },

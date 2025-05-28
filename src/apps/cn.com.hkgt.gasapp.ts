@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-广告弹窗',
+      fastQuery: true,
       activityIds: 'cn.com.hkgt.gasapp.dialog.BannerDialog',
       rules: 'ImageView[id="cn.com.hkgt.gasapp:id/exit"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/12744270',

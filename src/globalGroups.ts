@@ -20,7 +20,7 @@ export default defineGkdGlobalGroups([
     disableIfAppGroupMatch: '开屏广告',
     rules: [
       {
-        anyMatches: ['[text*="跳过"][text.length<10][visibleToUser=true]'],
+        matches: ['[text*="跳过"][text.length<10][visibleToUser=true]'],
       },
     ],
     apps: [...appList.openAdBlackListAppIDs]
@@ -42,7 +42,7 @@ export default defineGkdGlobalGroups([
       {
         key: 0,
         matches: [
-          'TextView[text="未成年人模式" ||text="开启青少年模式"]',
+          'TextView[text="未成年人模式" ||text*="青少年模式"]',
           'TextView[text="我知道了"]',
         ],
       },
@@ -66,7 +66,8 @@ export default defineGkdGlobalGroups([
       {
         key: 0,
         matches: [
-          '@[text="取消"||text="暂不升级"||text="以后再说"] + [text="更新"||text="立即升级"||text="优先体验"]',
+          '[text="更新"||text="立即升级"||text="立即更新"||text="优先体验"]',
+          '[text="取消"||text="暂不升级"||text="下次再说"||text="以后再说"]',
         ],
       },
     ],

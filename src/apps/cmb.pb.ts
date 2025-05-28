@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '全屏广告-朝朝宝弹窗',
+      fastQuery: true,
       activityIds: '.app.h5container.webviewcontainer.PBWebContainerActivity',
       rules: '[id="cover-img"] + [text="关闭推荐"]',
       snapshotUrls: 'https://i.gkd.li/import/12706022',

@@ -11,23 +11,38 @@ export default defineGkdApp({
       matchTime: 10000,
       resetMatch: 'app',
       actionMaximum: 1,
-      rules: '[vid="splash_adv_ship"]',
-      snapshotUrls: 'https://i.gkd.li/import/13806892',
+      rules: [
+        {
+          matches: '[id="cn.mil.junhao:id/splash_adv_ship"]',
+          snapshotUrls: 'https://i.gkd.li/import/13806892',
+        },
+      ],
     },
     {
       key: 1,
-      name: '功能类-首页右侧浮窗',
+      name: '局部广告-首页右侧浮窗',
+      fastQuery: true,
       activityIds: 'com.mediacloud.app.nav2.AppHome21Style',
-      rules:
-        '[vid="fragment_containerx"] > FrameLayout > ImageView[index=2][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/13806894',
+      rules: [
+        {
+          matches:
+            '@ImageView - FrameLayout - ImageView < FrameLayout <2 [id="cn.mil.junhao:id/fragment_containerx"]',
+          snapshotUrls: 'https://i.gkd.li/import/13806894',
+        },
+      ],
     },
     {
       key: 2,
-      name: '功能类-意见反馈浮窗',
+      name: '局部广告-意见反馈浮窗',
+      fastQuery: true,
       activityIds: 'com.mediacloud.app.nav2.AppHome21Style',
-      rules: '[vid="float_feedback"] > ImageView[index=2][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/13806896',
+      rules: [
+        {
+          matches:
+            '@ImageView - FrameLayout - ImageView < [id="cn.mil.junhao:id/float_feedback"]',
+          snapshotUrls: 'https://i.gkd.li/import/13806896',
+        },
+      ],
     },
   ],
 });

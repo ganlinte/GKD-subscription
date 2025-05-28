@@ -7,37 +7,38 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       matchTime: 10000,
-      fastQuery: true,
+      ignoreGlobalGroupMatch: false,
       rules: [
         {
-          name: '字节SDK',
-          matches:
-            '@[id="com.byted.pangle:id/tt_splash_skip_btn"] <<n [id="cn.lezhi.speedtest:id/fl_splash_container"]',
-          snapshotUrls: 'https://i.gkd.li/import/13544242',
-        },
-        {
-          name: '腾讯SDK',
-          matches: '[text*="跳过"][text.length<=10]',
-          snapshotUrls: 'https://i.gkd.li/import/13626049',
-        },
-        {
-          name: '腾讯SDK2',
-          matches:
-            '@View <3 FrameLayout[childCount=4] <2 FrameLayout[childCount=2] < [vid="fl_splash_container"]',
-          snapshotUrls: 'https://i.gkd.li/import/13885906',
+          anyMatches: [
+            '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
+            '@View <3 FrameLayout <2 FrameLayout < [id="cn.lezhi.speedtest:id/fl_splash_container"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/import/13544242',
+            'https://i.gkd.li/import/13885906',
+            'https://i.gkd.li/import/13626049', //跳过
+          ],
         },
       ],
     },
     {
       key: 1,
       name: '更新提示',
-      activityIds: 'cn.lezhi.speedtest.main5.MainV5Activity',
-      rules:
-        '[id="cn.lezhi.speedtest:id/rl_update_dialog_layout"] >n [id="cn.lezhi.speedtest:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/12727619',
+      activityIds: '.main5.MainV5Activity',
+      rules: [
+        {
+          matches: [
+            'TextView[text="立即更新"]',
+            '[id="cn.lezhi.speedtest:id/iv_close"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/12727619',
+        },
+      ],
     },
   ],
 });
