@@ -6,25 +6,19 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-红包弹窗',
+      name: '全屏广告-优惠卷弹窗',
+      fastQuery: true,
+      activityIds: '.coupon.couponfactory.CouponFactoryActivity',
       rules: [
         {
-          key: 0,
-          name: '领券中心-红包弹窗',
-          activityIds:
-            'cn.yonghui.hyd.coupon.couponfactory.CouponFactoryActivity',
-          matches:
-            '[id="cn.yonghui.hyd:id/advance"] +n [id="cn.yonghui.hyd:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13414401',
-        },
-        {
-          key: 1,
-          name: '好券即将过期弹窗',
-          activityIds:
-            'cn.yonghui.hyd.coupon.couponfactory.CouponFactoryActivity',
-          matches:
-            '[id="cn.yonghui.hyd:id/couponsWillGoneHeaderIv"] +n [id="cn.yonghui.hyd:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13414444',
+          anyMatches: [
+            '@TextView[id="cn.yonghui.hyd:id/close"] -n [id="cn.yonghui.hyd:id/title"][text="天降红包"]',
+            '@ImageView[id="cn.yonghui.hyd:id/close"] -n [id="cn.yonghui.hyd:id/couponsWillGoneHeaderIv"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/import/13414401', // 天降红包
+            'https://i.gkd.li/import/13414444', // 优惠券
+          ],
         },
       ],
     },

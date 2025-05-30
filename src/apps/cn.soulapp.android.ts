@@ -23,27 +23,14 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
-      name: '青少年模式',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          matches: '[id="cn.soulapp.android:id/btn_sure"]',
-          snapshotUrls: 'https://i.gkd.li/import/12834093',
-        },
-      ],
-    },
-    {
       key: 2,
-      name: '局部广告-广场页卡片广告',
+      name: '局部广告-广场-卡片广告',
       fastQuery: true,
       activityIds: ['cn.soulapp.android.component.startup.main.MainActivity'],
       rules: [
         {
           matches:
-            '[id="cn.soulapp.android:id/sl_ad_root"] >n [id="cn.soulapp.android:id/fl_tag_container"]',
+            '@ImageView - [text="广告"] < LinearLayout < [id="cn.soulapp.android:id/fl_tag_container"]',
           snapshotUrls: 'https://i.gkd.li/import/12838000',
         },
       ],
@@ -52,23 +39,25 @@ export default defineGkdApp({
       key: 3,
       name: '全屏广告-app评分',
       fastQuery: true,
-      activityIds: ['cn.soulapp.android.component.chat.ConversationActivity'],
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: '.component.chat.ConversationActivity',
       rules: [
         {
           matches:
-            '[id="cn.soulapp.android:id/score_message"] +3 [id="cn.soulapp.android:id/cancel"]',
+            '@[id="cn.soulapp.android:id/cancel"][text="取消"] - [id="cn.soulapp.android:id/score_rate"]',
           snapshotUrls: 'https://i.gkd.li/import/13425057',
         },
       ],
     },
     {
       key: 4,
-      name: '全屏广告-版本更新',
+      name: '更新提示-升级到最新版本',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: ['cn.soulapp.android.component.startup.main.MainActivity'],
+      activityIds: '.component.startup.main.MainActivity',
       rules: [
         {
           matches:

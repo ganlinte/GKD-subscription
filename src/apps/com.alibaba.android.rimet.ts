@@ -5,7 +5,6 @@ export default defineGkdApp({
   name: '钉钉',
   groups: [
     {
-      enable: false,
       key: 1,
       name: '局部广告-消息列表上方广告',
       fastQuery: true,
@@ -22,9 +21,8 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
       key: 2,
-      name: '全屏广告-文件即将过期提示',
+      name: '局部广告-文件即将过期提示',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -40,11 +38,10 @@ export default defineGkdApp({
       ],
     },
     {
-      name: '功能类-自动点击原图',
-      enable: false,
       key: 3,
-      actionMaximum: 1,
+      name: '功能类-自动点击原图',
       fastQuery: true,
+      actionMaximum: 1,
       activityIds:
         'com.alibaba.android.dingtalk.photoui.activitys.AlbumActivity',
       rules: [
@@ -60,19 +57,15 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
       key: 4,
-      name: '更新提示',
+      name: '全屏广告-钉钉新功能',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      activityIds:
+        'com.alibaba.lightapp.runtime.activity.WebViewDialogActivity',
       rules: [
-        {
-          key: 0,
-          matches: '@Button[text*="暂不更新"] + Button[text*="更新"]',
-          snapshotUrls: 'https://i.gkd.li/import/13402478',
-        },
         {
           matches:
             'TextView[id="com.alibaba.android.rimet:id/dialog_close_button"]',
@@ -81,13 +74,12 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
       key: 5,
       name: '功能类-扫码自动登录桌面版',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
+      resetMatch: 'match',
       activityIds: 'com.alibaba.android.user.qrcode.WebLoginActivity',
       rules: [
         {

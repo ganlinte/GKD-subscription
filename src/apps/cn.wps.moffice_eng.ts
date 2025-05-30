@@ -10,6 +10,7 @@ export default defineGkdApp({
       exampleUrls: [
         'https://github.com/gkd-kit/subscription/assets/38517192/57787554-0443-4bc0-9f29-1759aae07b9b',
       ],
+      fastQuery: true,
       activityIds: [
         'cn.wps.moffice.main.StartPublicActivity',
         'cn.wps.moffice.documentmanager.PreStartActivity',
@@ -18,7 +19,8 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: '[id$="/nativeclose"]',
+          matches:
+            '[id="cn.wps.moffice_eng:id/nativeclose"||id="com.mopub.ad.xiaomi:id/nativeclose"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12505350',
             'https://i.gkd.li/import/12505286',
@@ -49,7 +51,6 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
       key: 3,
       name: '更新提示',
       activityIds: [
@@ -61,7 +62,6 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/import/12882371',
     },
     {
-      enable: false,
       key: 4,
       name: '全屏广告-开启WPS云服务',
       desc: '自动点击不开启',
@@ -89,6 +89,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '局部广告-文档末尾广告',
+      fastQuery: true,
       activityIds: [
         'cn.wps.moffice.writer.multiactivity.Writer', //Writer1,Writer2...
       ],

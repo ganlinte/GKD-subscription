@@ -8,6 +8,7 @@ export default defineGkdApp({
       key: 0,
       name: '开屏广告',
       desc: '点击跳过',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -23,17 +24,17 @@ export default defineGkdApp({
       key: 2,
       name: '分段广告-卡片广告',
       desc: '点击X-点击不感兴趣',
+      fastQuery: true,
       rules: [
         {
           key: 0,
           activityIds: 'cn.wsds.gamemaster.ui.gamedetails.ActivityGameDetails',
           matches:
-            '[id="cn.wsds.gamemaster:id/feed_ad"] [text="立即下载"] + ImageView[clickable=true]',
+            '@ImageView - TextView < ViewGroup <n * <n * <n * <n * < [id="cn.wsds.gamemaster:id/feed_ad"]',
           snapshotUrls: 'https://i.gkd.li/import/13930398',
         },
         {
           preKeys: 0,
-          fastQuery: true,
           activityIds: 'cn.wsds.gamemaster.ui.gamedetails.ActivityGameDetails',
           matches: '[text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/import/13930399',

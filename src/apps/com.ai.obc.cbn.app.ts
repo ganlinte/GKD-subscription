@@ -7,13 +7,16 @@ export default defineGkdApp({
     {
       key: 2,
       name: '更新提示',
+      fastQuery: true,
+      resetMatch: 'app',
+      actionMaximum: 1,
       activityIds: [
         'com.ai.obc.cbn.app.ui.other.activity.MainActivity',
         'com.ai.obc.cbn.app.ui.main.fragment.MainFragment',
       ],
       rules: [
         {
-          matches: '[id$="/ivDis"]',
+          matches: 'ImageView[id="com.ai.obc.cbn.app:id/ivDis"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12617201',
             'https://i.gkd.li/import/12655061',
