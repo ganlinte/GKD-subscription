@@ -29,9 +29,15 @@ export default defineGkdApp({
       fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
-      activityIds: 'com.sf.ui.main.MainActivity',
+      activityIds: [
+        'com.sf.ui.main.MainActivity',
+        'com.sf.ui.launcher.LauncherActivity',
+      ],
       rules: 'ImageView[id="com.sfacg:id/imgClose"]',
-      snapshotUrls: 'https://i.gkd.li/import/14427490',
+      snapshotUrls: [
+        'https://i.gkd.li/import/14427490',
+        'https://i.gkd.li/i/20585745',
+      ],
     },
     {
       key: 2,
