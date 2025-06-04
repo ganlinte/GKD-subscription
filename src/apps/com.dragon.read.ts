@@ -213,17 +213,19 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '全屏广告-阅读-章节间图片广告',
+      name: '全屏广告-阅读-章节间广告',
       desc: '自动点击右下方空白处翻页，翻页模式【上下】无法使用',
       fastQuery: true,
       forcedTime: 3600000, //1小时
       rules: [
         {
-          matches: ['[id="android:id/content"]'],
+          matches: '[id="android:id/content"]',
           anyMatches: [
             'UISvg +n FlattenUIText[text^="¥"][visibleToUser=true]',
             '[text="点击关闭广告并退出小说" || text="去抢购" || text="去领取"][visibleToUser=true]',
             'TextView[text~="(?is)全[0-9]+集"] <2 ViewGroup + TextView[text="看全集"][visibleToUser=true]',
+            'TextView[text="观看全集"][visibleToUser=true] -n TextView[vid="title"][text="短剧端内免费看"]',
+            'TextView[text="免费看剧"][visibleToUser=true] < FrameLayout <2 LinearLayout -n TextView[vid="title"][text="短剧端内免费看"]',
           ],
           excludeMatches: '[text="反馈"]', //翻页时容易误触
           position: { right: 100, bottom: 300 },
@@ -235,6 +237,8 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17932302', //去领取
             'https://i.gkd.li/i/18124417', //去抢购
             'https://i.gkd.li/i/20279981', //看全集
+            'https://i.gkd.li/i/20585911', //观看全集
+            'https://i.gkd.li/i/20586037', //免费看剧
           ],
         },
       ],
@@ -246,6 +250,7 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
+      activityIds: '.reader.ui.ReaderActivity',
       rules: [
         {
           matches:
