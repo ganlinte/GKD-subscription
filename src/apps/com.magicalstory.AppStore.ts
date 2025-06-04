@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-卡片式广告',
+      name: '局部广告-搜索-卡片式广告',
       fastQuery: true,
       forcedTime: 1000,
       rules: [
@@ -58,6 +58,19 @@ export default defineGkdApp({
       rules:
         '[id="com.magicalstory.AppStore:id/tv_update"] <2 * + * > [id="com.magicalstory.AppStore:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13459373',
+    },
+    {
+      key: 4,
+      name: '局部广告-广场-流式广告',
+      fastQuery: true,
+      activityIds: '.main.fragments.square.section.sectionActivity',
+      rules: [
+        {
+          matches:
+            '@ImageView[visibleToUser=true] < FrameLayout[index=3] <4 FrameLayout <3 LinearLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <2 [vid="recyclerView"]',
+          snapshotUrls: 'https://i.gkd.li/i/20585709',
+        },
+      ],
     },
   ],
 });
