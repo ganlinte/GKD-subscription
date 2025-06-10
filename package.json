@@ -50,7 +50,7 @@
     "@gkd-kit/define": "0.0.1",
     "@gkd-kit/tools": "^0.6.0",
     "@types/node": "22.15.29",
-    "@typescript-eslint/eslint-plugin": "8.32.1",
+    "@typescript-eslint/eslint-plugin": "8.33.0",
     "@typescript-eslint/parser": "8.33.0",
     "esbuild": "0.25.4",
     "eslint": "^9.25.1",
