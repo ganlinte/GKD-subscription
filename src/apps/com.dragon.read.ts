@@ -8,6 +8,7 @@ export default defineGkdApp({
       key: 2,
       name: '局部广告-书城-右侧悬浮红包广告',
       fastQuery: true,
+      matchTime: 20000,
       resetMatch: 'app',
       activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
       rules: [
@@ -23,27 +24,17 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-优惠券弹窗',
-      activityIds: '.pages.main.MainFragmentActivity',
+      name: '评价提示',
       fastQuery: true,
+      actionMaximum: 1,
+      matchTime: 20000,
+      resetMatch: 'app',
+      activityIds: '.pages.main.MainFragmentActivity',
       rules: [
         {
-          name: '电商惊喜券',
           matches:
-            '@LynxFlattenUI[id=null][text=""][clickable=true] - [text="去逛商城"] -4 [text$="电商惊喜券"]',
-          snapshotUrls: 'https://i.gkd.li/import/12910159',
-        },
-        {
-          name: '爆款好物一分购',
-          matches:
-            '@ImageView[clickable=true] <2 LinearLayout[childCount=2] < [id="android:id/content"][childCount=1]',
-          snapshotUrls: 'https://i.gkd.li/import/12878266',
-        },
-        {
-          name: '限时会员福利',
-          matches:
-            '@ImageView[clickable=true] -3 ViewGroup >n TextView[text="恭喜获得限时会员福利"]',
-          snapshotUrls: 'https://i.gkd.li/i/18553545',
+            '@ImageView +n LinearLayout > TextView[text="我要反馈"] +2 TextView[text="五星好评"]',
+          snapshotUrls: 'https://i.gkd.li/i/20772203',
         },
       ],
     },
@@ -69,7 +60,7 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '全屏广告-广告弹窗',
+      name: '全屏广告-书城-广告弹窗',
       desc: '【X】',
       fastQuery: true,
       rules: [
@@ -80,6 +71,24 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18124360',
             'https://i.gkd.li/i/18124367',
           ],
+        },
+        {
+          name: '电商惊喜券',
+          matches:
+            '@LynxFlattenUI[id=null][text=""][clickable=true] - [text="去逛商城"] -4 [text$="电商惊喜券"]',
+          snapshotUrls: 'https://i.gkd.li/import/12910159',
+        },
+        {
+          name: '爆款好物一分购',
+          matches:
+            '@ImageView[clickable=true] <2 LinearLayout[childCount=2] < [id="android:id/content"][childCount=1]',
+          snapshotUrls: 'https://i.gkd.li/import/12878266',
+        },
+        {
+          name: '限时会员福利',
+          matches:
+            '@ImageView[clickable=true] -3 ViewGroup >n TextView[text="恭喜获得限时会员福利"]',
+          snapshotUrls: 'https://i.gkd.li/i/18553545',
         },
       ],
     },
