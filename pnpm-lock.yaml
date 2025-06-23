@@ -28,14 +28,14 @@ importers:
         specifier: ^9.29.0
         version: 9.29.0
       '@gkd-kit/api':
-        specifier: 0.7.2
-        version: 0.7.2
+        specifier: 0.7.3
+        version: 0.7.3
       '@gkd-kit/define':
         specifier: 0.0.1
-        version: 0.0.1(@gkd-kit/api@0.7.2)
+        version: 0.0.1(@gkd-kit/api@0.7.3)
       '@gkd-kit/tools':
         specifier: ^0.6.0
-        version: 0.6.0(@gkd-kit/api@0.7.2)(json5@2.2.3)
+        version: 0.6.0(@gkd-kit/api@0.7.3)(json5@2.2.3)
       '@types/node':
         specifier: 24.0.1
         version: 24.0.1
@@ -335,10 +335,6 @@ packages:
     resolution: {integrity: sha512-gtF186CXhIl1p4pJNGZw8Yc6RlshoePRvE0X91oPGb3vZ8pM3qOS9W9NGPat9LziaBV7XrJWGylNQXkGcnM3IQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/js@9.28.0':
-    resolution: {integrity: sha512-fnqSjGWd/CoIp4EXIxWVK/sHA6DOHN4+8Ix2cX5ycOY7LG0UY8nHCU5pIp2eaE1Mc7Qd8kHspYNzYXT2ojPLzg==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-
   '@eslint/js@9.29.0':
     resolution: {integrity: sha512-3PIF4cBw/y+1u2EazflInpV+lYsSG0aByVIQzAgb1m1MhHFSbqTyNqtBKHgWf/9Ykud+DhILS9EGkmekVhbKoQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -351,8 +347,8 @@ packages:
     resolution: {integrity: sha512-4SaFZCNfJqvk/kenHpI8xvN42DMaoycy4PzKc5otHxRswww1kAt82OlBuwRVLofCACCTZEcla2Ydxv8scMXaTg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@gkd-kit/api@0.7.2':
-    resolution: {integrity: sha512-bpMVMVfBvs2lHH/5khpBr79ULSHreRCpL488CQbhaWziJ3WzWI4AYaLn/Jw+ETukhvv5y9Y+PxdJzoct8BAAcQ==}
+  '@gkd-kit/api@0.7.3':
+    resolution: {integrity: sha512-hnNfIO7nQW6aOVmO0WJzeIqvWmuG7YsGcKclZvnHmB08ZGippPZ/W7vbRlzpcIkEGMzX/FLz06QDCln8cvq3VA==}
 
   '@gkd-kit/define@0.0.1':
     resolution: {integrity: sha512-ql/f0TIlBQOSaJS6e9c8B4rLHYWyCzDctP0vRpc6aYaWGJXnZKZIbuTUr2ET45eNzD4dviCjTU6cSv/wcA07IQ==}
@@ -1533,8 +1529,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@eslint/js@9.28.0': {}
-
   '@eslint/js@9.29.0': {}
 
   '@eslint/object-schema@2.1.6': {}
@@ -1544,17 +1538,17 @@ snapshots:
       '@eslint/core': 0.15.0
       levn: 0.4.1
 
-  '@gkd-kit/api@0.7.2': {}
+  '@gkd-kit/api@0.7.3': {}
 
-  '@gkd-kit/define@0.0.1(@gkd-kit/api@0.7.2)':
+  '@gkd-kit/define@0.0.1(@gkd-kit/api@0.7.3)':
     dependencies:
-      '@gkd-kit/api': 0.7.2
+      '@gkd-kit/api': 0.7.3
 
   '@gkd-kit/selector@0.5.4': {}
 
-  '@gkd-kit/tools@0.6.0(@gkd-kit/api@0.7.2)(json5@2.2.3)':
+  '@gkd-kit/tools@0.6.0(@gkd-kit/api@0.7.3)(json5@2.2.3)':
     dependencies:
-      '@gkd-kit/api': 0.7.2
+      '@gkd-kit/api': 0.7.3
       '@gkd-kit/selector': 0.5.4
       '@gkd-kit/wasm_matches': 0.0.1
       json5: 2.2.3
