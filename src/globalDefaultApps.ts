@@ -177,6 +177,7 @@ export const openAdBlackListAppIDs = new Set([
 // 更新提示黑名单
 export const updateBlackListAppIDs = new Set([
   ...blackListAppIDs,
+  'com.android.bankabc', //中国农业银行
   ...filterAppsByGroup(apps, '更新提示'),
 ]);
 
