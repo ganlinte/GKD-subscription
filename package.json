@@ -77,7 +77,7 @@
     "node": "23.11.0",
     "npm": "11.4.2"
   },
-  "packageManager": "pnpm@10.12.1",
+  "packageManager": "pnpm@10.12.3",
   "engineStrict": true,
   "engines": {
     "node": ">=22"
