@@ -49,7 +49,7 @@
     "@gkd-kit/api": "0.7.3",
     "@gkd-kit/define": "0.0.1",
     "@gkd-kit/tools": "^0.6.0",
-    "@types/node": "24.0.1",
+    "@types/node": "24.0.4",
     "@typescript-eslint/eslint-plugin": "8.34.0",
     "@typescript-eslint/parser": "8.34.0",
     "esbuild": "0.25.5",
