@@ -28,6 +28,7 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       matchTime: 20000,
+      forcedTime: 20000,
       resetMatch: 'app',
       activityIds: '.pages.main.MainFragmentActivity',
       rules: [
