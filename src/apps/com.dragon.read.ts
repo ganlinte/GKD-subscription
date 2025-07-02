@@ -103,6 +103,19 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/i/17661722',
     },
     {
+      key: 7,
+      name: '评价提示-阅读',
+      fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'match',
+      rules: [
+        {
+          matches: '@TextView[text="取消"] -n TextView[text="点评此书"]',
+          snapshotUrls: 'https://i.gkd.li/i/21012283',
+        },
+      ],
+    },
+    {
       key: 11,
       name: '局部广告-阅读-卡片广告',
       desc: '点击X',
