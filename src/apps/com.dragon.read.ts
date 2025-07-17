@@ -5,6 +5,20 @@ export default defineGkdApp({
   name: '番茄免费小说',
   groups: [
     {
+      key: 1,
+      name: '更新提示',
+      fastQuery: true,
+      matchTime: 20000,
+      resetMatch: 'app',
+      activityIds: '.pages.main.MainFragmentActivity',
+      rules: [
+        {
+          matches: '@TextView[text="以后再说"] + TextView[text="优先体验"]',
+          snapshotUrls: 'https://i.gkd.li/i/21290014',
+        },
+      ],
+    },
+    {
       key: 2,
       name: '局部广告-书城-右侧悬浮红包广告',
       fastQuery: true,
