@@ -232,6 +232,11 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17928168',
           ],
         },
+        {
+          name: '关闭',
+          matches: 'FlattenUIText[text="关闭"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/21272921',
+        },
       ],
     },
     {
