@@ -259,6 +259,7 @@ export default defineGkdApp({
       desc: '自动点击右下方空白处翻页，翻页模式【上下】无法使用',
       fastQuery: true,
       forcedTime: 3600000, //1小时
+      activityIds: '.reader.ui.ReaderActivity',
       rules: [
         {
           matches: '[id="android:id/content"]',
