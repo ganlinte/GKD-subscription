@@ -290,7 +290,7 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '局部广告-阅读-菜单右侧图书福利浮窗',
+      name: '局部广告-阅读-菜单右侧福利浮窗',
       desc: '点击X',
       fastQuery: true,
       actionMaximum: 1,
@@ -298,9 +298,16 @@ export default defineGkdApp({
       activityIds: '.reader.ui.ReaderActivity',
       rules: [
         {
+          name: '图书福利',
           matches:
             '@ImageView - ImageView < * < * < FrameLayout + LinearLayout > LinearLayout > TextView[text="目录"]',
           snapshotUrls: 'https://i.gkd.li/i/20340317',
+        },
+        {
+          name: '免费领会员',
+          matches:
+            'ViewGroup - @ImageView < * < * < FrameLayout + LinearLayout > LinearLayout > TextView[text="目录"]',
+          snapshotUrls: 'https://i.gkd.li/i/21341401',
         },
       ],
     },
