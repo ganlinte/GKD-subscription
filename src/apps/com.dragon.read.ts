@@ -161,6 +161,7 @@ export default defineGkdApp({
           anyMatches: [
             '@ImageView - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
             '@ImageView < FrameLayout - LinearLayout <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
+            '@UISvg +n FlattenUIText[text="广告"] <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/import/12908734', //1
@@ -168,6 +169,7 @@ export default defineGkdApp({
             'https://i.gkd.li/import/15294350', //1
             'https://i.gkd.li/i/17474877', //1
             'https://i.gkd.li/i/17565008', //2
+            'https://i.gkd.li/i/21479922', //3
           ],
         },
         {
