@@ -8,8 +8,8 @@ export default defineGkdApp({
       key: 1,
       name: '更新提示',
       fastQuery: true,
-      matchTime: 20000,
       resetMatch: 'app',
+      actionMaximum: 1,
       activityIds: '.pages.main.MainFragmentActivity',
       rules: [
         {
