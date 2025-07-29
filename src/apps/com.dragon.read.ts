@@ -273,7 +273,7 @@ export default defineGkdApp({
             '[text="点击关闭广告并退出小说" || text="去抢购" || text="去领取"][visibleToUser=true]',
             'TextView[text~="(?is)全[0-9]+集"] <2 ViewGroup + TextView[text="看全集"][visibleToUser=true]',
             'TextView[text="观看全集"][visibleToUser=true] -n TextView[vid="title"][text="短剧端内免费看"]',
-            'TextView[text="免费看剧"][visibleToUser=true] < FrameLayout <2 LinearLayout -n TextView[vid="title"][text="短剧端内免费看"]',
+            'TextView[text="免费看剧"][visibleToUser=true] < FrameLayout <(1,2) LinearLayout -n TextView[vid="title"][text$="剧端内免费看"]',
             'FlattenUIText[text="更多精选好物"][visibleToUser=true]',
           ],
           excludeMatches: '[text="反馈"]', //翻页时容易误触
@@ -288,6 +288,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/20279981', //看全集
             'https://i.gkd.li/i/20585911', //观看全集
             'https://i.gkd.li/i/20586037', //免费看剧
+            'https://i.gkd.li/i/21479966', //免费看剧
             'https://i.gkd.li/i/21308312', //更多精选好物
           ],
         },
