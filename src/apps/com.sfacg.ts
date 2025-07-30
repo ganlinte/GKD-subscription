@@ -61,15 +61,20 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-书库-右侧-上架预定书单',
+      name: '局部广告-书库-右侧-上架预定书单浮窗',
       desc: '点击 X',
       fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
       matchTime: 20000,
       activityIds: 'com.sf.ui.main.MainActivity',
-      rules: '@ImageView - ImageView[id="com.sfacg:id/iv_home_float"]',
-      snapshotUrls: 'https://i.gkd.li/import/15397824',
+      rules: [
+        {
+          matches: '@ImageView - ImageView[id="com.sfacg:id/iv_home_float"]',
+          excludeMatches: 'ImageView[id="com.sfacg:id/imgClose"]',
+          snapshotUrls: 'https://i.gkd.li/import/15397824',
+        },
+      ],
     },
   ],
 });
