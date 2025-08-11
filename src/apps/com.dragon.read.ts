@@ -133,6 +133,22 @@ export default defineGkdApp({
       ],
     },
     {
+      key: 8,
+      name: '局部广告-首页-右侧红包领取悬浮窗',
+      desc: 'X',
+      fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      matchTime: 20000,
+      rules: [
+        {
+          matches:
+            '@ImageView + ViewGroup > TextView[text="领取"][index=parent.childCount.minus(1)]',
+          snapshotUrls: 'https://i.gkd.li/i/21708368',
+        },
+      ],
+    },
+    {
       key: 11,
       name: '局部广告-阅读-卡片广告',
       desc: '点击X',
