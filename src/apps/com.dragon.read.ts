@@ -20,18 +20,22 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-书城-右侧悬浮红包广告',
+      name: '局部广告-首页-右侧红包浮窗',
       fastQuery: true,
       matchTime: 20000,
       resetMatch: 'app',
+      actionMaximum: 1,
       activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
       rules: [
         {
-          matches:
+          anyMatches: [
             '@ImageView < * < RelativeLayout < FrameLayout <(1,2) [id="android:id/content"]',
+            '@ImageView + ViewGroup > TextView[text="领取"][index=parent.childCount.minus(1)]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/import/12716506',
             'https://i.gkd.li/i/17725414',
+            'https://i.gkd.li/i/21708368', //领取
           ],
         },
       ],
@@ -129,22 +133,6 @@ export default defineGkdApp({
         {
           matches: '@TextView[text="取消"] -n TextView[text="点评此书"]',
           snapshotUrls: 'https://i.gkd.li/i/21012283',
-        },
-      ],
-    },
-    {
-      key: 8,
-      name: '局部广告-首页-右侧红包领取悬浮窗',
-      desc: 'X',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      matchTime: 20000,
-      rules: [
-        {
-          matches:
-            '@ImageView + ViewGroup > TextView[text="领取"][index=parent.childCount.minus(1)]',
-          snapshotUrls: 'https://i.gkd.li/i/21708368',
         },
       ],
     },
