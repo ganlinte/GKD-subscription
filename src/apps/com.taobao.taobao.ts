@@ -11,7 +11,15 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.taobao.taobao:id/close"]',
+      rules: [
+        {
+          anyMatches: [
+            '[id="com.taobao.taobao:id/close"]',
+            '[id="com.taobao.taobao:id/tv_close"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/21708258',
+        },
+      ],
     },
     {
       enable: false,
