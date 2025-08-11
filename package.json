@@ -59,7 +59,7 @@
     "json5": "2.2.3",
     "lint-staged": "16.1.4",
     "prettier": "3.6.2",
-    "simple-git-hooks": "2.13.0",
+    "simple-git-hooks": "2.13.1",
     "tsx": "4.20.3",
     "typescript": "5.8.3"
   },
