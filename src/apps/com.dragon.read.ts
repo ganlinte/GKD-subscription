@@ -210,8 +210,10 @@ export default defineGkdApp({
       name: '全屏广告-阅读-视频广告',
       desc: '点击【关闭】/【反馈-不感兴趣】',
       fastQuery: true,
-      matchRoot: true,
-      activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
+      activityIds: [
+        '.reader.ui.ReaderActivity',
+        '.ad.openingscreenad.OpeningScreenADActivity',
+      ],
       rules: [
         {
           key: 1,
@@ -232,6 +234,7 @@ export default defineGkdApp({
             'https://i.gkd.li/import/13520160',
             'https://i.gkd.li/i/17468490',
             'https://i.gkd.li/i/17474896',
+            'https://i.gkd.li/i/21708291', //.ad.openingscreenad.OpeningScreenADActivity
           ],
           exampleUrls: [
             'https://i.gkd.li/i/17564881', //等待
@@ -273,7 +276,7 @@ export default defineGkdApp({
             '[text="点击关闭广告并退出小说" || text="去抢购" || text="去领取"][visibleToUser=true]',
             'TextView[text~="(?is)全[0-9]+集"] <2 ViewGroup + TextView[text="看全集"][visibleToUser=true]',
             'TextView[text="观看全集"][visibleToUser=true] -n TextView[vid="title"][text="短剧端内免费看"]',
-            'TextView[text="免费看剧"][visibleToUser=true] < FrameLayout <(1,2) LinearLayout -n TextView[vid="title"][text$="剧端内免费看"]',
+            'TextView[text="免费看剧"][visibleToUser=true] < FrameLayout <(1,2) LinearLayout -n TextView[vid="title"]',
             'FlattenUIText[text="更多精选好物"][visibleToUser=true]',
           ],
           excludeMatches: '[text="反馈"]', //翻页时容易误触
@@ -289,6 +292,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/20585911', //观看全集
             'https://i.gkd.li/i/20586037', //免费看剧
             'https://i.gkd.li/i/21479966', //免费看剧
+            'https://i.gkd.li/i/21708274', //免费看剧
             'https://i.gkd.li/i/21308312', //更多精选好物
           ],
         },
