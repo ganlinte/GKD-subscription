@@ -15,12 +15,13 @@ export default defineGkdApp({
         {
           anyMatches: [
             '@View + TextView[index=parent.childCount.minus(1)] <n FrameLayout <n FrameLayout < FrameLayout[id="com.cainiao.wireless:id/fl_third_splash_container"]',
-            'TextView[id="com.cainiao.wireless:id/homesplash_close_fullscreen"][text^="跳过"]',
+            'TextView[text^="跳过"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/19222366', //View
             'https://i.gkd.li/i/21750819', //View
             'https://i.gkd.li/i/19477428', //跳过
+            'https://i.gkd.li/i/21913724', //跳过
           ],
         },
       ],
