@@ -267,7 +267,7 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '全屏广告-阅读-章节间广告',
+      name: '全屏广告-阅读-翻页广告',
       desc: '自动点击右下方空白处翻页，翻页模式【上下】无法使用',
       fastQuery: true,
       forcedTime: 3600000, //1小时
@@ -281,7 +281,7 @@ export default defineGkdApp({
             'TextView[text~="(?is)全[0-9]+集"] <2 ViewGroup + TextView[text="看全集"][visibleToUser=true]',
             'TextView[text="观看全集"][visibleToUser=true] -n TextView[vid="title"][text="短剧端内免费看"]',
             'TextView[text="免费看剧"][visibleToUser=true] < FrameLayout <(1,2) LinearLayout -n TextView[vid="title"]',
-            'FlattenUIText[text="更多精选好物"][visibleToUser=true]',
+            'FlattenUIText[text="更多精选好物"||text="立即查看"||text="我知道了"][visibleToUser=true]',
           ],
           excludeMatches: '[text="反馈"]', //翻页时容易误触
           position: { right: 100, bottom: 300 },
@@ -298,6 +298,8 @@ export default defineGkdApp({
             'https://i.gkd.li/i/21479966', //免费看剧
             'https://i.gkd.li/i/21708274', //免费看剧
             'https://i.gkd.li/i/21308312', //更多精选好物
+            'https://i.gkd.li/i/21913845', //立即查看
+            'https://i.gkd.li/i/21913873', //我知道了
           ],
         },
       ],
