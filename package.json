@@ -44,16 +44,16 @@
     "@commitlint/cli": "19.8.1",
     "@commitlint/config-conventional": "19.8.1",
     "@commitlint/types": "19.8.1",
-    "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.34.0",
+    "@eslint/eslintrc": "3.3.1",
+    "@eslint/js": "9.34.0",
     "@gkd-kit/api": "0.7.3",
     "@gkd-kit/define": "0.0.1",
-    "@gkd-kit/tools": "^0.6.0",
+    "@gkd-kit/tools": "0.6.0",
     "@types/node": "24.3.0",
     "@typescript-eslint/eslint-plugin": "8.39.1",
     "@typescript-eslint/parser": "8.40.0",
     "esbuild": "0.25.9",
-    "eslint": "^9.33.0",
+    "eslint": "9.33.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-unused-imports": "4.2.0",
     "json5": "2.2.3",
@@ -83,6 +83,6 @@
     "node": ">=22"
   },
   "dependencies": {
-    "picocolors": "^1.1.1"
+    "picocolors": "1.1.1"
   }
 }
