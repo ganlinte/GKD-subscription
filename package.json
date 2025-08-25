@@ -27,8 +27,8 @@
     "build": "tsc --noEmit && tsx ./scripts/build.ts"
   },
   "simple-git-hooks": {
-    "pre-commit": "bunx exec lint-staged",
-    "commit-msg": "bunx exec commitlint --config commitlint.config.ts --edit ${1}",
+    "pre-commit": "bunx lint-staged",
+    "commit-msg": "bunx commitlint --config commitlint.config.ts --edit ${1}",
     "pre-push": "bun run check"
   },
   "lint-staged": {
