@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - uses: oven-sh/setup-bun@v1
         with:
@@ -23,19 +25,28 @@ jobs:
       - run: bun run format
       - run: bun run lint
 
-      - name: Git commit
-        id: commit
+      - name: Pull latest changes and rebase
         run: |
           git config --local user.email github-actions[bot]@users.noreply.github.com
           git config --local user.name github-actions[bot]
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git fetch origin
+          git rebase origin/${{ github.ref_name }}
+
+      - name: Git commit
+        id: commit
+        run: |
           if [[ -n "$(git status --porcelain)" ]]; then
-            git commit -am "chore(actions): check_format_lint [skip ci]"
+            git add .
+            git commit -m "chore(actions): check_format_lint [skip ci]"
           else
             echo "No changes to commit"
+            exit 0
           fi
 
       - name: Git push
         uses: ad-m/github-push-action@master
+        if: ${{ steps.commit.outcome == 'success' }}
         with:
           branch: ${{ github.ref_name }}
           force: true
