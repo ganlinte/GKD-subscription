@@ -231,7 +231,7 @@ export default defineGkdApp({
           matches: '@[text="反馈"][visibleToUser=true]',
           excludeMatches: [
             '@[text="关闭"] - [text="反馈"]', //优先【关闭】
-            'TextView[text$="秒后，继续阅读下一页"]', //等待
+            'TextView[text*="秒后"]', //等待
             '@[text="反馈"][visibleToUser=true][2=parent.childCount]', //插图
           ],
           snapshotUrls: [
@@ -271,7 +271,10 @@ export default defineGkdApp({
       desc: '自动点击右下方空白处翻页，翻页模式【上下】无法使用',
       fastQuery: true,
       forcedTime: 3600000, //1小时
-      activityIds: '.reader.ui.ReaderActivity',
+      activityIds: [
+        '.reader.ui.ReaderActivity',
+        '.ad.openingscreenad.OpeningScreenADActivity',
+      ],
       rules: [
         {
           matches: '[id="android:id/content"]',
