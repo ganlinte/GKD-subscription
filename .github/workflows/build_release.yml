@@ -70,7 +70,7 @@ jobs:
           asset_content_type: application/json
 
       - name: Publish package
-        if: ${{ steps.commit.outcome == 'success' && env.NPM_TOKEN != '' }}
+        if: ${{ steps.commit.outcome == 'success' && secrets.NPM_TOKEN != '' }}
         run: |
           bun -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
           bun publish --access public --no-git-checks
