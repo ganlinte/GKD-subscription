@@ -71,7 +71,7 @@ jobs:
 
       - name: Publish package
         env:
-            NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         if: ${{ steps.commit.outcome == 'success' && env.NPM_TOKEN != '' }}
         run: |
           bun -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
