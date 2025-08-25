@@ -32,11 +32,10 @@ jobs:
             git commit -am "chore(actions): check_format_lint [skip ci]"
           else
             echo "No changes to commit"
-            exit 0
           fi
 
       - name: Git push
         uses: ad-m/github-push-action@master
-        if: ${{ steps.commit.outcome == 'success' }}
         with:
           branch: ${{ github.ref_name }}
+          force: true
