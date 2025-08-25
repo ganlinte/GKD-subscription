@@ -1,8 +1,29 @@
+name: pull_request_check
+
+on:
+  pull_request:
+    branches:
+      - main
+
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+      - name: Get changed files
+        id: changed_files
+        uses: tj-actions/changed-files@v46
+
+      - name: Check changed files
+        run: |
+          if [ ${{ steps.changed_files.outputs.all_changed_files_count }} -ne 1 ]; then
+            echo "your changed files count must be 1"
+            exit 1
+          fi
+          for file in ${{ steps.changed_files.outputs.all_changed_files }}; do
+            echo "$file was changed"
+          done
 
       - uses: oven-sh/setup-bun@v1
         with:
@@ -14,20 +35,11 @@ jobs:
       - run: bun run format
       - run: bun run lint
 
-      - name: Git commit
-        id: commit
+      - name: check format status
         run: |
-          git config --local user.email github-actions[bot]@users.noreply.github.com
-          git config --local user.name github-actions[bot]
-          if [[ -n "$(git status --porcelain)" ]]; then
-            git commit -am "chore(actions): check_format_lint [skip ci]"
-          else
-            echo "No changes to commit"
-            exit 0
+          status=$(git status --porcelain)
+          if [ -n "$status" ]; then
+            echo "Something wasn’t formatted properly"
+            git --no-pager diff
+            exit 1
           fi
-
-      - name: Git push
-        uses: ad-m/github-push-action@master
-        if: ${{ steps.commit.outcome == 'success' }}
-        with:
-          branch: ${{ github.ref_name }}
