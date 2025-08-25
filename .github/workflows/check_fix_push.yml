@@ -1,44 +1,33 @@
-name: check_fix_push
-
-on:
-  push:
-    branches:
-      - '**'
-
-permissions: write-all
-
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v3
+      - uses: oven-sh/setup-bun@v1
         with:
-          node-version: 22
+          bun-version: latest
 
-      - uses: pnpm/action-setup@v2
+      - run: bun install
 
-      - run: pnpm install
-
-      - run: pnpm run check
-
-      - run: pnpm run format
-
-      - run: pnpm run lint
+      - run: bun run check
+      - run: bun run format
+      - run: bun run lint
 
       - name: Git commit
         id: commit
         run: |
           git config --local user.email github-actions[bot]@users.noreply.github.com
           git config --local user.name github-actions[bot]
-          git status --porcelain
-          git --no-pager diff
-          git commit -a -m "chore(actions): check_format_lint"
-        continue-on-error: true
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git commit -am "chore(actions): check_format_lint [skip ci]"
+          else
+            echo "No changes to commit"
+            exit 0
+          fi
 
       - name: Git push
         uses: ad-m/github-push-action@master
         if: ${{ steps.commit.outcome == 'success' }}
         with:
-          branch: ${{ github.ref }}
+          branch: ${{ github.ref_name }}

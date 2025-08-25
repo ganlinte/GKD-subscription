@@ -26,19 +26,17 @@ jobs:
             echo "$file was changed"
           done
 
-      - uses: actions/setup-node@v3
+      - uses: oven-sh/setup-bun@v1
         with:
-          node-version: 20
+          bun-version: latest
 
-      - uses: pnpm/action-setup@v2
+      - run: bun install
 
-      - run: pnpm install
+      - run: bun run check
 
-      - run: pnpm run check
+      - run: bun run format
 
-      - run: pnpm run format
-
-      - run: pnpm run lint
+      - run: bun run lint
 
       - name: check format status
         run: |

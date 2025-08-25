@@ -27,9 +27,9 @@
     "build": "tsc --noEmit && tsx ./scripts/build.ts"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm exec lint-staged",
-    "commit-msg": "pnpm exec commitlint --config commitlint.config.ts --edit ${1}",
-    "pre-push": "pnpm run check"
+    "pre-commit": "bunx exec lint-staged",
+    "commit-msg": "bunx exec commitlint --config commitlint.config.ts --edit ${1}",
+    "pre-push": "bun run check"
   },
   "lint-staged": {
     "*.{js,cjs,mjs,ts,cts,mts,jsx,tsx}": [
@@ -73,11 +73,7 @@
     "type": "git",
     "url": "git+https://github.com/ganlinte/gkd-subscription.git"
   },
-  "volta": {
-    "node": "23.11.0",
-    "npm": "11.5.2"
-  },
-  "packageManager": "pnpm@10.15.0",
+  "packageManager": "bun@1.2.17",
   "engineStrict": true,
   "engines": {
     "node": ">=22"

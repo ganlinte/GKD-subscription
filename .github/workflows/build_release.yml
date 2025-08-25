@@ -12,23 +12,21 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-node@v3
+      - uses: oven-sh/setup-bun@v1
         with:
-          node-version: 20
+          bun-version: latest
 
-      - uses: pnpm/action-setup@v2
+      - run: bun install
 
-      - run: pnpm install
-
-      - run: pnpm run build
+      - run: bun run build
 
       - id: version
         run: |
-          version=$(node -e "import('@gkd-kit/tools').then((m) => m.stdoutGkdVersion());")
+          version=$(bun -e "import('@gkd-kit/tools').then((m) => m.stdoutGkdVersion());")
           echo "version=${version}" >> "$GITHUB_OUTPUT"
 
       - id: update_pkg_version
-        run: node -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
+        run: bun -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
 
       - name: Git commit
         id: commit
@@ -72,11 +70,10 @@ jobs:
           asset_content_type: application/json
 
       - name: Publish package
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         if: ${{ steps.commit.outcome == 'success' && env.NPM_TOKEN != '' }}
         run: |
-          pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
-          node -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
-          pnpm publish --no-git-checks
-          node -e "import('@gkd-kit/tools').then((m) => m.syncNpmmirror());"
+          bun -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
+          bun publish --access public --no-git-checks
+          bun -e "import('@gkd-kit/tools').then((m) => m.syncNpmmirror());"
+        env:
+          NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
