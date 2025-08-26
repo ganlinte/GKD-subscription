@@ -25,14 +25,6 @@ jobs:
       - run: bun run format
       - run: bun run lint
 
-      - name: Pull latest changes and rebase
-        run: |
-          git config --local user.email github-actions[bot]@users.noreply.github.com
-          git config --local user.name github-actions[bot]
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          git fetch origin
-          git rebase origin/${{ github.ref_name }}
-
       - name: Git commit
         id: commit
         run: |
@@ -43,6 +35,14 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
+
+      - name: Pull latest changes and rebase
+        run: |
+          git config --local user.email github-actions[bot]@users.noreply.github.com
+          git config --local user.name github-actions[bot]
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git fetch origin
+          git rebase origin/${{ github.ref_name }}
 
       - name: Git push
         uses: ad-m/github-push-action@master
