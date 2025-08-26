@@ -8,11 +8,9 @@
 
 本项目基于 nodejs + typescript
 
-- 安装[volta](https://volta.sh/)
-- 安装 node `volta install node`
-- 安装 pnpm `volta install pnpm@latest`
+- 安装 [bun](https://bun.net.cn/)
 - 建议安装 [Visual Studio Code](https://code.visualstudio.com/)
-- Fork 本项目, 然后 Clone 至本地, 切换到项目根目录，安装依赖 `pnpm install`
+- Fork 本项目, 然后 Clone 至本地, 切换到项目根目录，安装依赖 `bun install`
 
 ## 开始
 
@@ -214,7 +212,7 @@ export default defineAppConfig({
 
 注意每个规则一定要添加快照链接, 否则后期维护根本不知道这个规则到底点的是啥
 
-然后运行校验命令 `npm run check`, 它会检测你的规则是否书写正确, 也会检测每个选择器语法是否正确
+然后运行校验命令 `bun run check`, 它会检测你的规则是否书写正确, 也会检测每个选择器语法是否正确
 
 然后提交这个文件发起 pr 即可
 
