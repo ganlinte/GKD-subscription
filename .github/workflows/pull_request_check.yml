@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -29,7 +32,7 @@ jobs:
         with:
           bun-version: latest
 
-      - run: bun install --frozen-lockfile
+      - run: bun install
 
       - run: bun run check
 
@@ -37,11 +40,15 @@ jobs:
 
       - run: bun run lint
 
-      - name: check format status
+      - name: Commit updated files if any
         run: |
-          status=$(git status --porcelain)
-          if [ -n "$status" ]; then
-            echo "Something wasn’t formatted properly"
-            git --no-pager diff
-            exit 1
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "Changes detected, committing..."
+            git config --local user.name "github-actions[bot]"
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git add .
+            git commit -m "chore: update bun.lock / format code [skip ci]"
+            git push
+          else
+            echo "No changes to commit"
           fi

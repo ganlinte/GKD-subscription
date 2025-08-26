@@ -28,6 +28,8 @@ jobs:
       - name: Git commit
         id: commit
         run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
           if [[ -n "$(git status --porcelain)" ]]; then
             git add .
             git commit -m "chore(actions): check_format_lint [skip ci]"
@@ -38,8 +40,6 @@ jobs:
 
       - name: Pull latest changes and rebase
         run: |
-          git config --local user.email github-actions[bot]@users.noreply.github.com
-          git config --local user.name github-actions[bot]
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git fetch origin
           git rebase origin/${{ github.ref_name }}
