@@ -51,7 +51,7 @@
     "@gkd-kit/tools": "0.6.0",
     "@types/node": "24.3.0",
     "@typescript-eslint/eslint-plugin": "8.41.0",
-    "@typescript-eslint/parser": "8.40.0",
+    "@typescript-eslint/parser": "8.41.0",
     "esbuild": "0.25.9",
     "eslint": "9.34.0",
     "eslint-config-prettier": "10.1.8",
