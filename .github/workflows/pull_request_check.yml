@@ -40,6 +40,12 @@ jobs:
 
       - run: bun run lint
 
+      - name: Checkout PR branch
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
       - name: Commit updated files if any
         run: |
           if [ -n "$(git status --porcelain)" ]; then
@@ -48,7 +54,7 @@ jobs:
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git add .
             git commit -m "chore: update bun.lock / format code [skip ci]"
-            git push
+            git push origin HEAD:${{ github.head_ref }}
           else
             echo "No changes to commit"
           fi
