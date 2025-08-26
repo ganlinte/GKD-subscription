@@ -73,7 +73,7 @@
     "type": "git",
     "url": "git+https://github.com/ganlinte/gkd-subscription.git"
   },
-  "packageManager": "bun@1.2.17",
+  "packageManager": "bun@1.2.21",
   "engineStrict": true,
   "engines": {
     "node": ">=22"
