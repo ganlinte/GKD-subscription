@@ -145,7 +145,6 @@ export default defineGkdApp({
       rules: [
         {
           name: '卡片广告',
-          forcedTime: 3600000, //1小时
           anyMatches: [
             '@ImageView[visibleToUser=true] < FrameLayout <3 ViewGroup[childCount=4] <n * <n * <n * <n * <n * <n  * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
             '@ImageView[visibleToUser=true] < FrameLayout <3 ViewGroup[childCount=4] <n * <n * <n * <n * <n * <n  * <n * <n * <n * <n * <n * <n [id="com.dragon.read:id/root_view"]',
@@ -228,10 +227,11 @@ export default defineGkdApp({
         {
           key: 2,
           name: '点击【反馈】',
-          matches: '@[text="反馈"][visibleToUser=true]',
+          matchRoot: true,
+          matches: '[text="反馈"][visibleToUser=true]',
           excludeMatches: [
             '@[text="关闭"] - [text="反馈"]', //优先【关闭】
-            'TextView[text*="秒后"]', //等待
+            '[text$="秒后，继续阅读下一页"]', //等待
             '@[text="反馈"][visibleToUser=true][2=parent.childCount]', //插图
           ],
           snapshotUrls: [
