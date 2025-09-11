@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Get changed files
         id: changed_files
@@ -33,28 +35,49 @@ jobs:
           bun-version: latest
 
       - run: bun install
-
       - run: bun run check
-
       - run: bun run format
-
       - run: bun run lint
 
-      - name: Checkout PR branch
-        uses: actions/checkout@v3
-        with:
-          ref: ${{ github.head_ref }}
-          fetch-depth: 0
-
-      - name: Commit updated files if any
+      # 尝试合并 main，自动处理 package.json / bun.lock
+      - name: Merge main into PR branch
         run: |
-          if [ -n "$(git status --porcelain)" ]; then
-            echo "Changes detected, committing..."
-            git config --local user.name "github-actions[bot]"
-            git config --local user.email "github-actions[bot]@users.noreply.github.com"
-            git add .
-            git commit -m "chore: update bun.lock / format code [skip ci]"
+          git fetch origin main
+          set +e
+          git merge origin/main -X ours
+          MERGE_EXIT=$?
+          set -e
+
+          if [ $MERGE_EXIT -ne 0 ]; then
+            echo "Merge had conflicts, checking files..."
+
+            # 如果 bun.lock 有冲突 → 删掉重新生成
+            if git ls-files -u | grep "bun.lock"; then
+              echo "bun.lock conflict detected, regenerating..."
+              git rm bun.lock
+              bun install
+              git add bun.lock
+            fi
+
+            # 如果 package.json 有冲突 → 保留 PR 分支版本
+            if git ls-files -u | grep "package.json"; then
+              echo "package.json conflict detected, keeping PR version"
+              git checkout --ours package.json
+              git add package.json
+              bun install
+              git add bun.lock
+            fi
+
+            # 如果还有别的文件冲突，直接 fail
+            OTHER_CONFLICTS=$(git ls-files -u | grep -vE "package.json|bun.lock" || true)
+            if [ -n "$OTHER_CONFLICTS" ]; then
+              echo "❌ Other conflicts detected, please resolve manually:"
+              echo "$OTHER_CONFLICTS"
+              exit 1
+            fi
+
+            git commit -m "chore: auto-resolve deps conflicts [skip ci]" || true
             git push origin HEAD:${{ github.head_ref }}
           else
-            echo "No changes to commit"
+            echo "No conflicts during merge"
           fi
