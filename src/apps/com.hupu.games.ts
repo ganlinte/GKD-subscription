@@ -7,23 +7,27 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-推荐流广告',
-      desc: '点击卡片右上角广告文字,出现广告反馈,点击屏蔽该广告',
+      desc: '点击卡片右上角广告文字或省略号,出现广告反馈,点击屏蔽该广告',
       fastQuery: true,
       activityIds: [
         'com.hupu.games.main.MainActivity',
         'com.hupu.android.bbs.detail.PostDetailActivity',
         'com.hupu.topic.TopicActivity',
+        'com.hupu.android.bbs.page.rating.ratingDetail.RatingDetailActivity',
       ],
       rules: [
         {
           key: 1,
           name: '【广告】',
-          matches:
+          anyMatches: [
             '@[id="com.hupu.games:id/shield_view"] >2 [id="com.hupu.games:id/tv_tag"][text="广告"]',
+            '@[id="com.hupu.games:id/shield_view"] -n  [id="com.hupu.games:id/af_head"]',
+          ],
           snapshotUrls: [
-            'https://i.gkd.li/import/12511005',
-            'https://i.gkd.li/import/13258026',
-            'https://i.gkd.li/import/13259692',
+            'https://i.gkd.li/import/12511005', //1
+            'https://i.gkd.li/import/13258026', //1
+            'https://i.gkd.li/import/13259692', //1
+            'https://i.gkd.li/i/22327976', //2
           ],
         },
         {
