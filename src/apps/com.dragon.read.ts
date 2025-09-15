@@ -119,7 +119,10 @@ export default defineGkdApp({
       resetMatch: 'app',
       actionMaximum: 1,
       forcedTime: 10000,
-      activityIds: '.pages.main.MainFragmentActivity',
+      activityIds: [
+        '.pages.main.MainFragmentActivity',
+        '.component.biz.impl.SearchActivity',
+      ],
       rules: '@[text="取消"] < * -2 * > [text="开启推送提醒"]',
       snapshotUrls: 'https://i.gkd.li/i/17661722',
     },
