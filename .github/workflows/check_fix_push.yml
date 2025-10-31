@@ -9,7 +9,9 @@ permissions: write-all
 
 jobs:
   check:
+    if: ${{ github.actor != 'dependabot[bot]' }}
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
         with:
@@ -20,7 +22,6 @@ jobs:
           bun-version: latest
 
       - run: bun install
-
       - run: bun run check
       - run: bun run format
       - run: bun run lint
@@ -42,11 +43,19 @@ jobs:
         run: |
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git fetch origin
+          set +e
           git rebase origin/${{ github.ref_name }}
+          REBASE_EXIT=$?
+          set -e
+
+          if [ $REBASE_EXIT -ne 0 ]; then
+            echo "⚠️ Rebase failed, skipping push"
+            exit 0
+          fi
 
       - name: Git push
         uses: ad-m/github-push-action@master
         if: ${{ steps.commit.outcome == 'success' }}
         with:
           branch: ${{ github.ref_name }}
-          force: true
+          force: false
