@@ -43,7 +43,7 @@
   "devDependencies": {
     "@commitlint/cli": "19.8.1",
     "@commitlint/config-conventional": "19.8.1",
-    "@commitlint/types": "19.8.1",
+    "@commitlint/types": "20.0.0",
     "@eslint/eslintrc": "3.3.1",
     "@eslint/js": "9.34.0",
     "@gkd-kit/api": "0.7.3",
