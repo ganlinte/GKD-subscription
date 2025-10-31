@@ -13,10 +13,8 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          anyMatches: [
-            '[id="com.taobao.taobao:id/close"]',
-            '[id="com.taobao.taobao:id/tv_close"]',
-          ],
+          matches:
+            '@[vid*="close"] > [text*="跳过"][text.length<10][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/21708258',
         },
       ],
