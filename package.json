@@ -55,7 +55,7 @@
     "esbuild": "0.25.9",
     "eslint": "9.35.0",
     "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-unused-imports": "4.2.0",
+    "eslint-plugin-unused-imports": "4.3.0",
     "json5": "2.2.3",
     "lint-staged": "16.1.6",
     "prettier": "3.6.2",
