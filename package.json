@@ -60,7 +60,7 @@
     "lint-staged": "16.1.6",
     "prettier": "3.6.2",
     "simple-git-hooks": "2.13.1",
-    "typescript": "5.9.2"
+    "typescript": "5.9.3"
   },
   "author": "ganlinte",
   "license": "MIT",
