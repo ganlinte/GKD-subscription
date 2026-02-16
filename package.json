@@ -54,7 +54,7 @@
     "@typescript-eslint/eslint-plugin": "8.55.0",
     "@typescript-eslint/parser": "8.48.1",
     "esbuild": "0.27.3",
-    "eslint": "^9.20.0",
+    "eslint": "^10.0.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-unused-imports": "4.4.1",
     "json5": "2.2.3",
