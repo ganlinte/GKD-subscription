@@ -14,7 +14,7 @@
         "@commitlint/types": "21.0.1",
         "@eslint/eslintrc": "3.3.5",
         "@eslint/js": "10.0.1",
-        "@gkd-kit/api": "0.8.0",
+        "@gkd-kit/api": "0.9.3",
         "@gkd-kit/define": "0.0.1",
         "@gkd-kit/tools": "^0.8.0",
         "@types/bun": "latest",
@@ -144,7 +144,7 @@
 
     "@eslint/plugin-kit": ["@eslint/plugin-kit@0.7.1", "", { "dependencies": { "@eslint/core": "^1.2.1", "levn": "^0.4.1" } }, "sha512-rZAP3aVgB9ds9KOeUSL+zZ21hPmo8dh6fnIFwRQj5EAZl9gzR7wxYbYXYysAM8CTqGmUGyp2S4kUdV17MnGuWQ=="],
 
-    "@gkd-kit/api": ["@gkd-kit/api@0.8.0", "", {}, "sha512-UIVjDQoUWVhPwxfiaQ9aMm1M/vY1G00iO7JZ8yqWlmXoOFwoA5UDSfsY7XB+RPvQTtwdd4F0dC4K5d/5Q+aJSw=="],
+    "@gkd-kit/api": ["@gkd-kit/api@0.9.3", "", {}, "sha512-TpN4QImCS8wJRYEvdsH1TYaTYrtZpXpojxRnepgEmXLHZh7Fh+iLCavvs03wiwjGabVC24Ounr06yjb6UV8ePA=="],
 
     "@gkd-kit/define": ["@gkd-kit/define@0.0.1", "", { "peerDependencies": { "@gkd-kit/api": "*" } }, "sha512-ql/f0TIlBQOSaJS6e9c8B4rLHYWyCzDctP0vRpc6aYaWGJXnZKZIbuTUr2ET45eNzD4dviCjTU6cSv/wcA07IQ=="],
 
