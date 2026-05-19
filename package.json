@@ -46,7 +46,7 @@
     "@commitlint/types": "21.0.1",
     "@eslint/eslintrc": "3.3.5",
     "@eslint/js": "10.0.1",
-    "@gkd-kit/api": "0.8.0",
+    "@gkd-kit/api": "0.9.3",
     "@gkd-kit/define": "0.0.1",
     "@gkd-kit/tools": "^0.8.0",
     "@types/bun": "latest",
