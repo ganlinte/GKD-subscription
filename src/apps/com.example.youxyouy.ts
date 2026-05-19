@@ -77,5 +77,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '全屏广告-长按加速视频(5秒)',
+      fastQuery: true,
+      activityIds: 'com.kwad.sdk.api.proxy.app.KsRewardVideoActivity',
+      rules: [
+        {
+          matches: '[text^="长按加速视频"]',
+          action: 'swipe',
+          swipeArg: {
+            start: { x: 'screenWidth/2', y: 'screenHeight/2' },
+            duration: 5000,
+          },
+          snapshotUrls: 'https://i.gkd.li/i/19160328',
+        },
+      ],
+    },
   ],
 });
