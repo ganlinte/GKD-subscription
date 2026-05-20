@@ -9,11 +9,11 @@ jobs:
       id-token: write
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
-      - uses: oven-sh/setup-bun@v1
+      - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
 
@@ -27,10 +27,11 @@ jobs:
           echo "version=${version}" >> "$GITHUB_OUTPUT"
           bun -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: '24'
           registry-url: 'https://registry.npmjs.org/'
+          package-manager-cache: false
 
       - name: Publish to NPM
         run: |
@@ -50,7 +51,7 @@ jobs:
           git push origin v${{ steps.version.outputs.version }}
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: v${{ steps.version.outputs.version }}
           name: Release ${{ steps.version.outputs.version }}
