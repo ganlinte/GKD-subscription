@@ -15,7 +15,7 @@ export default defineGkdApp({
           key: 1,
           actionDelay: 200,
           matches:
-            '@ImageView < ViewGroup <3 ViewGroup[childCount=5] <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.phoenix.read:id/root_view"]',
+            'ImageView < @ViewGroup <3 ViewGroup[childCount=5] <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.phoenix.read:id/root_view"]',
           snapshotUrls: 'https://i.gkd.li/i/27986281',
         },
         {
@@ -35,11 +35,12 @@ export default defineGkdApp({
         {
           matches: '[text="点击关闭广告并退出小说"]',
           excludeMatches: '[text$="秒后，继续阅读下一页"]',
+          forcedTime: 3600000,
           action: 'swipe',
           swipeArg: {
             start: { x: 'screenWidth*0.8', y: 'screenHeight/2' },
             end: { x: 'screenWidth*0.2', y: 'screenHeight/2' },
-            duration: 500,
+            duration: 300,
           },
           snapshotUrls: 'https://i.gkd.li/i/27988263',
           excludeSnapshotUrls: 'https://i.gkd.li/i/27988163',
