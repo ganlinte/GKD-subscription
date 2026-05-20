@@ -12,9 +12,16 @@ export default defineGkdApp({
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: [
         {
+          key: 1,
+          actionDelay: 200,
           matches:
             '@ImageView < ViewGroup <3 ViewGroup[childCount=5] <n * <n * <n * <n * <n * <n * <n * <n * <n * <n [id="com.phoenix.read:id/root_view"]',
           snapshotUrls: 'https://i.gkd.li/i/27986281',
+        },
+        {
+          preKeys: 1,
+          matches: 'TextView[text="关闭此广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/28024153',
         },
       ],
     },
