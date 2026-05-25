@@ -33,7 +33,7 @@ export default defineGkdApp({
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: [
         {
-          matches: '[text="点击关闭广告并退出小说"]',
+          matches: '[text="点击关闭广告并退出小说"][visibleToUser=true]',
           excludeMatches: '[text$="秒后，继续阅读下一页"]',
           forcedTime: 3600000,
           action: 'swipe',
@@ -43,7 +43,11 @@ export default defineGkdApp({
             duration: 300,
           },
           snapshotUrls: 'https://i.gkd.li/i/27988263',
-          excludeSnapshotUrls: 'https://i.gkd.li/i/27988163',
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/i/27988163',
+            'https://i.gkd.li/i/28187435', //前一页
+            'https://i.gkd.li/i/28187442', //后一页
+          ],
         },
       ],
     },
