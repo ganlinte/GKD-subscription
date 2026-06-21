@@ -11,7 +11,9 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: ['com.pandabus.android.jilinxing.MainActivity'],
       rules: '@[vid="iv_native_dislike"]',
-      snapshotUrls: [],
+      snapshotUrls: [
+        'https://i.gkd.li/i/29184757',
+                    ],
     },
   ],
 });
