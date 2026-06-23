@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '开屏小窗广告',
+      name: '全屏广告-开屏小窗广告',
       desc: '检测到开屏穿山甲广告自动关闭',
       fastQuery: true,
       activityIds: ['com.pandabus.android.jilinxing.MainActivity'],
