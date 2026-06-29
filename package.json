@@ -59,7 +59,7 @@
     "eslint-plugin-unused-imports": "4.4.1",
     "json5": "2.2.3",
     "lint-staged": "17.0.8",
-    "prettier": "3.8.4",
+    "prettier": "3.9.1",
     "simple-git-hooks": "2.13.1",
     "typescript": "6.0.3"
   },
