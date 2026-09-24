@@ -21,17 +21,22 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-主页广告',
-      activityIds: ['com.zzw.october.MainActivity'],
+      activityIds: 'com.zzw.october.MainActivity',
+      fastQuery: true,
       rules: [
         {
           key: 1,
-          fastQuery: true,
           matches:
             '[id="com.zzw.october:id/interact_ad_root"] >n ImageView[id="com.zzw.october:id/iv_close"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12842675',
             'https://i.gkd.li/import/12869369',
           ],
+        },
+        {
+          matches:
+            '@ImageView < FrameLayout - FrameLayout > TextView[text="进入小程序"] - FrameLayout > [text="上滑或点击按钮查看详情"]',
+          snapshotUrls: 'https://i.gkd.li/i/32597173',
         },
       ],
     },
