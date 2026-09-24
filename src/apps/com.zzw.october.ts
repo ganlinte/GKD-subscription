@@ -8,13 +8,17 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-我的',
       fastQuery: true,
-      actionMaximum: 1,
+      activityIds: 'com.zzw.october.MainActivity',
       rules: [
         {
-          activityIds: 'com.zzw.october.MainActivity',
           matches:
             'FrameLayout[childCount=5] > FrameLayout > ImageView[text=null]',
           snapshotUrls: 'https://i.gkd.li/import/14661569',
+        },
+        {
+          matches:
+            '@ImageView < FrameLayout[id="com.zzw.october:id/fl_close"] < [id="com.zzw.october:id/dialog_root"]',
+          snapshotUrls: 'https://i.gkd.li/i/32597470',
         },
       ],
     },
