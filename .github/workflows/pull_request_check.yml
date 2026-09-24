@@ -21,12 +21,29 @@ jobs:
         uses: tj-actions/changed-files@v46
 
       - name: Check changed files
+        env:
+          CHANGED_FILES: ${{ steps.changed_files.outputs.all_changed_files }}
+          CHANGED_FILES_COUNT: ${{ steps.changed_files.outputs.all_changed_files_count }}
+          IS_DEPENDABOT: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
         run: |
-          if [ ${{ steps.changed_files.outputs.all_changed_files_count }} -ne 1 ]; then
+          if [[ "$IS_DEPENDABOT" == "true" ]]; then
+            if [[ "$CHANGED_FILES_COUNT" -lt 1 || "$CHANGED_FILES_COUNT" -gt 2 ]]; then
+              echo "Dependabot pull requests must change one or two files"
+              exit 1
+            fi
+
+            for file in $CHANGED_FILES; do
+              if [[ "$file" != "package.json" && "$file" != "bun.lock" ]]; then
+                echo "Dependabot changed an unexpected file: $file"
+                exit 1
+              fi
+            done
+          elif [[ "$CHANGED_FILES_COUNT" -ne 1 ]]; then
             echo "your changed files count must be 1"
             exit 1
           fi
-          for file in ${{ steps.changed_files.outputs.all_changed_files }}; do
+
+          for file in $CHANGED_FILES; do
             echo "$file was changed"
           done
 
