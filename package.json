@@ -60,7 +60,7 @@
     "json5": "2.2.3",
     "lint-staged": "17.2.0",
     "prettier": "3.9.8",
-    "simple-git-hooks": "2.13.1",
+    "simple-git-hooks": "2.14.0",
     "typescript": "6.0.3"
   },
   "author": "ganlinte",
